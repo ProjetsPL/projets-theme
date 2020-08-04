@@ -1,0 +1,5 @@
+top-line
+{% assign visibility_pages = site.pages  | where: "visibility_in_menu", true %}
+{% for page in visibility_pages %}
+  <li><a href="{{page.url}}">{{page.title}}</a></li>                  
+{% endfor %}

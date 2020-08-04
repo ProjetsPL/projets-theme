@@ -1,0 +1,32 @@
+title: "Projets"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "projets.pl" # the base hostname & protocol for your site, e.g. http://example.com
+lang: "pl"
+photo: "/assets/img/default.jpg"
+scvarificationnumber: "" # numer identyfikacjyny google search console
+analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
+
+markdown: kramdown
+
+sass:
+  style: compressed
+
+toc:
+  min_level: 2
+  max_level: 3
+
+plugins:
+  # - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-toc
+
+collections:
+  posts:    
+    output: true
+    permalink: /blog/:title:output_ext
+  services:    
+    output: true
+    permalink: /uslugi/:title:output_ext
+  casestudies:    
+    output: true
+    permalink: /realizacje/:title:output_ext

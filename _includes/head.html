@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{page.seo_title}}</title>
+<meta name="description" content="{{page.seo_description}}">
+<link rel="canonical" href="{{page.url | absolute_url}}">
+
+<!-- {% for heflang in page.hreflangs %}
+    {% if heflang.lang and heflang.link%}
+        <link rel="alternate" hreflang="{{heflang.lang}}" href="{{heflang.link}}">
+    {%endif%}
+{% endfor %} -->
+
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icon/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icon/safari-pinned-tab.svg" color="#039ba9">
+<meta name="msapplication-TileColor" content="#039ba9">
+<meta name="theme-color" content="#039ba9">
+
+<meta name="generator" content="Jekyll v4.0.0">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="{{site.lang}}">
+<meta property="og:site_name" content="{{site.title}}">
+<meta property="og:title" content="{{ page.seo_title }}">
+<meta property="og:description" content="{{ page.seo_description }}">
+<meta property="og:image" content="{{ page.photo | default: site.photo | absolute_url }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ page.url | absolute_url }}">
+<meta property="twitter:title" content="{{ page.seo_title }}">
+<meta property="twitter:description" content="{{ page.seo_description }}">
+<meta property="twitter:image" content="{{ page.photo | default: site.photo | absolute_url }}">
+
+<link rel="stylesheet" href="/assets/main.css?v=1">
+
+<meta name="google-site-verification" content="{{site.scvarificationnumber}}" />

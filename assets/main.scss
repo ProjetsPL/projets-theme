@@ -1,6 +1,218 @@
 ---
 ---
 
-body {
-    
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400;600&family=Ubuntu:wght@700&display=swap&subset=latin-ext');
+
+// Colors
+$bg-0: #FFFFFF;
+$bg-1: #F9F9F9;
+$bg-2: #F7F5F7; 
+$bg-3: #E0DAE3;
+$bg-4: #C5BACC;
+$bg-gradient-0: linear-gradient(180deg, #FFFFFF 0%, #F9F9F9 100%);
+$main-1: #2A1A33;
+$main-2: #4B2661;
+$main-3: #8644AD;
+$main-4: #B75DED;
+$negative-1: #B82929;
+$positive-1: #2C970A;
+
+//Document size
+$beam-gutter-size: 40px;
+$beam-size: 1160px;
+
+//Borders
+$bg-border-1: 2px solid $bg-1;
+$bg-border-2: 2px solid $bg-2;
+$bg-border-3: 2px solid $bg-3;
+
+//Shadows
+$main-shadow: 0px 15px 30px rgba(42, 26, 51, 0.1);
+$main-shadow-sm: 0px 5px 15px rgba(42, 26, 51, 0.2);
+
+//transitions time
+$slow: 0.4s;
+$normal: 0.2s;
+$fast: 0.1s;
+
+//Main elements
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+body {
+    margin: 0 auto;    
+    color: $main-1;    
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 0.02em;
+    color: $main-1;
+}
+p, .p1, .p2, .p3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p, .p1 {
+    font-size: 17px;
+    line-height: 29px;
+}
+.p2 {
+    font-size: 15px;
+    line-height: 26px;
+}
+.p3 {
+    font-size: 13px;
+    line-height: 23px;
+}
+h1, .h1 {
+    font-size: 41px;
+    line-height: 52px;
+}
+h2, .h2 {
+    font-size: 32px;
+    line-height: 43px;
+}
+h3, .h3 {
+    font-size: 25px;
+    line-height: 36px;
+}
+h4, .h4 {
+    font-size: 20px;
+    line-height: 29px;
+}
+.beam-background {
+    background: $bg-gradient-0 ;
+}
+.header-beam {
+    margin-top: 90px;
+}
+
+//Buttons 
+
+.btn {
+     height: 40px;
+     padding: 0 30px;
+     background-color: $main-2;
+     color: $bg-1;
+     display: flex;
+     align-items: center;
+     font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: $main-shadow;
+    transition: $normal;
+    &:hover {
+        background-color: $main-3;
+    }
+    &:active {
+        transform: scale(0.9);
+        box-shadow: $main-shadow-sm;
+    }
+}
+
+//Document Structure
+.beams-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    &.global-beam-wrapper {
+        .beam {
+            max-width: $beam-size;
+        }
+    }
+}
+.beam-item>.beam {
+    margin-left: -($beam-gutter-size/2);
+    --beam-gutter-size: #{$beam-gutter-size};
+    max-width: $beam-size;
+    width: calc(var(--beam-gutter-size) + 100%);
+}
+.beam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100%);
+    &.b-size-6 {
+        >.b-size-1 {
+            flex-basis: 16.66%;
+        }
+        >.b-size-2 {
+            flex-basis: 33.33%;
+        }
+        >.b-size-3 {
+            flex-basis: 50%;
+        }
+        >.b-size-4 {
+            flex-basis: 66.66%;
+        }
+        >.b-size-5 {
+            flex-basis: 83.33%;
+        }
+        >.b-size-6 {
+            flex-basis: 100%;
+        }
+    }
+    &.b-size-5 {
+        >.b-size-1 {
+            flex-basis: 20%;
+        }
+        >.b-size-2 {
+            flex-basis: 40%;
+        }
+        >.b-size-3 {
+            flex-basis: 60%;
+        }
+        >.b-size-4 {
+            flex-basis: 80%;
+        }
+        >.b-size-5 {
+            flex-basis: 100%;
+        }
+    }
+    &.b-size-4 {
+        >.b-size-1 {
+            flex-basis: 25%;
+        }
+        >.b-size-2 {
+            flex-basis: 50%;
+        }
+        >.b-size-3 {
+            flex-basis: 75%;
+        }
+        >.b-size-4 {
+            flex-basis: 100%;
+        }
+    }
+    &.b-size-3 {
+        >.b-size-1 {
+            flex-basis: 33.33%;
+        }
+        >.b-size-2 {
+            flex-basis: 66.66%;
+        }
+        >.b-size-3 {
+            flex-basis: 100%;
+        }
+    }
+    .beam-item {
+        padding-left: $beam-gutter-size/2;
+        padding-right: $beam-gutter-size/2;
+        width: 100%;
+    }
+}
+
+// top-line
+@import "top-line.scss";

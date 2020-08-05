@@ -1,0 +1,81 @@
+.top-line {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+.top-line-content {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    transition: $normal;
+    &:active {
+        transform: scale(0.9)
+    }
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            transition: $normal;
+            padding: 0 20px 0 20px;
+            &.active {
+                a {
+                    &::after {
+                        width: 100%;
+                    }
+                    top:0px;
+                }
+            }
+            a {
+                position: relative;
+                transition: $normal;
+                padding: 25px 0 25px 0;
+                text-decoration: none;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.02em;
+                color: $main-2;                
+                top:0px;                
+                &::after {
+                    transition: 0.2s;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 2px;
+                    width: 0%;
+                    background-color: $main-3;
+                }
+                &:hover {
+                    top:-4px;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+            &:active {
+                transform: scale(0.9)
+            }
+        }
+    }
+}

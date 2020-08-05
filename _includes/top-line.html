@@ -1,5 +1,27 @@
-top-line
-{% assign visibility_pages = site.pages  | where: "visibility_in_menu", true %}
-{% for page in visibility_pages %}
-  <li><a href="{{page.url}}">{{page.title}}</a></li>                  
-{% endfor %}
+<div class="beams-wrapper global-beam-wrapper top-line">
+  <div class="beam">
+    <div class="beam-item">
+      <header class="top-line-content">
+        <a href="/" class="logo">
+          <img src="/assets/img/h-logo.svg" alt="{{ site.title}}">
+        </a>
+        <nav class="main-nav">
+          <ul>
+          {% assign visibility_pages = site.pages  | where: "visibility_in_menu", true | sort: "position_in_menu" %}
+          {% for node in visibility_pages %}
+          {% if page.url == node.url %}
+            <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>         
+            {% else %}
+            <li><a href="{{node.url}}">{{node.title}}</a></li>     
+            {% endif %}             
+          {% endfor %}
+          </ul>
+        </nav>
+        {% assign cta_pages = site.pages  | where: "cta_in_menu", true %}
+        {% for node in cta_pages %}
+        <a href="{{node.url}}" class="btn btn-sm">{{node.cta_text_in_menu}}</a>               
+        {% endfor %}
+      </header>
+    </div>
+  </div>
+</div>

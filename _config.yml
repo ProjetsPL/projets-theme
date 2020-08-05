@@ -9,6 +9,7 @@ analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
 markdown: kramdown
 
 sass:
+  sass_dir: _scss
   style: compressed
 
 toc:
@@ -16,7 +17,6 @@ toc:
   max_level: 3
 
 plugins:
-  # - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-toc
 

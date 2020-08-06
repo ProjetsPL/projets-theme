@@ -1,19 +1,190 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'pl' }}">
+<html lang="{{ page.lang | default: site.lang }}">
     <head>
         {% include head.html %}
         <!--Dane struklturalne dla każdego layoutu-->
     </head>
     <body>    
         {% include top-line.html %}          
-        <div class="beams-wrapper global-beam-wrapper beam-background header-beam">
-            <div class="beam">
-                <div class="beam-item">
-                    <h1>{{page.title}}</h1>
-                    {{content}}              
+        <section class="beams-wrapper global-beam-wrapper beam-background header-beam header-slider">
+            {% assign slides = page.header_slider %}
+            {% for item in slides %}
+            <section class="beam b-size-2 slide-item">
+                <div class="beam-item b-size-1 slide-content">
+                    <p class="h4 uppercase">{{item.name}}</p>
+                    <p class="h1">{{item.title}}</p>
+                    <p class="content">{{item.content}}</p>
+                    <a class="cta"href="{{item.link}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </div>
+                <div class="beam-item b-size-1 slide-photo">                    
+                    <img src="{{item.photo}}" alt="{{item.name}}" class="main">
+                </div>
+            </section>
+            {%endfor%}
+        </section>
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam index-services">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-5"> 
+                    <header class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <h2 class="h4 uppercase">{{page.services_section.title}}</h2>
+                                {%if page.services_section.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.services_section.icon}}" alt="{{page.services_section.title}}">
+                                </div>
+                                {%endif%}
+                            </div>
+                            {%if page.services_section.link and page.services_section.cta %}
+                            <div class="link">
+                                <a href="{{page.services_section.link}}">{{page.services_section.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            </div>
+                            {%endif%}
+                        </div>
+                        {%if page.services_section.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.services_section.content}}</p>
+                        </div>           
+                        {%endif%}
+                    </header>
+                    <div class="beam b-size-2 services-categories">
+                        {% assign services_category = page.services_section.services %}
+                         {% for item  in services_category %}
+                        <section class="beam-item b-size-1"> 
+                            <header class=" services-category-header">
+                                <div class="icon icon-bg">
+                                    <img src="{{item.icon}}" alt="{{item.title}}">
+                                </div>
+                                <div class="title">
+                                    <h3 class="h1">{{item.title}}</h3>
+                                </div>
+                            </header>
+                            <div class="services-category-content">
+                                <p>{{item.content}}</p>
+                            </div>
+                            <ul class="services-category-list">
+                            {% assign services =  site.services | where: "category" , item.title |  sort: "order" %}
+                            {% for item in services %}
+                              <li><a href="{{item.url}}">{{item.title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>                 
+                            {% endfor %}   
+                            </ul>         
+                        </section>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
-        </div>            
+        </section>   
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam index-testimonials">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-5"> 
+                    <header class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <h2 class="h4 uppercase">{{page.testimonials_section.title}}</h2>
+                                {%if page.testimonials_section.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.testimonials_section.icon}}" alt="{{page.testimonials_section.title}}">
+                                </div>
+                                {%endif%}
+                            </div>
+                            {%if page.testimonials_section.link and page.testimonials_section.cta %}
+                            <div class="link">
+                                <a href="{{page.testimonials_section.link}}">{{page.testimonials_section.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            </div>
+                            {%endif%}
+                        </div>         
+                        {%if page.testimonials_section.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.testimonials_section.content}}</p>
+                        </div>                      
+                        {%endif%}
+                    </header>      
+                    <div class="beam b-size-2 testimonials">
+                        {% assign testimonials = site.casestudies | where: "testimonial_on_index", true | sample: 2 %}
+                         {% for item in testimonials %}
+                         <section class="beam-item b-size-1 testimonial"> 
+                             <header class="testimonial-header">
+                                 <div class="photo"><img src="{{item.customer_opinion.photo}}" alt="{{item.customer_opinion.person}}"></div>
+                                 <div class="person">
+                                     <div class="logo"><img src="{{item.company_logo}}" alt="{{item.company}}"></div>
+                                     <div class="name h4">{{item.customer_opinion.person}}</div>
+                                     <div class="position">{{item.customer_opinion.position}}</div>
+                                 </div>
+                            </header>
+                            <div class="content">
+                                <p>"{{item.customer_opinion.quotation_small}}"</p>
+                            </div>
+                            <a href="{{item.url}}" alt="{{item.title}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </section>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        {%if page.cta_buttons[1].link and page.cta_buttons[1].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="{{page.cta_buttons[1].link}}">{{page.cta_buttons[1].name}}</a>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam index-casestudies">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-5"> 
+                    <header class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <h2 class="h4 uppercase">{{page.case_studies_section.title}}</h2>
+                                {%if page.case_studies_section.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.case_studies_section.icon}}" alt="{{page.case_studies_section.title}}">
+                                </div>
+                                {%endif%}
+                            </div>
+                            {%if page.case_studies_section.link and page.case_studies_section.cta %}
+                            <div class="link">
+                                <a href="{{page.case_studies_section.link}}">{{page.case_studies_section.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            </div>
+                            {%endif%}
+                        </div>
+                        {%if page.case_studies_section.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.case_studies_section.content}}</p>
+                        </div> 
+                        {%endif%} 
+                    </header>
+                    <div class="beam casestudies">
+                        {% assign casestudy = site.casestudies | where: "casestudy_on_index", true%}
+                        {% for item in casestudy limit:1 %}
+                        <section class="beam b-size-5 casestudies">
+                            <div class="beam-item b-size-3 casestudie-content">
+                                <h3 class="h2">{{item.intro.title}}</h3>
+                                <p>{{item.intro.content}}</p>
+                                <div class="link">
+                                    <a href="{{item.url}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                                </div>
+                            </div>
+                            <div class="beam-item b-size-2 casestudie-img">
+                                <div class="circle-bg" style="background-color: #{{ item.colors.main }}"></div>    
+                                {% include casestudy-mockup-mobile.html %}       
+                            </div>
+                        </section>
+                        {%endfor%}                    
+                    </div>                    
+                </div>
+            </div>
+        </section>  
         {% include footer.html %}      
     </body>
-</html>
+</html> 

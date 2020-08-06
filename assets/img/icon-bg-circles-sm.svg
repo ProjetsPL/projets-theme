@@ -1,0 +1,74 @@
+<svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.04" cx="85" cy="85" r="38" stroke="#4B2661" stroke-width="2">
+<animate 
+                        attributeName="opacity" 
+                        begin="0s"
+                        values="0.04;0.04;0.12;0.04;0.04" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+                <animate 
+                        attributeName="r" 
+                        begin="0s"
+                        values="38;38;39;38;38" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+</circle>
+<circle opacity="0.03" cx="85" cy="85" r="52" stroke="#4B2661" stroke-width="2">
+<animate 
+                        attributeName="opacity" 
+                        begin="0.5s"
+                        values="0.03;0.03;0.09;0.03;0.03" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+                <animate 
+                        attributeName="r" 
+                        begin="0.5s"
+                        values="52;52;54;52;52" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+</circle>
+<circle opacity="0.02" cx="85" cy="85" r="66" stroke="#4B2661" stroke-width="2">
+<animate 
+                        attributeName="opacity" 
+                        begin="1s"
+                        values="0.02;0.02;0.06;0.02;0.02" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+                <animate 
+                        attributeName="r" 
+                        begin="1s"
+                        values="66;66;69;66;66" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+</circle>
+<circle opacity="0.01" cx="85" cy="85" r="80" stroke="#4B2661" stroke-width="2">
+<animate 
+                        attributeName="opacity" 
+                        begin="1.5s"
+                        values="0.01;0.01;0.03;0.01;0.01" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+                <animate 
+                        attributeName="r" 
+                        begin="1.5s"
+                        values="80;80;84;80;80" 
+                        keyTimes="0; 0.15; 0.5; 0.85; 1"
+                        dur="2s"
+                        repeatCount="indefinite"  
+                />
+</circle>
+</svg>

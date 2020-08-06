@@ -9,7 +9,7 @@ analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
 markdown: kramdown
 
 sass:
-  sass_dir: _scss
+  sass_dir: assets/_scss
   style: compressed
 
 toc:
@@ -20,6 +20,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
 
+collections_dir: page/collections
 collections:
   posts:    
     output: true
@@ -30,3 +31,10 @@ collections:
   casestudies:    
     output: true
     permalink: /realizacje/:title:output_ext
+
+defaults:  
+  -
+    scope:
+      path: "page/static"
+    values:
+      permalink: /:basename:output_ext

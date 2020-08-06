@@ -1,4 +1,5 @@
 ---
+# GLOBAL 
 layout: blog
 title: Blog
 seo_title:  SEO Blog
@@ -10,3 +11,9 @@ cta_in_menu: false
 cta_text_in_menu:
 ---
 CONTENT Blog
+
+  {% for post in site.posts %}
+  <ul>
+    <li><a href="{{post.url}}">{{post.title}}</a></li>          
+  </ul>        
+  {% endfor %}

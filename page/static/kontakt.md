@@ -1,4 +1,5 @@
 ---
+# GLOBAL 
 layout: page
 title: Kontakt
 seo_title:  SEO Kontakt

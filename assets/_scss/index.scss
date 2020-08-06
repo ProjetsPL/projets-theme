@@ -116,6 +116,25 @@
                 top: 50%;
                 left: 50%;
                 transform: translateX(-35%) translateY(-10%);
+                animation-name: circle-bg;
+                animation-duration: 10s;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out ;
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 44.27%, rgba(255, 255, 255, 0) 100%);
+                    border-radius: 100%;
+                    animation-name: circle-bg-after;
+                    animation-duration: 7s;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-out ;
+                }
             }
             .casestudie-mockup {               
                 z-index: 5; 
@@ -134,4 +153,15 @@
             }
         }
     }
+}
+
+
+@keyframes circle-bg {
+    0% {transform:  translateX(-35%) translateY(-10%) scale(1);}
+   50%  {transform: translateX(-30%) translateY(-20%) scale(1.1);}
+    100%  {transform: translateX(-35%) translateY(-10%) scale(1);}
+}
+@keyframes circle-bg-after {
+    0% {transform: scale(0); opacity: 1;}
+    100%  {transform: scale(2); opacity: 0;}
 }

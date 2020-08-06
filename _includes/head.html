@@ -25,19 +25,19 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:locale" content="{{site.lang}}">
-<meta property="og:site_name" content="{{site.title}}">
+<meta property="og:locale" content="{{site.data.global.lang}}">
+<meta property="og:site_name" content="{{site.data.global.title}}">
 <meta property="og:title" content="{{ page.seo_title }}">
 <meta property="og:description" content="{{ page.seo_description }}">
-<meta property="og:image" content="{{ page.photo | default: site.photo | absolute_url }}">
+<meta property="og:image" content="{{ page.photo | default: site.data.global.og_random_photo | absolute_url }}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ page.url | absolute_url }}">
 <meta property="twitter:title" content="{{ page.seo_title }}">
 <meta property="twitter:description" content="{{ page.seo_description }}">
-<meta property="twitter:image" content="{{ page.photo | default: site.photo | absolute_url }}">
+<meta property="twitter:image" content="{{ page.photo | default: site.data.global.og_random_photo | absolute_url }}">
 
 <link rel="stylesheet" href="/assets/main.css?v=1">
 
-<meta name="google-site-verification" content="{{site.scvarificationnumber}}" />
+<meta name="google-site-verification" content="{{site.data.global.scvarificationnumber}}" />

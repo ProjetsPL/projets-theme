@@ -1,0 +1,37 @@
+title: "Projets"
+url: "https://projets.pl" # the base hostname & protocol for your site, e.g. http://example.com
+lang: "pl"
+
+og_random_photo: "/assets/img/default.jpg"
+
+scvarificationnumber: "" # numer identyfikacjyny google search console
+analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
+
+footer:
+  contact_section:
+    title: Z niecierpliwością czekamy na Twój projekt
+    content: Z niecierpliwością czekamy na Twój projekt
+    link: /kontakt.html
+    cta: Napisz do nas
+    icon: /uploads/icon-sm-email.svg  
+
+  other_version:
+    -
+      name: projets.pl
+      lang: pl
+      flag: /uploads/icon-flag-pl.svg
+      link: https://projets.pl
+    -
+      name: projets.io
+      lang: en
+      flag: /uploads/icon-flag-us.svg
+      link: https://projets.io
+  
+  phone: "+48666395394"
+  email: studio@projets.pl
+  company: Matlęga sp. j., ul. Łanowa 10, 30-725 Kraków.
+  copyrights: © 2020 Projets. All rights reserved.
+  
+  menu:
+    services:
+    static_pages:

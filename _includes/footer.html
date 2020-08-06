@@ -1,17 +1,76 @@
-<div class="beams-wrapper global-beam-wrapper beam-background">
-  <div class="beam">
-    <div class="beam-item">
-      Stopka
+<footer class="beams-wrapper global-beam-wrapper beam-background section-beam">
+  {% if page.show_contact_in_footer %}
+  <div class="beam b-size-6  footer-contactsection">
+    <div class="beam-item  b-size-5">
+      <div class="section-header">
+        <div class="head">
+            <div class="title">
+                <p class="h4 uppercase">{{site.data.global.footer.contact_section.title}}</p>
+                {%if site.data.global.footer.contact_section.icon%}
+                <div class="icon icon-bg icon-bg-sm">
+                    <img src="{{site.data.global.footer.contact_section.icon}}" alt="{{site.data.global.footer.contact_section.title}}">
+                </div>
+                {%endif%}
+            </div>
+        </div>
+        {%if site.data.global.footer.contact_section.content %}
+        <div class="section-intro">                                 
+            <p>{{site.data.global.footer.contact_section.content}}</p>
+        </div> 
+        <a class="btn" href="{{site.data.global.footer.contact_section.link}}">{{site.data.global.footer.contact_section.cta}}</a>
+        {%endif%} 
+      </div>
     </div>
   </div>
-</div>
+  {%endif%}
+  <div class="beam b-size-2 footer-content">
+    <nav class="beam-item  b-size-1">
+      <div class="beam b-size-2">
+        <div class="beam-item  b-size-1 footer-nav-section">
+          <p class="h4">Usługi</p>
+          <ul>
+            {% for service in site.services %}
+            <li><a href="{{service.url}}">{{service.title}}</a></li>    
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="beam-item  b-size-1 footer-nav-section">
+          <p class="h4">Informacje</p>          
+          <ul>
+            {% assign visibility_pages = site.pages  | where: "visibility_in_menu", true | sort: "position_in_menu" %}
+            {% for item in visibility_pages %}
+            <li><a href="{{item.url}}">{{item.title}}</a></li>  
+            {% endfor %}
+          </ul>
+        </div>
+    </div>     
+  </nav> 
+  <div class="beam-item  b-size-1 footer-details">
+    <ul class="footer-lang">
+      {% assign language_version =  site.data.global.footer.other_version %}
+      {% for item in language_version %}
+      {% if item.name and item.lang and item.flag and item.link %}
+        <li><a class="btn btn-white btn-lefticon" href="{{item.link}}"><img src="{{item.flag}}" alt="{{item.lang}}">{{item.name}}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <div class="footer-contact">
+      <a href="tel:{{site.data.global.footer.phone}}" class="pb"><img src="/assets/img/icon-sm-phone-gray.svg" alt=""> {{site.data.global.footer.phone}}</a>      
+      <a href="mailto:{{site.data.global.footer.mail}}" class="pb"><img src="/assets/img/icon-sm-email-gray.svg" alt=""> {{site.data.global.footer.email}}</a>
+    </div>
+    <div class="footer-info">
+      <p class="p2">{{site.data.global.footer.company}}</p>
+      <p class="p2">{{site.data.global.footer.copyrights}}</p>
+    </div>
+  </div>
+</footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.analyticsvarificationnumber}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.global.analyticsvarificationnumber}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{site.analyticsvarificationnumber}}');
+  gtag('config', '{{site.data.global.analyticsvarificationnumber}}');
 </script>

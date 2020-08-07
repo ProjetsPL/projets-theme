@@ -17,6 +17,8 @@ cta_buttons:
     link: /kontakt.html
   - name: Napisz do nas
     link: /kontakt.html
+  - name: Jakieś inne CTA
+    link: /kontakt.html
 
 header_slider:
   -

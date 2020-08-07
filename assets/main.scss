@@ -21,6 +21,7 @@ $positive-1: #2C970A;
 //Document size
 $beam-gutter-size: 40px;
 $beam-size: 1160px;
+$samll-beam-size: 960px;
 
 //Borders
 $bg-border-1: 2px solid $bg-1;
@@ -28,6 +29,7 @@ $bg-border-2: 2px solid $bg-2;
 $bg-border-3: 2px solid $bg-3;
 
 //Shadows
+$main-shadow-lg: 0px 15px 60px rgba(42, 26, 51, 0.1);
 $main-shadow: 0px 15px 30px rgba(42, 26, 51, 0.1);
 $main-shadow-sm: 0px 5px 15px rgba(42, 26, 51, 0.2);
 
@@ -37,9 +39,6 @@ $normal: 0.2s;
 $fast: 0.1s;
 
 //Main elements
-body {    
-    font-family: 'Montserrat', sans-serif;
-}
 *,
  ::before,
  ::after {
@@ -50,6 +49,7 @@ body {
     margin: 0 auto;    
     color: $main-1;    
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {    
     font-family: 'Ubuntu', sans-serif;
@@ -95,6 +95,21 @@ h4, .h4 {
     font-size: 20px;
     line-height: 29px;
 }
+@media (max-width:1000px) {
+    h1, .h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    h2, .h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    h3, .h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
 a {
     color: $main-3;
     transition: $normal;
@@ -112,12 +127,8 @@ a {
     text-transform: uppercase;
 }
 
-
 .beam-background {
     background: $bg-gradient-0 ;
-}
-.header-beam {
-    margin-top: 90px;
 }
 .section-beam {
     padding: 100px 0;
@@ -143,11 +154,39 @@ a {
         }
         .link {
             padding-top: 5px;
+            min-width: 250px;
+            text-align: right;
         }
     }
     .section-intro {
         *:first-child {
             margin-top: 0;
+        }
+    }
+}
+@media (max-width:1200px) {
+    .section-header {
+        .head {        
+            .title {
+                .icon {
+                    top: -125px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:660px) {
+    .section-header {
+        .head {  
+            flex-flow: column;
+            .title {
+                margin-bottom: 20px;
+            }
+            .link {
+                text-align: left;
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -159,8 +198,13 @@ a {
         a {
             position: absolute;
             top:-20px;
-            right:0;
+            right:$beam-gutter-size/2;
         }
+    }
+}
+.small-beam-wrapper {
+    .beam {
+        max-width: $samll-beam-size;
     }
 }
 
@@ -327,6 +371,7 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
+    // overflow-y: hidden;
     &.global-beam-wrapper {
         .beam {
             max-width: $beam-size;

@@ -1,3 +1,8 @@
+.beams-wrapper.global-beam-wrapper{
+    .beam.footer-contactsection {
+        max-width: $samll-beam-size;
+    }
+}
 .footer-contactsection {
     position: relative;
     .section-header {
@@ -9,7 +14,7 @@
         position: absolute;
         bottom:0;
         left: $beam-gutter-size/2;
-        width: $beam-size - $beam-gutter-size ;
+        width: calc(100% - #{$beam-gutter-size});
         border-top: $bg-border-2;
     }
     margin-bottom: 60px;
@@ -28,7 +33,7 @@
         li{
             a {
                 display: block;
-                padding: 5px 0;
+                padding: 10px 0;
                 color: $main-1;
                 &:hover {
                     color: $main-3;
@@ -77,6 +82,63 @@
     .footer-info {
         p {
             margin: 0;
+        }
+    }
+}
+
+@media (max-width:950px) {
+    .footer-content.beam.b-size-2 {
+        justify-content: flex-start;
+        flex-basis: 100%;
+        .footer-nav.b-size-1 {
+            flex-basis: 100%;
+            .footer-nav-section {
+                // text-align: center;
+                // flex-basis: 30%;
+
+
+            }
+            margin-bottom: 50px;
+        }
+        .footer-details.b-size-1 {
+            flex-basis: 100%;
+            align-items: flex-start;
+            .footer-info {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .footer-content.beam.b-size-2 {
+        .footer-nav.b-size-1 {
+            margin-bottom: 50px;
+            .footer-nav-section {
+                flex-basis: 100%;
+            }
+        }
+        .footer-details.b-size-1 {
+            
+            .footer-lang {
+                flex-flow: column;
+                margin-bottom: 40px;
+                li { 
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            .footer-contact {
+                flex-flow: column;
+                align-items: flex-start;
+                margin-bottom: 40px;
+                a { 
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            .footer-info {
+            }
         }
     }
 }

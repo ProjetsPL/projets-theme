@@ -1,4 +1,4 @@
-<div class="beams-wrapper global-beam-wrapper top-line">
+<div id ="topLine" class="beams-wrapper global-beam-wrapper top-line">
   <div class="beam">
     <div class="beam-item">
       <header class="top-line-content">
@@ -17,11 +17,103 @@
           {% endfor %}
           </ul>
         </nav>
-        {% assign cta_pages = site.pages  | where: "cta_in_menu", true %}
-        {% for item in cta_pages %}
-        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
-        {% endfor %}
+        <div class="cta-section">
+          {% assign cta_pages = site.pages  | where: "cta_in_menu", true %}
+          {% for item in cta_pages %}
+          <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
+          {% endfor %}
+      </div>
+      <div class="burger-button" id="mobileMenuBtn">
+          <img src="/assets/img/icon-menu.svg" alt="">
+      </div>
       </header>
     </div>
   </div>
 </div>
+<div class="mobile-menu" id ="mobileMenu">
+  <div class="mobile-menu-head">
+    <div class="title h4 uppercase">Menu</div>
+    <div class="close-button"><img src="/assets/img/icon-close.svg" alt=""></div>
+  </div>
+  <div class="mobile-menu-content">
+    <nav class="main-nav">
+      <ul>
+      {% assign visibility_pages = site.pages  | where: "visibility_in_menu", true | sort: "position_in_menu" %}
+      {% for item in visibility_pages %}
+      {% if page.url == item.url %}
+        <li class="active"><a href="{{item.url}}">{{item.title}}</a></li>         
+        {% else %}
+        <li><a href="{{item.url}}">{{item.title}}</a></li>     
+        {% endif %}             
+      {% endfor %}
+      </ul>
+    </nav>
+    <div class="cta-section">
+      {% assign cta_pages = site.pages  | where: "cta_in_menu", true %}
+      {% for item in cta_pages %}
+      <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
+      {% endfor %}
+    </div>
+    <div class="contact-section">
+      <a href="tel:{{site.data.global.footer.phone}}" class="pb"><img src="/assets/img/icon-sm-phone-gray.svg" alt=""> {{site.data.global.footer.phone}}</a>      
+      <a href="mailto:{{site.data.global.footer.mail}}" class="pb"><img src="/assets/img/icon-sm-email-gray.svg" alt=""> {{site.data.global.footer.email}}</a>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  console.log("test")
+
+
+  const throttle = (func, limit) => {
+        let inThrottle;
+        return function() {
+            const args = arguments;
+            const context = this;
+            if (!inThrottle) {
+                func.apply(context, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        }
+    };
+
+    const  topLine = document.querySelector("#topLine"),
+    mobileMenu = document.querySelector("#mobileMenu");
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", throttle(function(){ 
+        var st = window.pageYOffset ;
+        if (st > lastScrollTop){
+            topLine.classList.add("invisible");
+        } else {
+            topLine.classList.remove("invisible");
+            // mobileMenuCtn.classList.remove("open");
+        }
+        if (st > 50) {
+            topLine.classList.add("bg");
+            mobileMenu.classList.add("bg");
+        } else {
+            topLine.classList.remove("bg");
+            mobileMenu.classList.remove("bg");
+            // mobileMenuCtn.classList.remove("open");
+        }
+        lastScrollTop = st;
+    }, 30));
+
+
+
+    
+    const  mobileMenuBtn = document.querySelector("#mobileMenuBtn"),
+    mobileMenuCtn = document.querySelector("#mobileMenu");
+
+    mobileMenuBtn.addEventListener("click", function(e) {
+      mobileMenuCtn.classList.toggle("open");
+        e.stopPropagation();
+    }, false);
+
+    document.addEventListener("click", function() {
+      mobileMenuCtn.classList.remove("open");
+    }, false);
+</script>

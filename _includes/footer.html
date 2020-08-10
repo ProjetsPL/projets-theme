@@ -30,7 +30,7 @@
           <p class="h4">Usługi</p>
           <ul>
             {% for service in site.services %}
-            <li><a href="{{service.url}}">{{service.title}}</a></li>    
+            <li><a href="{{service.url}}">{{service.menu_title}}</a></li>    
             {% endfor %}
           </ul>
         </div>
@@ -39,7 +39,7 @@
           <ul>
             {% assign visibility_pages = site.pages  | where: "visibility_in_menu", true | sort: "position_in_menu" %}
             {% for item in visibility_pages %}
-            <li><a href="{{item.url}}">{{item.title}}</a></li>  
+            <li><a href="{{item.url}}">{{item.menu_title}}</a></li>  
             {% endfor %}
           </ul>
         </div>

@@ -269,6 +269,22 @@
         }
     }
 }
+@media (max-width:550px) {
+    .index-casestudies {
+        &+footer {
+            background-color: red;
+            .footer-contactsection {
+                .section-header {
+                    .title {
+                        .icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @keyframes circle-bg {
     0% {transform:  translateX(25%) translateY(-10%) scale(1);}
    50%  {transform: translateX(30%) translateY(-20%) scale(1.1);}

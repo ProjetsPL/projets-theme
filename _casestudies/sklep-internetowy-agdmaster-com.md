@@ -5,10 +5,11 @@ title: agdmaster.com
 seo_title:  SEO agdmaster.com
 seo_description: |-
   META agdmaster.com
+menu_title: agdmaster.com
 visibility_in_menu: false
 position_in_menu: 0
 cta_in_menu: false
-cta_in_menu_text:
+cta_text_in_menu: 
 show_contact_in_footer: true
 
 # CASESTUDY layout
@@ -34,4 +35,6 @@ customer_opinion:
   quotation: 
   quotation_small: |-
     Zastosowane przez zespół rozwiązania przyczyniły się do stworzenia nowoczesnego, a jednocześnie przyjaznego użytkownikowi sklepu. Oprócz wykonanego projektu specjaliści zapewniają także pełne wsparcie dla naszego serwisu.
+
+main_for_service: _services/branding.md
 ---

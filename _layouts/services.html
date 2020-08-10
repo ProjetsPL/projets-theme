@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.data.global.lang }}">
+    <head>
+        {% include head.html %}
+        <!--Dane struklturalne dla każdego layoutu-->
+    </head>
+    <body>    
+        {% include top-line.html %}          
+        <header class="beams-wrapper global-beam-wrapper beam-background section-beam">
+            <div class="beam">
+                <div class="beam-item">
+                    <h1>{{page.title}}</h1>
+                    <p>{{page.header_intro}}</p>
+                </div>
+            </div>
+        </header>           
+        {% assign services = page.services %}
+        {% for item  in services %}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam">
+            <div class="beam">
+                <div class="beam-item">
+                    {% assign service = site.services | where: "path", item.service  %}
+                    {% for item in service %}
+                        <h2>{{item.menu_title}}</h2>
+                        <p>{{item.intro}}</p>
+                        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
+                    {% endfor %}                    
+                    {% assign casestudy = site.casestudies | where: "path", item.casestudy  %}
+                    {% for item in casestudy %}
+                        {{item.menu_title}}
+                    {% endfor %}
+                </div> 
+            </div>
+        </section> 
+        {%endfor%}
+        {% include footer.html %}       
+    </body>
+</html>

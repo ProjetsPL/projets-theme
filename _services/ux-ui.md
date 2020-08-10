@@ -1,10 +1,11 @@
 ---
 # GLOBAL 
 layout: post
-title: Sklepy internetowe
-seo_title:  Sklepy internetowe
+title: UX & UI
+seo_title:  SEO UX & UI
 seo_description: |-
-  META Sklepy internetowe
+  META UX & UI
+menu_title: UX & UI
 visibility_in_menu: false
 position_in_menu: 0
 cta_in_menu: false
@@ -12,8 +13,8 @@ cta_in_menu_text:
 show_contact_in_footer: true
 
 #SERVICE layout
-category: Web development
-order: 2
+category: Product design
+order: 3
 ---
 ## Przykładowa usługa
 

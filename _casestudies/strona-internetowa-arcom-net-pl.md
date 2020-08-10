@@ -5,10 +5,11 @@ title: arcom.net.pl
 seo_title:  SEO arcom.net.pl
 seo_description: |-
   META arcom.net.pl
+menu_title: arcom.net.pl
 visibility_in_menu: false
 position_in_menu: 0
 cta_in_menu: false
-cta_in_menu_text:
+cta_text_in_menu: 
 show_contact_in_footer: true
 
 # CASESTUDY layout
@@ -35,4 +36,6 @@ customer_opinion:
   quotation_small: |-
     Musimy załatwić. Komunikacja od samego początku przebiegała bardzo sprawnie. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez Projets zostały dopasowane do naszych wszystkich oczekiwań.
   promoted: true
+
+main_for_service: _services/ux-ui.md
 ---

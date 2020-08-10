@@ -16,15 +16,19 @@ services:
   -
     service: _services/aplikacje-internetowe.md
     casestudy: _casestudies/system-wms-expano.md
+    side: left
   -
     service: _services/sklepy-internetowe.md
     casestudy: _casestudies/sklep-internetowy-manwoman-co.md
+    side: right
   -
     service: _services/ux-ui.md
     casestudy: _casestudies/strona-internetowa-arcom-net-pl.md
+    side: left 
   -
     service: _services/branding.md
     casestudy: _casestudies/sklep-internetowy-agdmaster-com.md
+    side: right
 
 ---
 CONTENT Usługi

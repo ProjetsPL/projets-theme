@@ -328,48 +328,6 @@ a {
     }
 }
 
-.casestudie-mockup {
-    display: inline-block;
-    background-color: $bg-0;
-    position: relative;
-    overflow: hidden;
-    box-shadow:  $main-shadow;
-    .mockup-img {
-        position: absolute;
-        display: block;
-        top:0px;
-        left:0;
-        width: 100%;
-        transition: 5s;
-        transition-timing-function: ease-in-out;
-    }    
-    .mockup-border {
-        display: block;
-        position: relative;
-        z-index: 2;
-    }
-    &:hover {                
-        .mockup-img {
-            transform: translateY(calc(-100% + (var(--mobile-mockup-size) * 1.95 ) ));
-        }
-    }
-&.mobile-mockup {    
-    --mobile-mockup-size:  376px;
-    border-radius: calc(var(--mobile-mockup-size) * 0.10106);
-        .mockup-shadow {
-            width: 100%;
-            height: 10%;
-            background:  linear-gradient(180deg, #FFF 0%, #FFFFFF00 100%);
-            position: absolute;
-            top:0;
-            left:0;
-            z-index: 1;
-        }
-        .mockup-border {
-            width: var(--mobile-mockup-size);
-        }
-    }
-}
 
 //Document Structure
 .beams-wrapper {
@@ -476,6 +434,7 @@ a {
 }
 
 
+@import "parts.scss";
 @import "top-line.scss";
 @import "footer.scss";
 

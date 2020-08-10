@@ -18,8 +18,8 @@ screens:
   mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
   desktop:
 colors:
-  main: FAE129
-  devices_border: FFFFFF
+  main: "FAE129"
+  devices_border: "FFFFFF"
 company: arcom.net.pl
 company_logo: /uploads/logo-manwoman.svg
 testimonial_on_index: false

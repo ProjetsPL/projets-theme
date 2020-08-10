@@ -18,8 +18,8 @@ Screens:
   mobile:
   desktop:
 colors:
-  main: FAE129
-  devices_border: FFFFFF
+  main: "2C4C60"
+  devices_border: "FFFFFF"
 company: agdmaster.com
 company_logo: /uploads/logo-agdmaster.svg
 testimonial_on_index: true

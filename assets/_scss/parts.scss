@@ -1,0 +1,124 @@
+//Includes partials
+.casestudy-beam {
+    .casestudy-bg{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+        .circle-bg {
+            height: 700px;
+            width: 700px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            transform: translateX(-25%) translateY(30%);
+        }
+    }
+    .casestudy-img {
+        text-align: right;
+        position: relative;
+        .mobile-mockup {               
+            z-index: 5; 
+            --mobile-mockup-size: 170px;
+            position: absolute;
+            top:50%;
+            right: 0%;
+            transform: translateX(-30%) translateY(-30%);
+            .mockup-border {
+            }
+        }             
+    }
+    .casestudy-content {
+        .h3 {
+            margin-top: 0;
+        }
+        .person {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin-bottom: 30px;
+            .photo {
+                img {
+                    height: 80px;
+                    border-radius: 3px;
+                    box-shadow: $main-shadow;
+                }
+            }
+            .desc {
+                * {
+                    margin: 0;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+.casestudy-beam-wrapper-right {
+    .casestudy-beam {        
+        .casestudy-bg{            
+            left: auto;
+            right: 0;            
+            .circle-bg {                
+                right: auto;
+                left: 0%;
+                transform: translateX(25%) translateY(30%);
+            }                   
+        }
+        .casestudy-img {   
+            order:2;
+            .mobile-mockup {
+                right: auto;
+                left: 0%;
+                transform: translateX(30%) translateY(-30%);
+            }
+        }
+        .casestudy-content {
+            order:1;
+        }
+    }
+}
+.casestudy-mockup {
+    display: inline-block;
+    background-color: $bg-0;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  $main-shadow;
+    .mockup-img {
+        position: absolute;
+        display: block;
+        top:0px;
+        left:0;
+        width: 100%;
+        transition: 5s;
+        transition-timing-function: ease-in-out;
+    }    
+    .mockup-border {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    &:hover {                
+        .mockup-img {
+            transform: translateY(calc(-100% + (var(--mobile-mockup-size) * 1.95 ) ));
+        }
+    }
+&.mobile-mockup {    
+    --mobile-mockup-size:  376px;
+    border-radius: calc(var(--mobile-mockup-size) * 0.10106);
+        .mockup-shadow {
+            width: 100%;
+            height: 10%;
+            background:  linear-gradient(180deg, #FFF 0%, #FFFFFF00 100%);
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 1;
+        }
+        .mockup-border {
+            width: var(--mobile-mockup-size);
+        }
+    }
+}

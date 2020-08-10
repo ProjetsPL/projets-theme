@@ -18,8 +18,8 @@ Screens:
   mobile:
   desktop:
 colors:
-  main: FAE129
-  devices_border: FFFFFF
+  main: "000000" 
+  devices_border: "FFFFFF"
 company: manwoman.com
 company_logo: /uploads/logo-manwoman.svg
 testimonial_on_index: true

@@ -6,15 +6,12 @@ seo_title:  SEO manwoman.co
 seo_description: |-
   META manwoman.co
 menu_title: manwoman.co
-visibility_in_menu: false
-position_in_menu: 0
-cta_in_menu: false
-cta_text_in_menu: 
+cta_title:
 show_contact_in_footer: true
 
 # CASESTUDY layout
 intro: 
-  title:
+  title: +300 000 produktów i setki największych marek w jednym miejscu
   content: |-
     Brak
 Screens:

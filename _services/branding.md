@@ -6,15 +6,18 @@ seo_title:  SEO Branding
 seo_description: |-
   META Branding
 menu_title: Branding
-visibility_in_menu: false
-position_in_menu: 0
-cta_in_menu: false
-cta_text_in_menu: 
+cta_title:
 show_contact_in_footer: true
 
 #SERVICE layout
 category: Product design
 order: 4
+intro: 
+  title: Branding
+  content: |-
+    Stworzymy tożsamość wizualną Twojej marki, która będzie podstawą dla rozwoju produktów i usług zapadających w pamięć użytkowników. Będą one nie tylko użyteczne, ale też estetyczne. Pozytywne wrażenie i spójność przekazu będzie kluczem do sukcesu Twojej firmy. 
+cta: Stwórzmy identyfikację
+icon: /uploads/icon-lg-web-app.svg
 ---
 ## Przykładowa usługa
 

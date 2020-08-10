@@ -21,13 +21,20 @@
                 <div class="beam-item">
                     {% assign service = site.services | where: "path", item.service  %}
                     {% for item in service %}
-                        <h2>{{item.menu_title}}</h2>
-                        <p>{{item.intro}}</p>
-                        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
+                        <div class="icon icon-bg">
+                            <img src="{{item.icon}}" alt="{{item.menu_title}}">
+                        </div>
+                        <h2>{{item.intro.title}}</h2>
+                        <p>{{item.intro.content}}</p>
+                        <a href="{{item.url}}" class="btn btn-sm">{{item.cta}}</a>               
                     {% endfor %}                    
                     {% assign casestudy = site.casestudies | where: "path", item.casestudy  %}
                     {% for item in casestudy %}
-                        {{item.menu_title}}
+                        <h3>{{item.intro.title}}</h3>
+                        <p>{{item.customer_opinion.quotation_small}}</p>                        
+                        <div class="photo"><img src="{{item.customer_opinion.photo}}" alt="{{item.customer_opinion.person}}"></div>
+                        <div class="name h4">{{item.customer_opinion.person}}</div>
+                        <div class="position">{{item.customer_opinion.position}}</div>
                     {% endfor %}
                 </div> 
             </div>

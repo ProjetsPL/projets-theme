@@ -6,10 +6,7 @@ seo_title:  SEO Strona główna
 seo_description: |-
   META Strona głowna
 menu_title: Strona główna
-visibility_in_menu: false
-position_in_menu: 0
-cta_in_menu: false
-cta_text_in_menu:
+cta_title:
 show_contact_in_footer: true
 
 # INDEX layout

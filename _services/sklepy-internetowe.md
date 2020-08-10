@@ -6,15 +6,18 @@ seo_title:  Sklepy internetowe
 seo_description: |-
   META Sklepy internetowe
 menu_title: Sklepy internetowe
-visibility_in_menu: false
-position_in_menu: 0
-cta_in_menu: false
-cta_text_in_menu: 
+cta_title:
 show_contact_in_footer: true
 
 #SERVICE layout
 category: Web development
 order: 2
+intro: 
+  title: Sklepy internetowe
+  content: |-
+    Opracujemy responsywne wersje sklepu dobrze prezentujące się na każdym urządzeniu. Stworzymy strukturę przyjazną wyszukiwarkom internetowym - dającą nieograniczone możliwości jego rozwoju. Otrzymasz także prosty i przejrzysty panel zarządzania.
+cta: Dowiedz się więcej
+icon: /uploads/icon-lg-web-app.svg
 ---
 ## Przykładowa usługa
 

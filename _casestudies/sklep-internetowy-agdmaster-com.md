@@ -6,15 +6,12 @@ seo_title:  SEO agdmaster.com
 seo_description: |-
   META agdmaster.com
 menu_title: agdmaster.com
-visibility_in_menu: false
-position_in_menu: 0
-cta_in_menu: false
-cta_text_in_menu: 
+cta_title:
 show_contact_in_footer: true
 
 # CASESTUDY layout
 intro: 
-  title:
+  title: Proste zakupy bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
   content: |-
     Brak
 Screens:

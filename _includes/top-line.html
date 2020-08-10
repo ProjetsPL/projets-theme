@@ -1,3 +1,9 @@
+{% assign all_pages = site.pages  %}
+{% assign all_posts = site.posts  %}
+{% assign all_casestudies = site.casestudies  %}
+{% assign all_services = site.services  %}
+{% assign all = all_pages | concat: all_posts | concat: all_casestudies | concat: all_services %}
+
 <div id ="topLine" class="beams-wrapper global-beam-wrapper top-line">
   <div class="beam">
     <div class="beam-item">
@@ -7,21 +13,27 @@
         </a>
         <nav class="main-nav">
           <ul>
-          {% assign visibility_pages = site.pages  | where: "visibility_in_menu", true | sort: "position_in_menu" %}
-          {% for item in visibility_pages %}
-          {% if page.url == item.url %}
-            <li class="active"><a href="{{item.url}}">{{item.menu_title}}</a></li>         
-            {% else %}
-            <li><a href="{{item.url}}">{{item.menu_title}}</a></li>     
-            {% endif %}             
-          {% endfor %}
+            {% assign header_menu = site.data.menus.header_menu %}
+            {% for item in header_menu %}
+              {% assign menu_items = all | where: "path", item.link  %}
+              {% for item in menu_items %}
+                {% if page.url == item.url %}
+                <li class="active"><a href="{{item.url}}">{{item.menu_title}}</a></li>         
+                {% else %}
+                <li><a href="{{item.url}}">{{item.menu_title}}</a></li>     
+                {% endif %} 
+              {%endfor%}
+            {%endfor%}
           </ul>
         </nav>
-        <div class="cta-section">
-          {% assign cta_pages = site.pages  | where: "cta_in_menu", true %}
-          {% for item in cta_pages %}
-          <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
-          {% endfor %}
+        <div class="cta-section">          
+          {% assign header_cta = site.data.menus.header_cta %}
+          {% for item in header_cta %}
+            {% assign cta_items = all | where: "path", item.link  %}
+            {% for item in cta_items %}
+            <a href="{{item.url}}" class="btn btn-sm">{{item.cta_title}}</a>               
+            {% endfor %}
+          {%endfor%}
       </div>
       <div class="burger-button" id="mobileMenuBtn">
           <img src="/assets/img/icon-menu.svg" alt="">
@@ -38,21 +50,27 @@
   <div class="mobile-menu-content">
     <nav class="main-nav">
       <ul>
-      {% assign visibility_pages = site.pages  | where: "visibility_in_menu", true | sort: "position_in_menu" %}
-      {% for item in visibility_pages %}
-      {% if page.url == item.url %}
-        <li class="active"><a href="{{item.url}}">{{item.menu_title}}</a></li>         
-        {% else %}
-        <li><a href="{{item.url}}">{{item.menu_title}}</a></li>     
-        {% endif %}             
-      {% endfor %}
+        {% assign header_menu = site.data.menus.header_menu %}
+        {% for item in header_menu %}
+          {% assign menu_items = all | where: "path", item.link  %}
+          {% for item in menu_items %}
+            {% if page.url == item.url %}
+            <li class="active"><a href="{{item.url}}">{{item.menu_title}}</a></li>         
+            {% else %}
+            <li><a href="{{item.url}}">{{item.menu_title}}</a></li>     
+            {% endif %} 
+          {%endfor%}
+        {%endfor%}
       </ul>
     </nav>
     <div class="cta-section">
-      {% assign cta_pages = site.pages  | where: "cta_in_menu", true %}
-      {% for item in cta_pages %}
-      <a href="{{item.url}}" class="btn btn-sm">{{item.cta_text_in_menu}}</a>               
-      {% endfor %}
+      {% assign header_cta = site.data.menus.header_cta %}
+      {% for item in header_cta %}
+        {% assign cta_items = all | where: "path", item.link  %}
+        {% for item in cta_items %}
+        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_title}}</a>               
+        {% endfor %}
+      {%endfor%}
     </div>
     <div class="contact-section">
       <a href="tel:{{site.data.global.footer.phone}}" class="pb"><img src="/assets/img/icon-sm-phone-gray.svg" alt=""> {{site.data.global.footer.phone}}</a>      

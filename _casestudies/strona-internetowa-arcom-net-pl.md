@@ -6,10 +6,7 @@ seo_title:  SEO arcom.net.pl
 seo_description: |-
   META arcom.net.pl
 menu_title: arcom.net.pl
-visibility_in_menu: false
-position_in_menu: 0
-cta_in_menu: false
-cta_text_in_menu: 
+cta_title:
 show_contact_in_footer: true
 
 # CASESTUDY layout

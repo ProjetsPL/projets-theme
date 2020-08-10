@@ -10,8 +10,6 @@ cta_title:
 show_contact_in_footer: true
 
 #SERVICE layout
-category: Web development
-order: 1
 intro: 
   title: Aplikacje
   content: |-

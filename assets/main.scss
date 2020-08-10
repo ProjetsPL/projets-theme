@@ -58,6 +58,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-bottom: 30px;
     letter-spacing: 0.02em;
     color: $main-2;
+    strong {
+        color: $main-3;
+    }
 }
 p, .p1, .p2, .p3 {
     margin-top: 30px;
@@ -339,11 +342,16 @@ a {
         width: 100%;
         transition: 5s;
         transition-timing-function: ease-in-out;
-    }
+    }    
     .mockup-border {
         display: block;
         position: relative;
         z-index: 2;
+    }
+    &:hover {                
+        .mockup-img {
+            transform: translateY(calc(-100% + (var(--mobile-mockup-size) * 1.95 ) ));
+        }
     }
 &.mobile-mockup {    
     --mobile-mockup-size:  376px;
@@ -472,3 +480,4 @@ a {
 @import "footer.scss";
 
 @import "index.scss";
+@import "services.scss";

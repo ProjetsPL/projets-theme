@@ -1,7 +1,7 @@
 ---
 # GLOBAL 
 layout: services
-title: Projektujemy i programujemy rozwiązania dla Twojego biznesu
+title: <strong>Projektujemy i programujemy</strong> rozwiązania dla Twojego biznesu
 seo_title:  SEO Usługi
 seo_description: |-
   MEAT Usługi

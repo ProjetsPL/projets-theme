@@ -10,8 +10,6 @@ cta_title:
 show_contact_in_footer: true
 
 #SERVICE layout
-category: Product design
-order: 3
 intro: 
   title: UX & UI
   content: |-

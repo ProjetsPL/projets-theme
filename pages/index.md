@@ -38,10 +38,20 @@ services_section:
       title: Web development
       icon: /uploads/icon-lg-web-development.svg
       content: Projektujemy nowoczesne dedykowane aplikacje oraz sklepy internetowe. Wprowadzamy rozwiązania zgodne z najnowszymi trendami - odpowiadające na różne potrzeby biznesowe.
+      pages:
+      -
+        link: _services/aplikacje-internetowe.md
+      -
+        link: _services/sklepy-internetowe.md
     -
       title: Product design
       icon: /uploads/icon-lg-product-design.svg
       content: Tworzymy identyfikacje wizualne firmy, produktu lub usługi. Projektujemy i wdrażamy layouty, które zaskakują klientów, przyciągają ich uwagę i gwarantują pozytywne doświadczenia.
+      pages:
+      -
+        link: _services/ux-ui.md
+      -
+        link: _services/branding.md
 
 testimonials_section:
   title: Opinie klientów są dla nas najważniejsze

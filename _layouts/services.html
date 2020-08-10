@@ -6,25 +6,36 @@
     </head>
     <body>    
         {% include top-line.html %}          
-        <header class="beams-wrapper global-beam-wrapper beam-background section-beam">
-            <div class="beam">
-                <div class="beam-item">
+        <header class="beams-wrapper global-beam-wrapper beam-background section-beam services-header">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-4">
                     <h1>{{page.title}}</h1>
                     <p>{{page.header_intro}}</p>
+                    <nav class="services-nav">
+                        <ul>
+                            {% assign services = page.services %}
+                            {% for item  in services %}
+                                {% assign service = site.services | where: "path", item.service  %}
+                                {% for item in service %}
+                                <li><a href="#{{item.path | remove: "_services/" | remove: ".md"}}">{{item.menu_title}}</a></li> 
+                                {%endfor%}
+                            {%endfor%}
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>           
         {% assign services = page.services %}
         {% for item  in services %}
-        <section class="beams-wrapper global-beam-wrapper beam-background section-beam">
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam" >
             <div class="beam">
-                <div class="beam-item">
+                <div class="beam-item" >
                     {% assign service = site.services | where: "path", item.service  %}
                     {% for item in service %}
                         <div class="icon icon-bg">
                             <img src="{{item.icon}}" alt="{{item.menu_title}}">
                         </div>
-                        <h2>{{item.intro.title}}</h2>
+                        <h2 id="{{item.path | remove: "_services/" | remove: ".md"}}">{{item.intro.title}}</h2>
                         <p>{{item.intro.content}}</p>
                         <a href="{{item.url}}" class="btn btn-sm">{{item.cta}}</a>               
                     {% endfor %}                    

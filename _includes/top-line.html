@@ -68,7 +68,7 @@
       {% for item in header_cta %}
         {% assign cta_items = all | where: "path", item.link  %}
         {% for item in cta_items %}
-        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_title}}</a>               
+        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_title }}</a>               
         {% endfor %}
       {%endfor%}
     </div>

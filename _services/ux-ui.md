@@ -15,7 +15,7 @@ intro:
   content: |-
     Zaprojektujemy Twoją stronę, sklep lub aplikację według przemyślanej struktury. Intuicyjny interfejs przyjazny użytkownikom wpłynie na ich pozytywne doświadczenia. Dobrze przygotowana architektura produktu pozowli zmaksymalizować współczynnik konwersji.
 cta: Rozpoczniejmy projekt
-icon: /uploads/icon-lg-web-app.svg
+icon: /uploads/icon-lg-web-design.svg
 ---
 ## Przykładowa usługa
 

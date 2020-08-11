@@ -16,19 +16,19 @@ intro:
     Kompleksowa odpowiedź na oczekiwania użytkownika w zakresie systemów magazynowania i transportu. Doświadczenie wsparte nowoczesnymi technologiami. Innowacyjny sposób prezencji produktów z elementami animacji, prosty i charakterystyczny design, a przede wszystkim przyjazny i intuicyjny layout skierowany na użytkownika.
 screens:
   mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
-  desktop:
+  desktop: /uploads/casestudy-arcom-net-pl-desktop.jpg
 colors:
   main: "FAE129"
-  devices_border: "FFFFFF"
+  devices_border: "FFF"
 company: arcom.net.pl
-company_logo: /uploads/logo-manwoman.svg
-testimonial_on_index: false
+company_logo: /uploads/logo-arcom.svg
+testimonial_on_index: true
 casestudy_on_index: true
 cta: Przeczytaj o sukcesie
 customer_opinion:
-  person: Marcin Jakiśtam
-  position: CEO
-  photo:
+  person: Marcin Smulski
+  position: Sales Manager
+  photo: /uploads/marcin-smulski.jpg
   quotation: 
   quotation_small: |-
     Musimy załatwić. Komunikacja od samego początku przebiegała bardzo sprawnie. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez Projets zostały dopasowane do naszych wszystkich oczekiwań.

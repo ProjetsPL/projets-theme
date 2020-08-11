@@ -14,9 +14,9 @@ intro:
   title: +300 000 produktów i setki największych marek w jednym miejscu
   content: |-
     Brak
-Screens:
-  mobile:
-  desktop:
+screens:
+  mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
+  desktop: /uploads/casestudy-arcom-net-pl-desktop.jpg
 colors:
   main: "000000" 
   devices_border: "FFFFFF"

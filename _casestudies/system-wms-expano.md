@@ -14,9 +14,9 @@ intro:
   title: Aplikacja typu WMS - Kontrola magazynu na wyższym pziomie
   content: |-
     Brak
-Screens:
-  mobile:
-  desktop:
+screens:
+  mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
+  desktop: /uploads/casestudy-arcom-net-pl-desktop.jpg
 colors:
   main: "610399"
   devices_border: "FFFFFF"

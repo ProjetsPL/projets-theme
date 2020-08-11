@@ -15,7 +15,7 @@ intro:
   content: |-
     Stworzymy tożsamość wizualną Twojej marki, która będzie podstawą dla rozwoju produktów i usług zapadających w pamięć użytkowników. Będą one nie tylko użyteczne, ale też estetyczne. Pozytywne wrażenie i spójność przekazu będzie kluczem do sukcesu Twojej firmy. 
 cta: Stwórzmy identyfikację
-icon: /uploads/icon-lg-web-app.svg
+icon: /uploads/icon-lg-project.svg
 ---
 ## Przykładowa usługa
 

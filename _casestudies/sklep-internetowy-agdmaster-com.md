@@ -14,9 +14,9 @@ intro:
   title: Proste zakupy bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
   content: |-
     Brak
-Screens:
-  mobile:
-  desktop:
+screens:
+  mobile: /uploads/casestudy-agdmaster-com-mobile.jpg
+  desktop: /uploads/casestudy-agdmaster-com-desktop.jpg
 colors:
   main: "2C4C60"
   devices_border: "FFFFFF"

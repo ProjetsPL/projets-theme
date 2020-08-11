@@ -15,7 +15,7 @@ intro:
   content: |-
     Opracujemy responsywne wersje sklepu dobrze prezentujące się na każdym urządzeniu. Stworzymy strukturę przyjazną wyszukiwarkom internetowym - dającą nieograniczone możliwości jego rozwoju. Otrzymasz także prosty i przejrzysty panel zarządzania.
 cta: Dowiedz się więcej
-icon: /uploads/icon-lg-web-app.svg
+icon: /uploads/icon-lg-e-commerce.svg
 ---
 ## Przykładowa usługa
 

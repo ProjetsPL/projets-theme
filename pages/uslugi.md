@@ -9,7 +9,7 @@ menu_title: Usługi
 cta_title: Sprawdź co oferujemy
 show_contact_in_footer: true
 
-# INDEX layout
+# SERVICES layout
 header_intro: |-
   Wspólnie opracujemy rozwiązanie odpowiadające potrzebom Twojego biznesu. Dzięki dobrze dopasowanym narzędziom wykorzystasz wszystkie możliwości do rozwoju i przeniesiesz swoją firmę lub startup na wyższy poziom.
 services:

@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: service
 title: Sklepy internetowe
 seo_title:  Sklepy internetowe
 seo_description: |-

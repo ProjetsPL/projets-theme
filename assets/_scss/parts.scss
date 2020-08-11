@@ -218,3 +218,157 @@
             }
         }
 }
+
+.breadcrumbs {
+    display: flex;
+    flex-flow: row;
+    margin-top: 100px;
+    justify-content: center;
+    & + * {
+        padding-top: 0;
+    }
+    ol {        
+        padding:0;
+        margin:0;
+        list-style: none;
+        // background-color: red;
+        width: 100%;
+        max-width: $beam-size + $beam-gutter-size;
+        padding:  0 $beam-gutter-size;
+        position: relative;
+        display: flex;
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: calc(50% - 1px);
+            left:0;
+            background-color: $bg-3;
+            height: 2px;
+            width: 100%;
+            transform: translateX(-100%);
+        }
+        li {
+            // padding-left: 35px; 
+            position: relative;           
+            a {
+                display: inline-flex;
+                align-items: center;
+                color: $main-1;
+                padding-left: 35px; 
+                position: relative;
+                // background-color: red;
+                height: 30px;
+                &::before {
+                    position: absolute;
+                    top:10px;
+                    left:8px;
+                    content: "";
+                    display: block;
+                    height: 8px;
+                    width: 18px;
+                    // background-color: red;
+                    background-image: url(img/icon-sm-arrow-more-breadcrumb.svg);
+                    background-size: cover;
+                }
+            }
+            &:first-child {
+                a {                    
+                    padding-left: 0px;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            &:last-child {   
+                a {
+                    color: $main-3;
+                }
+            }
+        }
+    }
+}
+@media (max-width:800px) { 
+    .breadcrumbs {
+        ol {
+            li {
+                display: none;
+                &:nth-last-child(2){
+                    display: block;          
+                    width: 100%;
+                    a {          
+                        padding-left: 35px;
+                        &::before {
+                            display: block;
+                            left:0px;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.post-item {
+    background-color: $bg-0;
+    border-radius: 5px;
+    box-shadow: $main-shadow;
+    margin-bottom: $beam-gutter-size;
+    transition: $normal;
+    a {
+        color: $main-1;
+    }
+    .content {
+        padding: 0 30px 30px 30px;
+        .more{
+            position: relative;
+            padding-top: 20px;
+            padding-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            img {
+                width: 80px;
+                border-radius: 5px;
+                position: absolute;
+                top:0;
+                left:0;
+                transform: translateY(-90%);
+            }
+            .date {
+                min-width: 70px;
+                text-align: right;
+                margin: 0;
+            }
+            .author {
+                margin: 0;
+            }
+        }
+        .title{ 
+            transition: $normal;
+            color: $main-2;
+            margin-top:15px;
+            margin-bottom: 10px;
+        }
+        .intro {
+            margin: 0;
+
+        }
+    }
+    &:hover {
+        .content {
+            .title {
+                color: $main-3;
+            }
+        }
+        .img-box {
+            .img {                
+                transform: translateX(-50%) translateY(-50%) scale(1.1);
+            }
+        }
+    }    
+    &:active {
+        transform: scale(0.98)
+    }
+}

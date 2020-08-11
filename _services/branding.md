@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: service
 title: Branding
 seo_title:  SEO Branding
 seo_description: |-

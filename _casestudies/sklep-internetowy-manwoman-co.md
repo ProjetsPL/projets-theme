@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: casestudy
 title: manwoman.co
 seo_title:  SEO manwoman.co
 seo_description: |-

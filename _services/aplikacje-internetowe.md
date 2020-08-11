@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: service
 title: Aplikacje internetowe
 seo_title:  Aplikacje internetowe
 seo_description: |-

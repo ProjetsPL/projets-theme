@@ -1,0 +1,29 @@
+<nav class="breadcrumbs">
+    <ol>
+        {% assign index = site.pages | where: "layout", "index" %}
+        {% for item in index %}
+            <li><a href="{{item.url}}">{{item.menu_title}}</a></li>
+        {% endfor %}
+        {% if  page.layout == "post" %} 
+            {% assign blog = site.pages | where: "layout", "blog" %}
+            {% for item in blog %}
+                <li><a href="{{item.url}}">{{item.menu_title}}</a></li>
+            {% endfor %}
+        {% elsif  page.layout == "service" %}  
+            {% assign services = site.pages | where: "layout", "services" %}
+            {% for item in services %}
+                <li><a href="{{item.url}}">{{item.menu_title}}</a></li>
+            {% endfor %}
+        {% elsif  page.layout == "casestudy" %}  
+            {% assign casestudies = site.pages | where: "layout", "casestudies" %}
+            {% for item in casestudies %}
+                <li><a href="{{item.url}}">{{item.menu_title}}</a></li>
+            {% endfor %}
+        {% endif %}
+        {% if  page.layout == "post" %} 
+            <li><a href="{{page.url}}">{{page.title}}</a></li>
+        {% else %}
+            <li><a href="{{page.url}}">{{page.menu_title}}</a></li>
+        {% endif %}
+    </ol>
+</nav>

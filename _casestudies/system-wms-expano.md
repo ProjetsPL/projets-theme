@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: casestudy
 title: Expano WMS
 seo_title:  SEO Expano WMS
 seo_description: |-

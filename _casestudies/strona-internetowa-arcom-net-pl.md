@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: casestudy
 title: arcom.net.pl
 seo_title:  SEO arcom.net.pl
 seo_description: |-

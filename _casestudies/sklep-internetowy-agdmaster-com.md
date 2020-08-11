@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: casestudy
 title: agdmaster.com
 seo_title:  SEO agdmaster.com
 seo_description: |-

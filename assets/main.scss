@@ -135,6 +135,12 @@ a {
 }
 .section-beam {
     padding: 100px 0;
+    // .beam .beam-item >*:first-child {
+    //     margin-top: 0;
+    // }
+}
+.header-beam {
+    padding-bottom: 30px;
 }
 .section-header {
     padding-bottom: 40px;
@@ -330,6 +336,30 @@ a {
 }
 
 
+//IMG ratio boxes
+.img-box {
+    position: relative;
+    overflow: hidden;
+    .img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%) translateY(-50%);
+        transition: 0.2s;
+    }
+    &.img-ratio-16-9 {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    &.img-ratio-16-6 {
+        position: relative;
+        width: 100%;
+        padding-top: 35%;
+    }
+}
+
 //Document Structure
 .beams-wrapper {
     align-items: center;
@@ -441,3 +471,4 @@ a {
 
 @import "index.scss";
 @import "services.scss";
+@import "blog.scss";

@@ -1,6 +1,6 @@
 ---
 # GLOBAL 
-layout: post
+layout: service
 title: UX & UI
 seo_title:  SEO UX & UI
 seo_description: |-

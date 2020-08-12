@@ -35,3 +35,11 @@ footer:
   menu:
     services:
     static_pages:
+
+# translations
+translations:
+  table_of_contents: Spis treści
+  update_date: Data akutalizacji
+  publication_date: Data publikacji
+  see_all_posts: Zobacz wszystkie posty
+  featured_posts: Polecane posty

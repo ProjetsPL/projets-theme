@@ -1,29 +1,19 @@
 header_menu:
-  - 
-    link: pages/uslugi.md
-  -
-    link: pages/blog.md
-  -
-    link: pages/realizacje.md
+  - pages/uslugi.md
+  - pages/blog.md
+  - pages/realizacje.md
 header_cta:
-  - 
-    link: pages/kontakt.md
+  -  pages/kontakt.md
 footer_menu:
   - 
     title: Usługi
     pages:
-      -
-        link: _services/aplikacje-internetowe.md
-      -
-        link: _services/sklepy-internetowe.md
-      -
-        link: _services/ux-ui.md
-      -
-        link: _services/branding.md
+      -  _services/aplikacje-internetowe.md
+      -  _services/sklepy-internetowe.md
+      - _services/ux-ui.md
+      - _services/branding.md
   - 
     title: Informacje
     pages:
-      - 
-        link: pages/uslugi.md
-      - 
-        link: pages/blog.md
+      -  pages/uslugi.md
+      -  pages/blog.md

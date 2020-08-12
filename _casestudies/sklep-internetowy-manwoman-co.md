@@ -1,12 +1,20 @@
 ---
 # GLOBAL 
 layout: casestudy
+page_type: casestudy
 title: manwoman.co
+
+#SEO
 seo_title:  SEO manwoman.co
 seo_description: |-
   META manwoman.co
-menu_title: manwoman.co
-cta_title:
+
+#MENU 
+top_line:
+  menu_title: manwoman.co
+  cta_title:
+
+#SETTINGS
 show_contact_in_footer: true
 
 # CASESTUDY layout
@@ -33,6 +41,4 @@ customer_opinion:
   quotation_small: |-
     Komunikacja od samego początku przebiegała bardzo sprawnie. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez Projets zostały dopasowane do naszych wszystkich oczekiwań.
   promoted: true
-
-main_for_service: _services/sklepy-internetowe.md
 ---

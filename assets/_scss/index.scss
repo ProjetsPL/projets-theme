@@ -16,10 +16,11 @@
                 font-weight: 600;
                 color: $main-1;
                 font-size: 17px;
-
+                padding-top: 0;
             }
             .h1 {
                 margin-bottom: 20px;
+                padding-top: 0;
             }
             .content {
                 margin-bottom: 20px;
@@ -81,6 +82,7 @@
                 margin-left: 50px;
                 * {
                     margin: 0;
+                    padding: 0;
                 }
             }
         }
@@ -152,6 +154,7 @@
                     padding-left: 25px;
                     .name {
                         margin: 20px 0 10px;
+                        padding-top: 0;
                     }
                 }
             }
@@ -176,6 +179,7 @@
         .casestudy-content {
             .h2 {
                 margin-top: 0;
+                padding-top: 0;
             }
         }
         .casestudy-bg{
@@ -280,8 +284,3 @@
    50%  {transform: translateX(30%) translateY(-20%) scale(1.1);}
     100%  {transform: translateX(25%) translateY(-10%) scale(1);}
 }
-// @keyframes circle-bg-after {
-//     0% {transform: scale(0.5); opacity: 0.6;}
-//     50%  {transform: scale(1); opacity: 0.6;}
-//     100%  {transform: scale(0.5); opacity: 0.6;}
-// }

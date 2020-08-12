@@ -1,17 +1,27 @@
 ---
 # GLOBAL 
 layout: casestudies
-title: Realizacje - chwalimi się naszą pracą
+page_type: casestudies
+title: Realizacje
+
+#SEO
 seo_title:  SEO Realizacje
 seo_description: |-
   MEAT Realizacje
-menu_title: Realizacje
-cta_title:
+
+#MENU 
+top_line:
+  menu_title: Realizacje
+  cta_title:
+
+#SETTINGS
 show_contact_in_footer: true
 
-#REALIZACJE layout 
-header_intro: |-
-  Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
+#CASE STUDIES layout 
+header:
+  title: <strong>Realizacje</strong> - chwalimi się naszą pracą
+  intro: |-
+    Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
 ---
 CONTENT Realizacje
 

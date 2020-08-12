@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.data.global.lang }}">
+    <head>
+        {% include head.html %}
+        <!--Dane struklturalne dla każdego layoutu-->
+    </head>
+    <body>    
+        {% include top-line.html %}   
+        {% include parts/breadcrumbs.html %}             
+        <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam service-header">
+            <div class="beam">
+                <div class="beam-item">
+                    <h1>{{page.header.title}}</h1>
+                    <p>{{page.header.intro}}</p>
+                </div>
+            </div>
+        </header>      
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="/kontakt.html">Wyceń projekt</a>
+                </div>
+            </div>
+        </div>
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam app-feature">
+            <div class="beam b-size-3">
+                <div class="beam-item b-size-1" >
+                    {% include parts/feature-box.html
+                        img="/uploads/graphic-app-1.svg"
+                        title="Szybkość działania"
+                        h="h3"
+                        content="Twój pomysł przenosimy do MVP (Minimum Viable Product). Dzięki temu możemy szybko wypuścić projekt, potwierdzić wczesne założenia dotyczące modelu biznesowego i ustalić plan rozwoju."
+                    %}
+                </div>
+                <div class="beam-item b-size-1" >
+                    {% include parts/feature-box.html
+                        img="/uploads/graphic-app-2.svg"
+                        title="Najnowsze technologie"
+                        h="h3"
+                        content="Podstawą tworzonych aplikacji jest szybkość i bezpieczeństwo przy jednoczesnym dostosowaniu do indywidualnych potrzeb i celów biznesowych. Wykorzystujemy najnowsze technologie, co czyni aplikacje użytecznymi oraz innowacyjnymi."
+                    %}
+                </div>
+                <div class="beam-item b-size-1" >
+                    {% include parts/feature-box.html
+                        img="/uploads/graphic-app-3.svg"
+                        title="Elastyczne zarządzanie"
+                        h="h3"
+                        content="Każdy projekt realizujemy według indywidualnie dopasowanej metodologii. Wykorzystanie Agile umożliwia nam innowacyjne - elastyczne i łatwe zarządzenie projektem. Kierunek rozwoju aplikacji jest elastyczny i otwarty na modyfikację."
+                    %}
+                </div>
+            </div>
+            <div class="beam b-size-3">
+                <div class="beam-item b-size-2 app-advantage" >
+                    <h2>Zyskaj przewagę biznesową opartą na nieszablonowych rozwiązaniach</h2>
+                    <p>Tworzymy dedykowane aplikacje oparte na nowatorskich pomysłach, które dają możliwość zdobycia przewagi nad konkurencją. Prowadzą również do realizacji wyznaczonych celów firmy - niezależnie od jej charakteru i wielkości.</p>
+                    <img src="/assets/img/click-arrow.svg" alt="Kliknij w button" class="click-arrow">
+                </div>
+            </div>
+        </section>       
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="/kontakt.html">Wyceń projekt</a>
+                </div>
+            </div>
+        </div>
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg">
+            {%assign casestudy = site.casestudies | where: "path", "_casestudies/system-wms-expano.md"%}
+            {% for item in casestudy %}
+                {% include parts/casestudy-beam.html  casestudy=item%} 
+            {% endfor %}
+        </section>
+
+        {% include footer.html %}       
+    </body>
+</html>

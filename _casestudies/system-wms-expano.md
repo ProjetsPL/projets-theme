@@ -1,12 +1,20 @@
 ---
 # GLOBAL 
 layout: casestudy
+page_type: casestudy
 title: Expano WMS
+
+#SEO
 seo_title:  SEO Expano WMS
 seo_description: |-
   META Expano WMS
-menu_title: Expano WMS
-cta_title:
+
+#MENU 
+top_line:
+  menu_title: Expano WMS
+  cta_title:
+
+#SETTINGS
 show_contact_in_footer: true
 
 # CASESTUDY layout
@@ -32,6 +40,4 @@ customer_opinion:
   quotation: 
   quotation_small: |-
     Zastosowane przez zespół rozwiązania przyczyniły się do stworzenia nowoczesnego, a jednocześnie przyjaznego użytkownikowi sklepu. Oprócz wykonanego projektu specjaliści zapewniają także pełne wsparcie dla naszego serwisu.
-
-main_for_service: _services/aplikacje-internetowe.md
 ---

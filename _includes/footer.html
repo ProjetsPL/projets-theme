@@ -39,9 +39,9 @@
           <ul>
             {% assign menu_items =  item.pages %}
             {% for item  in menu_items %}
-              {% assign menu_item = all | where: "path", item.link  %}
+              {% assign menu_item = all | where: "path", item  %}
               {% for item in menu_item %}
-                <li><a href="{{item.url}}">{{item.menu_title}}</a></li>    
+                <li><a href="{{item.url}}">{{item.top_line.menu_title}}</a></li>    
               {% endfor %}
             {%endfor%}
           </ul>
@@ -69,6 +69,67 @@
   </div>
 </footer>
 
+<script>  
+  const throttle = (func, limit) => {
+      let inThrottle;
+      return function() {
+          const args = arguments;
+          const context = this;
+          if (!inThrottle) {
+              func.apply(context, args);
+              inThrottle = true;
+              setTimeout(() => inThrottle = false, limit);
+          }
+      }
+  };
+
+  const  topLine = document.querySelector("#topLine"),
+  mobileMenu = document.querySelector("#mobileMenu"),
+  stickyElement = document.querySelector(".sticky-element");
+  let lastScrollTop = 0;
+  window.addEventListener("scroll", throttle(function(){ 
+      var st = window.pageYOffset ;
+      if (st > lastScrollTop){
+          topLine.classList.add("invisible");
+          // stickyElement.classList.remove("sticky-element-scroll-up");
+      } else {
+          topLine.classList.remove("invisible");
+          // stickyElement.classList.add("sticky-element-scroll-up");
+      }
+      if (st > 50) {
+          topLine.classList.add("bg");
+          mobileMenu.classList.add("bg");
+      } else {
+          topLine.classList.remove("bg");
+          mobileMenu.classList.remove("bg");
+          // stickyElement.classList.remove("sticky-element-scroll-up");
+      }
+      lastScrollTop = st;
+  }, 30));
+    
+  const  mobileMenuBtn = document.querySelector("#mobileMenuBtn"),
+  mobileMenuCtn = document.querySelector("#mobileMenu");
+
+  mobileMenuBtn.addEventListener("click", function(e) {
+    mobileMenuCtn.classList.toggle("open");
+      e.stopPropagation();
+  }, false);
+
+  document.addEventListener("click", function() {
+    mobileMenuCtn.classList.remove("open");
+  }, false);
+</script>
+
+<script type="text/javascript" src="/assets/js/sticky-sidebar.js"></script>
+<script type="text/javascript">
+if (document.querySelector('.sticky-element')) {
+  var sidebar = new StickySidebar('.sticky-rail', {
+      innerWrapperSelector: '.sticky-element',
+      topSpacing: 30,
+      bottomSpacing: 30
+  });
+}
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.global.analyticsvarificationnumber}}"></script>
 <script>

@@ -4,134 +4,35 @@
 {% assign all_services = site.services  %}
 {% assign all = all_pages | concat: all_posts | concat: all_casestudies | concat: all_services %}
 
-<div id ="topLine" class="beams-wrapper global-beam-wrapper top-line">
-  <div class="beam">
-    <div class="beam-item">
-      <header class="top-line-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/h-logo.svg" alt="{{site.data.global.title}}">
-        </a>
-        <nav class="main-nav">
-          <ul>
-            {% assign header_menu = site.data.menus.header_menu %}
-            {% for item in header_menu %}
-              {% assign menu_items = all | where: "path", item.link  %}
-              {% for item in menu_items %}
-                {% if page.url == item.url %}
-                <li class="active"><a href="{{item.url}}">{{item.menu_title}}</a></li>         
-                {% else %}
-                <li><a href="{{item.url}}">{{item.menu_title}}</a></li>     
-                {% endif %} 
-              {%endfor%}
-            {%endfor%}
-          </ul>
-        </nav>
-        <div class="cta-section">          
-          {% assign header_cta = site.data.menus.header_cta %}
-          {% for item in header_cta %}
-            {% assign cta_items = all | where: "path", item.link  %}
-            {% for item in cta_items %}
-            <a href="{{item.url}}" class="btn btn-sm">{{item.cta_title}}</a>               
-            {% endfor %}
-          {%endfor%}
-      </div>
-      <div class="burger-button" id="mobileMenuBtn">
-          <img src="/assets/img/icon-menu.svg" alt="">
-      </div>
-      </header>
+<div id="topLine" class="beams-wrapper global-beam-wrapper top-line">
+    <div class="beam">
+        <div class="beam-item">
+            <header class="top-line-content">
+                <a href="/" class="logo">
+                    <img src="/assets/img/h-logo.svg" alt="{{site.data.global.title}}">
+                </a>
+                {% include parts/top-line-nav.html %}
+                <div class="burger-button" id="mobileMenuBtn">
+                    <img src="/assets/img/icon-menu.svg" alt="">
+                </div>
+            </header>
+        </div>
     </div>
-  </div>
 </div>
-<div class="mobile-menu" id ="mobileMenu">
-  <div class="mobile-menu-head">
-    <div class="title h4 uppercase">Menu</div>
-    <div class="close-button"><img src="/assets/img/icon-close.svg" alt=""></div>
-  </div>
-  <div class="mobile-menu-content">
-    <nav class="main-nav">
-      <ul>
-        {% assign header_menu = site.data.menus.header_menu %}
-        {% for item in header_menu %}
-          {% assign menu_items = all | where: "path", item.link  %}
-          {% for item in menu_items %}
-            {% if page.url == item.url %}
-            <li class="active"><a href="{{item.url}}">{{item.menu_title}}</a></li>         
-            {% else %}
-            <li><a href="{{item.url}}">{{item.menu_title}}</a></li>     
-            {% endif %} 
-          {%endfor%}
-        {%endfor%}
-      </ul>
-    </nav>
-    <div class="cta-section">
-      {% assign header_cta = site.data.menus.header_cta %}
-      {% for item in header_cta %}
-        {% assign cta_items = all | where: "path", item.link  %}
-        {% for item in cta_items %}
-        <a href="{{item.url}}" class="btn btn-sm">{{item.cta_title }}</a>               
-        {% endfor %}
-      {%endfor%}
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-head">
+        <div class="title h4 uppercase">Menu</div>
+        <div class="close-button"><img src="/assets/img/icon-close.svg" alt=""></div>
     </div>
-    <div class="contact-section">
-      <a href="tel:{{site.data.global.footer.phone}}" class="pb"><img src="/assets/img/icon-sm-phone-gray.svg" alt=""> {{site.data.global.footer.phone}}</a>      
-      <a href="mailto:{{site.data.global.footer.mail}}" class="pb"><img src="/assets/img/icon-sm-email-gray.svg" alt=""> {{site.data.global.footer.email}}</a>
+    <div class="mobile-menu-content">
+        {% include parts/top-line-nav.html %}
+        <div class="contact-section">
+            <a href="tel:{{site.data.global.footer.phone}}" class="pb"><img src="/assets/img/icon-sm-phone-gray.svg"
+                    alt="">
+                {{site.data.global.footer.phone}}</a>
+            <a href="mailto:{{site.data.global.footer.mail}}" class="pb"><img src="/assets/img/icon-sm-email-gray.svg"
+                    alt="">
+                {{site.data.global.footer.email}}</a>
+        </div>
     </div>
-  </div>
 </div>
-
-
-
-<script>
-  console.log("test")
-
-
-  const throttle = (func, limit) => {
-        let inThrottle;
-        return function() {
-            const args = arguments;
-            const context = this;
-            if (!inThrottle) {
-                func.apply(context, args);
-                inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
-            }
-        }
-    };
-
-    const  topLine = document.querySelector("#topLine"),
-    mobileMenu = document.querySelector("#mobileMenu");
-    let lastScrollTop = 0;
-    window.addEventListener("scroll", throttle(function(){ 
-        var st = window.pageYOffset ;
-        if (st > lastScrollTop){
-            topLine.classList.add("invisible");
-        } else {
-            topLine.classList.remove("invisible");
-            // mobileMenuCtn.classList.remove("open");
-        }
-        if (st > 50) {
-            topLine.classList.add("bg");
-            mobileMenu.classList.add("bg");
-        } else {
-            topLine.classList.remove("bg");
-            mobileMenu.classList.remove("bg");
-            // mobileMenuCtn.classList.remove("open");
-        }
-        lastScrollTop = st;
-    }, 30));
-
-
-
-    
-    const  mobileMenuBtn = document.querySelector("#mobileMenuBtn"),
-    mobileMenuCtn = document.querySelector("#mobileMenu");
-
-    mobileMenuBtn.addEventListener("click", function(e) {
-      mobileMenuCtn.classList.toggle("open");
-        e.stopPropagation();
-    }, false);
-
-    document.addEventListener("click", function() {
-      mobileMenuCtn.classList.remove("open");
-    }, false);
-</script>

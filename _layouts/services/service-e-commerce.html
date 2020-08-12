@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.data.global.lang }}">
+    <head>
+        {% include head.html %}
+        <!--Dane struklturalne dla każdego layoutu-->
+    </head>
+    <body>    
+        {% include top-line.html %}   
+        {% include parts/breadcrumbs.html %}             
+        <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam service-header">
+            <div class="beam">
+                <div class="beam-item">
+                    <h1>{{page.header.title}}</h1>
+                    <p>{{page.header.intro}}</p>
+                </div>
+            </div>
+        </header>   
+        
+
+
+        {% include footer.html %}       
+    </body>
+</html>

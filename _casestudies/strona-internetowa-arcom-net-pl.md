@@ -1,12 +1,20 @@
 ---
 # GLOBAL 
 layout: casestudy
+page_type: casestudy
 title: arcom.net.pl
+
+#SEO
 seo_title:  SEO arcom.net.pl
 seo_description: |-
   META arcom.net.pl
-menu_title: arcom.net.pl
-cta_title:
+
+#MENU 
+top_line:
+  menu_title: arcom.net.pl
+  cta_title:
+
+#SETTINGS
 show_contact_in_footer: true
 
 # CASESTUDY layout
@@ -33,6 +41,4 @@ customer_opinion:
   quotation_small: |-
     Musimy załatwić. Komunikacja od samego początku przebiegała bardzo sprawnie. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez Projets zostały dopasowane do naszych wszystkich oczekiwań.
   promoted: true
-
-main_for_service: _services/ux-ui.md
 ---

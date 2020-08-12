@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.data.global.lang }}">
-    <head>
-        {% include head.html %}
-        <!--Dane struklturalne dla każdego layoutu-->
-    </head>
-    <body>    
-        {% include top-line.html %}          
-        {% include parts/breadcrumbs.html %}      
-        <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam">
-            <div class="beam b-size-3">
-                <div class="beam-item b-size-2">
-                    <header>
-                        <h1>{{page.title}}</h1>
-                        <div class="post-date">
-                          <span><time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%d-%m-%Y'}}</time></span> |
-                          <span><time datetime="{{ page.update_date | date_to_xmlschema }}">{{page.update_date | date: '%d-%m-%Y'}}</time></span>
-                        </div>
-                        {{page.intro | markdownify }}
-                        <figure>
-                            <img src="{{ page.main_photo}}" class="img" alt="{{page.main_photo_desc}}">
-                            <figcaption>{{page.main_photo_desc}}</figcaption>
-                        </figure>
-                      </header>
-                      <!-- {{page.page_content | markdownify }} -->
-    
-                    {{ content | inject_anchors }}
-                    
-                    <section>
-                      <h2>FAQ</h2>
-                      {% for question in page.faq %}
-                        {% if question.question and question.answer%}
-                        <section class="faq distinction distinction-question">
-                          <h3 class="h4"> {{question.question}}</h3>
-                          <p>{{question.answer}}</p>
-                        </section>
-                        {%endif%}
-                      {% endfor %}        
-                    </section> 
-                </div>
-                <div class="beam-item b-size-1">
-                    <nav class="table-of-content">
-                        <span class="title"> {{site.data.translations.table_of_contents}}</span>
-                        {% toc %}
-                    </nav>
+
+<head>
+    {% include head.html %}
+    <!--Dane struklturalne dla każdego layoutu-->
+</head>
+
+<body>
+    {% include top-line.html %}
+    {% include parts/breadcrumbs.html %}
+    <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam post-article">
+        <div class="beam b-size-5 " id="main-content">
+            <div class="beam-item b-size-3 post-content">
+                <header>
+                    <h1 class="title">{{page.header.title}}</h1>
+                    <div class="post-date">
+                        <span class="p3">{{site.data.global.translations.publication_date}}: <time
+                                datetime="{{ page.dates.publication | date_to_xmlschema }}">{{page.dates.publication | date: '%d-%m-%Y'}}</time></span>
+                        |
+                        <span class="p3">{{site.data.global.translations.update_date}}: <time
+                                datetime="{{ page.dates.update  | date_to_xmlschema }}">{{page.dates.update  | date: '%d-%m-%Y'}}</time></span>
+                    </div>
+                    {{page.intro | markdownify }}
+                    <figure>
+                        <img src="{{ page.header.main_photo}}" class="img" alt="{{page.header.main_photo_desc}}">
+                        <figcaption>{{page.header.main_photo_desc}}</figcaption>
+                    </figure>
+                </header>
+                <nav class="table-of-content table-of-content-mobile">
+                    <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                    {% toc %}
+                </nav>
+                {{ content | inject_anchors }}
+                <section>
+                    {% for question in page.faq limit:1 %}
+                    {% if question.question and question.answer%}
+                    <h2>FAQ</h2>
+                    {%endif%}
+                    {% endfor %}
+                    {% for question in page.faq %}
+                    {% if question.question and question.answer%}
+                    <section class="faq distinction">
+                        <h3 class="h4"> {{question.question}}</h3>
+                        <p>{{question.answer}}</p>
+                    </section>
+                    {%endif%}
+                    {% endfor %}
+                </section>
+                <footer class="author">
+                    <div class="photo">
+                        <img src="{{page.author.photo}}" alt="{{page.author.name}}">
+                    </div>
+                    <div class="content">
+                        <p class="name h4">{{page.author.name}}</p>
+                        <p class="position">{{page.author.position}}</p>
+                    </div>
+                </footer>
+            </div>
+            <div class="beam-item b-size-2  post-toc">
+                <div class="sticky-rail">
+                    <div class="sticky-element">
+                        <nav class="table-of-content  table-of-content-desktop">
+                            <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                            {% toc %}
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </article>            
-        {% include footer.html %}      
-    </body>
+        </div>
+    </article>
+    <section class="beams-wrapper global-beam-wrapper beam-background section-beam futured-posts-beam">
+        <div class="beam">
+            <div class="beam-item">
+                <header class="section-header">
+                    <div class="head">
+                        <div class="title">
+                            <h2 class="h4 uppercase">{{site.data.global.translations.featured_posts}}</h2>
+                        </div>
+                        {% assign blog = site.pages | where: "layout", "blog" %}
+                        {% for item in blog %}
+                        <div class="link">
+                            <a href="{{item.url}}">{{item.cta_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </header>
+                <div class="beam b-size-3 futured-posts-listing ">
+                    {% for item in site.posts limit:3 %}
+                    <div class="beam-item b-size-1">
+                        {% include parts/post-item.html  post=item h="h2"%}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include footer.html %}
+</body>
 </html>

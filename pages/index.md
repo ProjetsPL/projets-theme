@@ -1,12 +1,20 @@
 ---
 # GLOBAL 
 layout: index
+page_type: index
 title: Strona główna
+
+#SEO
 seo_title:  SEO Strona główna
 seo_description: |-
   META Strona głowna
-menu_title: Strona główna
-cta_title:
+
+#MENU 
+top_line:
+  menu_title: Strona główna
+  cta_title:
+
+#SETTINGS
 show_contact_in_footer: true
 
 # INDEX layout
@@ -39,19 +47,15 @@ services_section:
       icon: /uploads/icon-lg-web-development.svg
       content: Projektujemy nowoczesne dedykowane aplikacje oraz sklepy internetowe. Wprowadzamy rozwiązania zgodne z najnowszymi trendami - odpowiadające na różne potrzeby biznesowe.
       pages:
-      -
-        link: _services/aplikacje-internetowe.md
-      -
-        link: _services/sklepy-internetowe.md
+        - _services/aplikacje-internetowe.md
+        - _services/sklepy-internetowe.md
     -
       title: Product design
       icon: /uploads/icon-lg-product-design.svg
       content: Tworzymy identyfikacje wizualne firmy, produktu lub usługi. Projektujemy i wdrażamy layouty, które zaskakują klientów, przyciągają ich uwagę i gwarantują pozytywne doświadczenia.
       pages:
-      -
-        link: _services/ux-ui.md
-      -
-        link: _services/branding.md
+        - _services/ux-ui.md
+        - _services/branding.md
 
 testimonials_section:
   title: Opinie klientów są dla nas najważniejsze
@@ -67,4 +71,3 @@ case_studies_section:
   content:
   icon: /uploads/icon-sm-grow.svg
 ---
-CONTENT Strona główna

@@ -1,18 +1,18 @@
 <article class="post-item">
     <a href="{{include.post.url}}">
         <div class="img-box img-ratio-16-9">
-            <img src="{{include.post.main_photo}}" alt="{{include.post.main_photo_desc}}" class="img">
+            <img src="{{include.post.header.main_photo}}" alt="{{include.post.header.main_photo_desc}}" class="img">
         </div>
         <div class="content">
             <footer class="more">
                 <img src="{{include.post.author.photo}}" alt="{{include.post.author.name}}">
                 <span class="author p3">{{include.post.author.name}}</span>
-                <span class="date p3">{{ include.post.date  | date: '%d-%m-%Y'}} </span>
+                <span class="date p3">{{ include.post.dates.publication  | date: '%d-%m-%Y'}} </span>
             </footer>
             <header>
-                <{{include.h}} class="h4 title">{{include.post.title}}</{{include.h}}>
+                <{{include.h}} class="h4 title">{{include.post.header.title}}</{{include.h}}>
             </header>
-            <p class="p2 intro">{{include.post.small_intro}}</p>
+            <p class="p2 intro">{{include.post.header.small_intro}}</p>
         </div>
     </a>
 </article>

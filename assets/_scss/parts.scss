@@ -1,4 +1,6 @@
 //Includes partials
+
+//casestudy-beam.html
 .casestudy-beam {
     // position: relative;
     .casestudy-bg{
@@ -16,7 +18,7 @@
             position: absolute;
             bottom: 0%;
             right: 0%;
-            transform: translateX(-30%) translateY(25%);
+            transform: translateX(-30%) translateY(30%);
         }
     }
     .casestudy-img {
@@ -48,6 +50,7 @@
         z-index: 1;
         .h3 {
             margin-top: 0;
+            padding-top: 0;
         }
         .person {
             display: flex;
@@ -78,7 +81,7 @@
             .circle-bg {                
                 right: auto;
                 left: 0%;
-                transform: translateX(30%) translateY(25%);
+                transform: translateX(30%) translateY(30%);
             }                   
         }
         .casestudy-img {   
@@ -151,6 +154,8 @@
     }
 }
 
+//casestudy-mockup-desktop.html
+//casestudy-mockup-mobile.html
 .casestudy-mockup {
     display: inline-block;
     background-color: $bg-0;
@@ -219,6 +224,7 @@
         }
 }
 
+//breadcrumbs.html
 .breadcrumbs {
     display: flex;
     flex-flow: row;
@@ -288,7 +294,7 @@
         }
     }
 }
-@media (max-width:800px) { 
+@media (max-width:1000px) { 
     .breadcrumbs {
         ol {
             li {
@@ -310,6 +316,7 @@
     }
 }
 
+//post-item.html
 .post-item {
     background-color: $bg-0;
     border-radius: 5px;
@@ -350,6 +357,7 @@
             color: $main-2;
             margin-top:15px;
             margin-bottom: 10px;
+            padding-top:0;
         }
         .intro {
             margin: 0;
@@ -370,5 +378,37 @@
     }    
     &:active {
         transform: scale(0.98)
+    }
+}
+
+//feature-box.html 
+.feature-box {
+    position: relative;
+    margin-top: 150px;
+    .img-box {
+        position: absolute;
+        top:0;
+        left:50%;
+        transform: translateY(-95%) translatex(-50%);
+        img {
+            display: inline-block;
+        }
+    }
+    .content-box {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        background-color: $bg-0;
+        border-radius: 5px;
+        box-shadow: $main-shadow;
+        text-align: center;
+        .title {
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+        .content {
+            margin: 0;
+            padding: 0;
+        }
     }
 }

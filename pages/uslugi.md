@@ -1,17 +1,27 @@
 ---
 # GLOBAL 
 layout: services
-title: <strong>Projektujemy i programujemy</strong> rozwiązania dla Twojego biznesu
+page_type: services
+title: Usługi
+
+#SEO
 seo_title:  SEO Usługi
 seo_description: |-
   MEAT Usługi
-menu_title: Usługi
-cta_title: Sprawdź co oferujemy
+
+#MENU
+top_line:
+  menu_title: Usługi
+  cta_title:
+
+#SETTINGS
 show_contact_in_footer: true
 
 # SERVICES layout
-header_intro: |-
-  Wspólnie opracujemy rozwiązanie odpowiadające potrzebom Twojego biznesu. Dzięki dobrze dopasowanym narzędziom wykorzystasz wszystkie możliwości do rozwoju i przeniesiesz swoją firmę lub startup na wyższy poziom.
+header:
+  title: <strong>Projektujemy i programujemy</strong> rozwiązania dla Twojego biznesu
+  intro: |-
+    Wspólnie opracujemy rozwiązanie odpowiadające potrzebom Twojego biznesu. Dzięki dobrze dopasowanym narzędziom wykorzystasz wszystkie możliwości do rozwoju i przeniesiesz swoją firmę lub startup na wyższy poziom.
 services:
   -
     service: _services/aplikacje-internetowe.md
@@ -29,17 +39,4 @@ services:
     service: _services/branding.md
     casestudy: _casestudies/sklep-internetowy-agdmaster-com.md
     side: right
-
 ---
-CONTENT Usługi
-      {% for service in site.services %}
-  <ul>
-    <li><a href="{{service.url}}">{{service.title}}</a></li>    
-  </ul>                         
-  {% endfor %}
-  
-      {% for casestudy in site.casestudies %}
-  <ul>
-    <li><a href="{{casestudy.url}}">{{casestudy.title}}</a></li>        
-  </ul>                     
-  {% endfor %}

@@ -42,7 +42,6 @@
                                 {%for item in project_types %}
                                 <div class="beam-item b-size-1">
                                     <div class="checkboxes-item">       
-                                        <input type="checkbox" id="{{item.id}}" name="{{page.project_type.title}}" value="{{item.title}}">
                                         <label class="label" for="{{item.id}}">
                                             <div class="content">
                                                 <img src="{{item.icon}}" alt="">
@@ -52,7 +51,8 @@
                                                 <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
                                                 <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
                                             </svg>                                                
-                                        </label>                             
+                                        </label>    
+                                        <input type="checkbox" id="{{item.id}}" name="{{page.project_type.title}}" value="{{item.title}}">                         
                                     </div> 
                                 </div>
                                 {%endfor%}              

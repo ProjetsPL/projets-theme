@@ -65,8 +65,7 @@ legend {
     margin: 0;
     min-width: 0;
   }
-  body:not(:-moz-handler-blocked) fieldset {
-    
+  body:not(:-moz-handler-blocked) fieldset {    
     display: block;
   }
 
@@ -830,7 +829,7 @@ ul, ol {
         }
     }
     input {
-        display: none;
+        // display: none;
     }
     input:checked + label {    
         &::before {

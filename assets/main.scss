@@ -795,7 +795,7 @@ ul, ol {
         transition: $normal;
         position: relative;
         cursor: pointer;
-        &::before {
+        .border {
             content: "";
             position: absolute;
             display: block;
@@ -829,16 +829,16 @@ ul, ol {
         }
     }
     input {
-        // display: none;
+        display: none;
     }
-    input:checked + label {    
-        &::before {
-            opacity: 1;
-        }
-        .checkbox {
+    input:checked  {    
+        & ~ .checkbox {
             path {
                 opacity: 1;
             }
+        }
+        &  ~ .border {
+            opacity: 1;
         }
     }
 }

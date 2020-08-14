@@ -20,44 +20,47 @@
                 <div class="beam-item"> 
                     <form name="contact" method="POST" data-netlify="true">                        
                         <fieldset>      
-                        <div class="section-header">
-                            <div class="head">
-                                <div class="title">
-                                    <legend><h2 class="h4 uppercase">{{page.project_type.header.title}}</h2></legend>  
-                                    {%if page.project_type.header.icon%}
-                                    <div class="icon icon-bg icon-bg-sm">
-                                        <img src="{{page.project_type.header.icon}}" alt="{{page.project_type.header.title}}">
+                            <div class="section-header">
+                                <div class="head">
+                                    <div class="title">
+                                        <h2 class="h4 uppercase"><legend>{{page.project_type.header.title}}</legend></h2>
+                                        {%if page.project_type.header.icon%}
+                                        <div class="icon icon-bg icon-bg-sm">
+                                            <img src="{{page.project_type.header.icon}}" alt="{{page.project_type.header.title}}">
+                                        </div>
+                                        {%endif%}
                                     </div>
-                                    {%endif%}
-                                </div>
-                            </div>         
-                            {%if page.project_type.header.content %}
-                            <div class="section-intro">                                 
-                                <p>{{page.project_type.header.content}}</p>
-                            </div>                      
-                            {%endif%}
-                        </div>      
-                        <div class="beam b-size-2 big-checkboxes">      
-                                {%assign project_types  = page.project_type.types %}
-                                {%for item in project_types %}
-                                <div class="beam-item b-size-1">
-                                    <div class="checkboxes-item">       
-                                        <label class="label">
-                                            <div class="content">
-                                                <img src="{{item.icon}}" alt="">
-                                                <p class="h4">{{item.title}}</p>
-                                            </div>            
-                                            <input type="checkbox" name="{{item.title}}" value="Tak">
-                                            <svg class="checkbox" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
-                                                <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
-                                            </svg>                              
-                                        </label>                           
-                                    </div> 
-                                </div>
-                                {%endfor%}              
-                        </div>                               
+                                </div>         
+                                {%if page.project_type.header.content %}
+                                <div class="section-intro">                                 
+                                    <p>{{page.project_type.header.content}}</p>
+                                </div>                      
+                                {%endif%}
+                            </div>      
+                            <div class="beam b-size-2 big-checkboxes">      
+                                    {%assign project_types  = page.project_type.types %}
+                                    {%for item in project_types %}
+                                    <div class="beam-item b-size-1">
+                                        <div class="checkboxes-item">       
+                                            <label class="label">
+                                                <div class="content">
+                                                    <img src="{{item.icon}}" alt="{{item.title}}">
+                                                    <p class="h4">{{item.title}}</p>
+                                                </div>            
+                                                <input type="checkbox" name="{{item.title}}" value="Tak">
+                                                <svg class="checkbox" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
+                                                    <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
+                                                </svg>     
+                                                <div class="border"></div>                         
+                                            </label>                           
+                                        </div> 
+                                    </div>
+                                    {%endfor%}              
+                            </div>                               
                         </fieldset> 
+                        <input type="text" name="Name" placeholder="imię i nazwisko">
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
                         <!-- <fieldset>       
                         <div class="section-header">
                             <div class="head">

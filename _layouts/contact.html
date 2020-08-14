@@ -18,11 +18,12 @@
         <section class="beams-wrapper small-beam-wrapper beam-background section-beam contact-form">
             <div class="beam">
                 <div class="beam-item"> 
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" data-netlify="true">                        
+                        <fieldset>      
                         <div class="section-header">
                             <div class="head">
                                 <div class="title">
-                                    <h2 class="h4 uppercase">{{page.project_type.header.title}}</h2>
+                                    <legend><h2 class="h4 uppercase">{{page.project_type.header.title}}</h2></legend>  
                                     {%if page.project_type.header.icon%}
                                     <div class="icon icon-bg icon-bg-sm">
                                         <img src="{{page.project_type.header.icon}}" alt="{{page.project_type.header.title}}">
@@ -36,7 +37,7 @@
                             </div>                      
                             {%endif%}
                         </div>      
-                        <div class="beam b-size-2 big-checkboxes">
+                        <div class="beam b-size-2 big-checkboxes">      
                                 {%assign project_types  = page.project_type.types %}
                                 {%for item in project_types %}
                                 <div class="beam-item b-size-1">
@@ -54,12 +55,14 @@
                                         </label>                             
                                     </div> 
                                 </div>
-                                {%endfor%}                             
-                        </div>
+                                {%endfor%}              
+                        </div>                               
+                        </fieldset>       
+                        <fieldset>       
                         <div class="section-header">
                             <div class="head">
                                 <div class="title">
-                                    <h2 class="h4 uppercase">{{page.project_range.header.title}}</h2>
+                                    <legend><h2 class="h4 uppercase">{{page.project_range.header.title}}</h2></legend>
                                     {%if page.project_range.header.icon%}
                                     <div class="icon icon-bg icon-bg-sm">
                                         <img src="{{page.project_range.header.icon}}" alt="{{page.project_range.header.title}}">
@@ -92,7 +95,8 @@
                                     </div> 
                                 </div>
                                 {%endfor%}                             
-                        </div>                        
+                        </div>                                                        
+                        </fieldset>                
                         <div class="section-header">
                             <div class="head">
                                 <div class="title">

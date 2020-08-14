@@ -55,6 +55,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+legend {
+    padding: 0;
+    display: block;
+  }
+  fieldset {
+    border: 0;
+    padding: 0 0 0 0;
+    margin: 0;
+    min-width: 0;
+  }
+  body:not(:-moz-handler-blocked) fieldset {
+    
+    display: block;
+  }
 
 //Typo
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {    

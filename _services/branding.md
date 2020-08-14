@@ -30,6 +30,55 @@ header:
     Zaprojektujemy nieszablonowy i unikalny wizerunek Twojej firmy, produktu lub usługi, który zaskoczy klientów i przyciągnie ich uwagę.
 promoted_casestudies:
   - _casestudies/sklep-internetowy-agdmaster-com.md
+cta_buttons:
+  - name: Rozpocznijmy współpracę
+    link: /kontakt.html
+  - name: Napisz do nas
+    link: /kontakt.html
+  - name: Jakieś inne CTA
+    link: /kontakt.html
+display_seo_section: true
+toc: true 
 
 #SERVICE BRANDING layout
+features:
+  -
+    title: Unikalny pomysł na logo
+    content: |-
+      Stworzymy wyjątkowe logo dopasowane do Twojego biznesu, dzięki czemu utrwalisz wizerunek marki w oczach klientów. Będzie to podstawa jej komunikacji z otoczeniem.
+    icon: /uploads/graphic-branding-1.svg
+  -
+    title: Identyfikacja wizualna marki
+    content: |-
+      Wykreujemy spójną tożsamość wizualną marki na wszystkich materiałach firmowych i promocyjnych. Wpłynie to na wizerunek Twojego biznesu w oczach odbiorcy.
+    icon: /uploads/graphic-branding-2.svg
+advantage:
+  title: Tworzymy <strong>wyjątkowe projekty</strong> z myślą o sukcesie Twojej marki
+  content: |-
+    Nie pozwól, żeby Twój biznes był z jednym wielu niezauważalnych na rynku. Sam produkt lub usługa to połowa sukcesu - potrzebny jest aspekt wizualny, który sprawi, że zaskoczysz potencjalnych klientów i przyciągniesz ich uwagę. Tworzymy nieszablonowe identyfikacje wizualne, które wyróżniają silne marki. Chcesz, żeby Twoja firma była jedną z nich? Zaufaj nam - znamy się na tym, co robimy.
+process:
+  title: Sprawdź jak wygląda kompleksowe opracowanie identyfikacji wizualnej marki
+  content: |-
+    Chcesz wiedzieć, w czym tkwi sukces przygotowywanych przez nas projektów? To przede wszystkim zaplanowanie działań związanych ze stworzeniem tożsamości wizualnej marki, które opieramy na dokładnym poznaniu biznesu i określeniu potrzeb, na które ma odpowiadać.
+  steps:
+    -
+      title: Poznajemy markę i jej otoczenie
+      content: |-
+        Budowanie wizerunku Twojej marki opieramy na zrozumieniu potrzeb odbiorców. Wiemy, że to coś więcej niż sama nazwa, dlatego koncentrujemy się na wyjątkowym charakterze biznesu i podkreślamy jego unikalne wartości. To pozwala zbudować podstawy, które wzbudzą zaufanie u Twoich klientów.
+      icon: /uploads/icon-lg-technical-seo.svg
+      side: left
+    -
+      title: Tworzymy kluczowe elementy identyfikacji
+      content: |-
+        Opracowujemy przewodni motyw graficzny lub słowno-graficzny dedykowany dla Twojego biznesu. Dobieramy odpowiednią kolorystykę i łączymy ją z typografią. Tworzymy dla Ciebie logotyp i key visuale, które obrazują najważniejsze wartości firmy w oczach odbiorcy. 
+      icon: /uploads/icon-lg-project.svg
+      side: right
+    -
+      title: Budujemy spójny wizerunek firmy
+      content: |-
+        Stworzona przez nas tożsamość wizualna marki dostarcza klientom informacji, czego mogą oczekiwać od Twoich produktów i usług. Wskazuje, co wyróżnia je na tle konkurencji. Dzięki niej możesz prowadzić spójną komunikacją z odbiorcami swojego biznesu.
+      icon: /uploads/icon-lg-ideas.svg
+      side: left
+---
+YO YO
 ---

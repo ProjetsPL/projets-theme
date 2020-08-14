@@ -79,7 +79,7 @@
                                 {% for item in services_items %}
                                     {% assign service_item =  site.services |  where: "path", item %}
                                     {% for item in service_item %}
-                                    <li><a href="{{item.url}}">{{item.menu_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>                 
+                                    <li><a href="{{item.url}}">{{item.top_line.menu_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>                 
                                     {% endfor %}   
                                 {%endfor%}
                             </ul>         

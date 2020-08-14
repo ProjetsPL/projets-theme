@@ -381,8 +381,8 @@
     }
 }
 
-//feature-box.html 
-.feature-box {
+//feature-item.html 
+.feature-item {
     position: relative;
     margin-top: 150px;
     .img-box {
@@ -411,4 +411,128 @@
             padding: 0;
         }
     }
+}
+
+//feature-small-list-item.html
+.feature-small-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: $bg-0;
+    border-radius: 5px;
+    box-shadow: $main-shadow;
+    // height: 100%;
+    margin-bottom: 20px;
+    .img-box {
+        flex-basis: 70px;
+        min-width: 70px;
+    }
+    .content-box {
+        .title {
+            margin: 0 0 5px 0;
+            padding:0;
+        }
+        .content {
+            margin: 0;
+            padding:0;
+        }
+    }
+}
+
+//process-item.html
+.process-item {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:110px 0;
+    .title {
+        flex-basis: calc(50% - 290px / 2);
+        text-align: right;
+        order: 1;
+        position: relative;
+        .h4 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+        }
+        .step-number {
+            position: absolute;
+            top:50%;
+            right:50%;
+            transform: translateX(50%) translateY(-50%);
+            font-size: 115px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+            color: $bg-2;
+        }
+    }
+    .icon {
+        flex-basis: 1;        
+        order: 2;
+    }
+    .content {
+        flex-basis: calc(50% - 290px / 2);
+        order: 3;
+        p {
+            margin: 0;
+        }
+    }
+    &.process-item-right {
+        .title {
+            text-align: left;
+            order: 3;        
+        }
+        .icon {
+            flex-basis: 1;        
+            order: 2;
+        }
+        .content {
+            order: 1;
+            text-align: right;
+        }
+    }
+}
+@media (max-width: 860px) {    
+    .process-item {
+        flex-flow: column;
+        .title {
+            order: 2;
+            margin-bottom: 50px;
+            margin-top: 70px;
+            .h4 {
+                text-align: center;
+            }    
+        }
+        .icon {
+            order: 1;
+        }
+        .content {
+            order:3;
+            text-align: center;
+        }        
+        &.process-item-right {
+            .title {
+                order: 2;
+                .h4 {
+                    text-align: center;
+                }
+            }
+            .icon {
+                order: 1;
+            }
+            .content {
+                order:3;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//technology-item.html
+.technology-item {
+    
 }

@@ -23,6 +23,10 @@ collections:
   casestudies:    
     output: true
     permalink: /realizacje/:title:output_ext
+  technologies:    
+    output: true
+    permalink: /technologie/:title:output_ext
+
 
 defaults:  
   -

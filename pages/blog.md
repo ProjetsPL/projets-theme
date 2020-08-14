@@ -12,7 +12,7 @@ seo_description: |-
 #MENU 
 top_line:
   menu_title: Blog
-  cta_title:
+  cta_title: Sprawdź wszsytkie wpisy
 
 #SETTINGS
 show_contact_in_footer: true

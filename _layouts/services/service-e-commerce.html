@@ -14,10 +14,127 @@
                     <p>{{page.header.intro}}</p>
                 </div>
             </div>
-        </header>   
-        
-
-
+        </header>
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam e-commerce-feature-small-list">
+            <div class="beam b-size-2  e-commerce-feature-list">
+                {% assign features = page.features_list %}
+                {% for item in features %}
+                <div class="beam-item b-size-1" >
+                    {% include parts/feature-small-list-item.html h="h3" content=item%}
+                </div>
+                {%endfor%}
+            </div>
+            <div class="beam b-size-3">
+                <div class="beam-item b-size-2 e-commerce-advantage" >
+                    <h2>{{page.advantage.title}}</h2>
+                    <p>{{page.advantage.content}}</p>
+                </div>
+            </div>
+            <div class="brands">
+            {% for brand in page.advantage.brands %}
+                <div class="logo">
+                    <img src="{{brand.logo}}" alt="{{brand.name}}">
+                </div> 
+            {%endfor%}
+            </div>
+            <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow">
+        </section>  
+        {%if page.cta_buttons[1].link and page.cta_buttons[1].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[1].link}}">{{page.cta_buttons[1].name}}</a>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg overflow-beam">
+            {%assign casestudies = page.promoted_casestudies%}
+            {% for item in casestudies %}
+                {%assign casestudy = site.casestudies | where: "path", item %}
+                {% for item in casestudy %}
+                    {% include parts/casestudy-beam.html  casestudy=item%} 
+                {% endfor %}
+            {%endfor%}
+        </section>
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam e-commerce-feature">
+            <header class="beam b-size-6 section-header-horizontal">
+                <div class="beam-item b-size-3" >
+                    <h2 class="h3 title">{{page.features.title}}</h2>
+                </div>
+                <div class="beam-item b-size-3" >
+                    <p class="content">{{page.features.content}}</p>
+                </div>
+            </header>
+            <div class="beam b-size-4  e-commerce-feature-list">
+                {% assign features = page.features.items %}
+                {% for item in features %}
+                <div class="beam-item b-size-2" >
+                    {% include parts/feature-item.html h="h3" content=item%}
+                </div>
+                {%endfor%}
+            </div>
+        </section>
+        {%if page.cta_buttons[2].link and page.cta_buttons[2].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="{{page.cta_buttons[2].link}}">{{page.cta_buttons[2].name}}</a>
+                </div>
+            </div>
+        </div>
+    {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam e-commerce-technologies">
+            <header class="beam b-size-6 section-header-horizontal">
+                <div class="beam-item b-size-3" >
+                    <h2 class="h3 title">{{page.technologies.title}}</h2>
+                </div>
+                <div class="beam-item b-size-3" >
+                    <p class="content">{{page.technologies.content}}</p>
+                </div>
+            </header>
+            <div class="beam b-size-3">
+                {% assign technologies = page.technologies.items %}
+                {% for item in technologies %}
+                    {% assign technology = site.technologies | where: "path", item%}
+                    {% for item in technology %}
+                    <div class="beam-item b-size-1 technologiy-item-wrapper" >
+                        {% include parts/technology-item.html h="h3" content=item%}
+                    </div>
+                    {%endfor%}
+                {%endfor%}
+            </div>
+        </section> 
+        {%if page.display_seo_section %}
+        <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam">
+            <div class="beam b-size-5 " id="main-content">
+                <div class="beam-item b-size-3 post-content">
+                {{ content  | inject_anchors }}
+                </div>                
+                {%if page.toc %}
+                <div class="beam-item b-size-2  post-toc">
+                    <div class="sticky-rail">
+                        <div class="sticky-element">
+                            <nav class="table-of-content  table-of-content-desktop">
+                                <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                                {% toc %}
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                {%endif%}
+            </div>
+        </article>
+        {%endif%}
         {% include footer.html %}       
     </body>
 </html>

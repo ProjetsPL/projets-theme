@@ -1,0 +1,18 @@
+<div class="process-item process-item-{{include.content.side}}">
+    <header class="title">
+        {%if include.step_number %}
+        <div class="step-number">            
+            {{include.step_number  }}
+        </div>
+        {%endif%}
+        <{{include.h}} class="h4">{{include.content.title}} </{{include.h}}>
+    </header>
+    <div class="icon">
+        <div class="icon icon-bg">
+            <img src="{{include.content.icon}}" alt="{{include.content.title}}">
+        </div>
+    </div>
+    <div class="content">
+        <p class="content p2">{{include.content.content}}</p>
+    </div>
+</div>

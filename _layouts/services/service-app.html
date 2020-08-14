@@ -15,62 +15,128 @@
                 </div>
             </div>
         </header>      
-        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
-            <div class="beam b-size-6">
-                <div class="beam-item">
-                    <a class="btn" href="/kontakt.html">Wyceń projekt</a>
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        {%endif%}
         <section class="beams-wrapper global-beam-wrapper beam-background section-beam app-feature">
-            <div class="beam b-size-3">
+            <div class="beam b-size-3  app-feature-list">
+                {% assign features = page.features %}
+                {% for item in features %}
                 <div class="beam-item b-size-1" >
-                    {% include parts/feature-box.html
-                        img="/uploads/graphic-app-1.svg"
-                        title="Szybkość działania"
-                        h="h3"
-                        content="Twój pomysł przenosimy do MVP (Minimum Viable Product). Dzięki temu możemy szybko wypuścić projekt, potwierdzić wczesne założenia dotyczące modelu biznesowego i ustalić plan rozwoju."
-                    %}
+                    {% include parts/feature-item.html h="h3" content=item%}
                 </div>
-                <div class="beam-item b-size-1" >
-                    {% include parts/feature-box.html
-                        img="/uploads/graphic-app-2.svg"
-                        title="Najnowsze technologie"
-                        h="h3"
-                        content="Podstawą tworzonych aplikacji jest szybkość i bezpieczeństwo przy jednoczesnym dostosowaniu do indywidualnych potrzeb i celów biznesowych. Wykorzystujemy najnowsze technologie, co czyni aplikacje użytecznymi oraz innowacyjnymi."
-                    %}
-                </div>
-                <div class="beam-item b-size-1" >
-                    {% include parts/feature-box.html
-                        img="/uploads/graphic-app-3.svg"
-                        title="Elastyczne zarządzanie"
-                        h="h3"
-                        content="Każdy projekt realizujemy według indywidualnie dopasowanej metodologii. Wykorzystanie Agile umożliwia nam innowacyjne - elastyczne i łatwe zarządzenie projektem. Kierunek rozwoju aplikacji jest elastyczny i otwarty na modyfikację."
-                    %}
-                </div>
+                {%endfor%}
             </div>
             <div class="beam b-size-3">
                 <div class="beam-item b-size-2 app-advantage" >
-                    <h2>Zyskaj przewagę biznesową opartą na nieszablonowych rozwiązaniach</h2>
-                    <p>Tworzymy dedykowane aplikacje oparte na nowatorskich pomysłach, które dają możliwość zdobycia przewagi nad konkurencją. Prowadzą również do realizacji wyznaczonych celów firmy - niezależnie od jej charakteru i wielkości.</p>
-                    <img src="/assets/img/click-arrow.svg" alt="Kliknij w button" class="click-arrow">
+                    <h2>{{page.advantage.title}}</h2>
+                    <p>{{page.advantage.content}}</p>
+                    <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow">
                 </div>
             </div>
         </section>       
-        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
-            <div class="beam b-size-6">
-                <div class="beam-item">
-                    <a class="btn" href="/kontakt.html">Wyceń projekt</a>
+        {%if page.cta_buttons[1].link and page.cta_buttons[1].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[1].link}}">{{page.cta_buttons[1].name}}</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg">
-            {%assign casestudy = site.casestudies | where: "path", "_casestudies/system-wms-expano.md"%}
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg overflow-beam">
+        {%assign casestudies = page.promoted_casestudies%}
+        {% for item in casestudies %}
+            {%assign casestudy = site.casestudies | where: "path", item %}
             {% for item in casestudy %}
                 {% include parts/casestudy-beam.html  casestudy=item%} 
             {% endfor %}
+        {%endfor%}
         </section>
-
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam app-process">
+            <header class="beam b-size-6 section-header-horizontal">
+                <div class="beam-item b-size-3" >
+                    <h2 class="h3 title">{{page.process.title}}</h2>
+                </div>
+                <div class="beam-item b-size-3" >
+                    <p class="content">{{page.process.content}}</p>
+                </div>
+            </header>
+            <div class="beam">
+                <div class="beam-item">                    
+                    <ol class="process-list">                        
+                        {% assign process = page.process.steps %}
+                        {% for item in process %}
+                        {% if forloop.index < 10%}
+                            {% assign num = forloop.index | prepend: "0" %}
+                        {%else%}                        
+                            {% assign num = forloop.index %}
+                        {%endif%}
+                        <li class="">
+                            {% include parts/process-item.html h="h3" content=item step_number=num%}
+                        </li>
+                        {%endfor%}
+                    </ol>
+                </div>
+            </div>
+        </section>       
+        {%if page.cta_buttons[2].link and page.cta_buttons[2].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[2].link}}">{{page.cta_buttons[2].name}}</a>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam app-technologies">
+            <header class="beam b-size-6 section-header-horizontal">
+                <div class="beam-item b-size-3" >
+                    <h2 class="h3 title">{{page.technologies.title}}</h2>
+                </div>
+                <div class="beam-item b-size-3" >
+                    <p class="content">{{page.technologies.content}}</p>
+                </div>
+            </header>
+            <div class="beam b-size-3">
+                {% assign technologies = page.technologies.items %}
+                {% for item in technologies %}
+                    {% assign technology = site.technologies | where: "path", item%}
+                    {% for item in technology %}
+                    <div class="beam-item b-size-1 technologiy-item-wrapper" >
+                        {% include parts/technology-item.html h="h3" content=item%}
+                    </div>
+                    {%endfor%}
+                {%endfor%}
+            </div>
+        </section>
+        {%if page.display_seo_section %}
+        <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam">
+            <div class="beam b-size-5 " id="main-content">
+                <div class="beam-item b-size-3 post-content">
+                {{ content  | inject_anchors }}
+                </div>                
+                {%if page.toc %}
+                <div class="beam-item b-size-2  post-toc">
+                    <div class="sticky-rail">
+                        <div class="sticky-element">
+                            <nav class="table-of-content  table-of-content-desktop">
+                                <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                                {% toc %}
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                {%endif%}
+            </div>
+        </article>
+        {%endif%}
         {% include footer.html %}       
     </body>
 </html>

@@ -30,6 +30,84 @@ header:
     Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
 promoted_casestudies:
   - _casestudies/system-wms-expano.md
+cta_buttons:
+  - name: Rozpocznijmy współpracę
+    link: /kontakt.html
+  - name: Napisz do nas
+    link: /kontakt.html
+  - name: Jakieś inne CTA
+    link: /kontakt.html
+display_seo_section: true
+toc: true 
+  
 
 #SERVICE APP layout
+features:
+  -
+    title: Szybkość działania
+    content: |-
+      Twój pomysł przenosimy do MVP (Minimum Viable Product). Dzięki temu możemy szybko wypuścić projekt, potwierdzić wczesne założenia dotyczące modelu biznesowego i ustalić plan rozwoju.
+    icon: /uploads/graphic-app-1.svg
+  -
+    title: Najnowsze technologie
+    content: |-
+      Podstawą tworzonych aplikacji jest szybkość i bezpieczeństwo przy jednoczesnym dostosowaniu do indywidualnych potrzeb i celów biznesowych. Wykorzystujemy najnowsze technologie, co czyni aplikacje użytecznymi oraz innowacyjnymi.
+    icon: /uploads/graphic-app-2.svg
+  -
+    title: Elastyczne zarządzanie
+    content: |-
+      Każdy projekt realizujemy według indywidualnie dopasowanej metodologii. Wykorzystanie Agile umożliwia nam innowacyjne - elastyczne i łatwe zarządzenie projektem. Kierunek rozwoju aplikacji jest elastyczny i otwarty na modyfikację.
+    icon: /uploads/graphic-app-3.svg
+advantage:
+  title: Zyskaj <strong>przewagę biznesową</strong> opartą na nieszablonowych rozwiązaniach
+  content: |-
+    Tworzymy dedykowane aplikacje oparte na nowatorskich pomysłach, które dają możliwość zdobycia przewagi nad konkurencją. Prowadzą również do realizacji wyznaczonych celów firmy - niezależnie od jej charakteru i wielkości.
+process:
+  title: Plan działania dostosowany do Twojego biznesu
+  content: |-
+    Realizujemy projekt kroku po kroku, począwszy od jego zaplanowania do wdrożenia. Jest to gwarancja sukcesu i zadowolenia Twoich klientów.
+  steps:
+    -
+      title: Analiza biznesowa oraz Dokumentacja Wymagań Projektu
+      content: |-
+        Kluczowy etap - analiza biznesowa oraz stworzenie dokumentacji wymagań projektu pozwalają nam doprecyzować wszelkie funkcjonalności aplikacji i ustalić koszty realizacji.
+      icon: /uploads/icon-lg-ideas.svg
+      side: left
+    -
+      title: Wybór technologii i plan realizacji
+      content: |-
+        Wybór właściwych technologii i wytyczenie ścieżki realizacji projektu ma wpływ na wydajność pracy i umożliwia nam bardzo szybkie wdrożenie. 
+      icon: /uploads/icon-lg-strategy.svg
+      side: right
+    -
+      title: Makietowanie projektu
+      content: |-
+        Wszystkie ustalone założenia projektowe przenosimy na mockup'y, dzięki którym porządkujemy wygląd i treść. Na ich podstawie tworzymy aplikacje internetowe.
+      icon: /uploads/icon-lg-project.svg
+      side: left
+    -
+      title: Realizacja projektu
+      content: |-
+        Podejmujemy prace realizacyjne zgodne z ustalonym harmonogramem - testujemy i monitorujemy zmiany, dzięki czemu określamy ich poprawność i skuteczność.
+      icon: /uploads/icon-lg-deployment.svg
+      side: right
+    -
+      title: Utrzymanie aplikacji i rozwój
+      content: |-
+        Dostosowujemy projekt aplikacji do możliwych zmian i przekształceń, które mogą pojawić się na każdym etapie jego realizacji i wpływać na funkcjonalność. 
+      icon: /uploads/icon-lg-app-service.svg
+      side: left
+technologies:
+  title: Specjalizujemy się w technologiach umożliwiających rozwój małych i dużych biznesów oraz startupów
+  content: |-
+    Dopasujemy odpowiednią technologię, która będzie odpowiedzią na Twoje oczekiwania niezależnie od tego, w jakiej działasz branży i pozwoli Ci zbudować przewagę nad konkurencją.
+  items:
+    - _technologies/ruby-on-rails.md
+    - _technologies/elastic-search.md
+    - _technologies/react-js.md
+
 ---
+
+## YO
+
+## YOYO

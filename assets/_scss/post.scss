@@ -38,10 +38,19 @@
                 margin: 0;
             }
         }
+    }    
+    .table-of-content-mobile {
+        display: none;
     }
 }
 @media (max-width: 1000px) {
     .post-article {
         padding-bottom: 50px;
+        .post-toc {
+            display: none;
+        }
+        .table-of-content-mobile {
+            display: block;
+        }
     }
 }

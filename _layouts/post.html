@@ -26,11 +26,13 @@
                         <img src="{{ page.header.main_photo}}" class="img" alt="{{page.header.main_photo_desc}}">
                         <figcaption>{{page.header.main_photo_desc}}</figcaption>
                     </figure>
-                </header>
+                </header>                
+                {%if page.toc %}
                 <nav class="table-of-content table-of-content-mobile">
                     <span class="title">{{site.data.global.translations.table_of_contents}}</span>
                     {% toc %}
                 </nav>
+                {%endif%}
                 {{ content | inject_anchors }}
                 <section>
                     {% for question in page.faq limit:1 %}
@@ -56,7 +58,8 @@
                         <p class="position">{{page.author.position}}</p>
                     </div>
                 </footer>
-            </div>
+            </div>            
+            {%if page.toc %}
             <div class="beam-item b-size-2  post-toc">
                 <div class="sticky-rail">
                     <div class="sticky-element">
@@ -67,6 +70,7 @@
                     </div>
                 </div>
             </div>
+            {%endif%}
         </div>
     </article>
     <section class="beams-wrapper global-beam-wrapper beam-background section-beam futured-posts-beam">
@@ -80,7 +84,7 @@
                         {% assign blog = site.pages | where: "layout", "blog" %}
                         {% for item in blog %}
                         <div class="link">
-                            <a href="{{item.url}}">{{item.cta_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                            <a href="{{item.url}}">{{item.top_line.cta_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
                         </div>
                         {% endfor %}
                     </div>

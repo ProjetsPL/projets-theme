@@ -14,10 +14,108 @@
                     <p>{{page.header.intro}}</p>
                 </div>
             </div>
-        </header>   
-        
-
-
+        </header>      
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam ux-ui-feature">
+            <div class="beam b-size-3  ux-ui-feature-list">
+                {% assign features = page.features %}
+                {% for item in features %}
+                <div class="beam-item b-size-1" >
+                    {% include parts/feature-item.html h="h3" content=item%}
+                </div>
+                {%endfor%}
+            </div>
+            <div class="beam b-size-3">
+                <div class="beam-item b-size-2 ux-ui-advantage" >
+                    <h2>{{page.advantage.title}}</h2>
+                    <p>{{page.advantage.content}}</p>
+                    <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow">
+                </div>
+            </div>
+        </section>       
+        {%if page.cta_buttons[1].link and page.cta_buttons[1].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[1].link}}">{{page.cta_buttons[1].name}}</a>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg overflow-beam">
+        {%assign casestudies = page.promoted_casestudies%}
+        {% for item in casestudies %}
+            {%assign casestudy = site.casestudies | where: "path", item %}
+            {% for item in casestudy %}
+                {% include parts/casestudy-beam.html  casestudy=item%} 
+            {% endfor %}
+        {%endfor%}
+        </section>
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam ux-ui-process">
+            <header class="beam b-size-6 section-header-horizontal">
+                <div class="beam-item b-size-3" >
+                    <h2 class="h3 title">{{page.process.title}}</h2>
+                </div>
+                <div class="beam-item b-size-3" >
+                    <p class="content">{{page.process.content}}</p>
+                </div>
+            </header>
+            <div class="beam">
+                <div class="beam-item">                    
+                    <ol class="process-list">                        
+                        {% assign process = page.process.steps %}
+                        {% for item in process %}
+                        {% if forloop.index < 10%}
+                            {% assign num = forloop.index | prepend: "0" %}
+                        {%else%}                        
+                            {% assign num = forloop.index %}
+                        {%endif%}
+                        <li class="">
+                            {% include parts/process-item.html h="h3" content=item step_number=num%}
+                        </li>
+                        {%endfor%}
+                    </ol>
+                </div>
+            </div>
+        </section>       
+        {%if page.cta_buttons[2].link and page.cta_buttons[2].name%}
+            <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+                <div class="beam b-size-6">
+                    <div class="beam-item">
+                        <a class="btn" href="{{page.cta_buttons[2].link}}">{{page.cta_buttons[2].name}}</a>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+        {%if page.display_seo_section %}
+        <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam">
+            <div class="beam b-size-5 " id="main-content">
+                <div class="beam-item b-size-3 post-content">
+                {{ content  | inject_anchors }}
+                </div>                
+                {%if page.toc %}
+                <div class="beam-item b-size-2  post-toc">
+                    <div class="sticky-rail">
+                        <div class="sticky-element">
+                            <nav class="table-of-content  table-of-content-desktop">
+                                <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                                {% toc %}
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                {%endif%}
+            </div>
+        </article>
+        {%endif%}
         {% include footer.html %}       
     </body>
 </html>

@@ -829,7 +829,7 @@ ul, ol {
         }
     }
     input {
-        display: none;
+        // display: none;
     }
     input:checked  {    
         & ~ .checkbox {

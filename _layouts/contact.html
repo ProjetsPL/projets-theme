@@ -157,7 +157,7 @@
                     </div>                                                        
                 </fieldset>     
                 <div class="beam-item contact-submit">
-                    <div id="recaptcha" data-netlify-recaptcha="true" class="submit-recaptcha">sdfsdf</div>
+                    <div id="recaptcha" data-netlify-recaptcha="true" class="submit-recaptcha"></div>
                     <button type="submit" id ="submit" class="btn submit-btn">Wyślij formularz</button>
                 </div>
             </div>
@@ -210,7 +210,6 @@
 
             var checkbox =  document.getElementById('consent'); 
             var email = document.getElementById('email');
-            var recaptcha =  document.getElementById('recaptcha');
 
             email.addEventListener("keyup", function(e) {
                 validateEmail( )   
@@ -218,11 +217,7 @@
 
             checkbox.addEventListener("change", function(e) {
                 validateConsent( )
-            }, false);
-            
-            recaptcha.addEventListener("click", function(e) {
-                validateRecaptcha( )
-            }, false);
+            }, false);            
 
             function submitEvent() {
                 validateRecaptcha( )

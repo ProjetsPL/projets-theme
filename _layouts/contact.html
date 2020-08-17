@@ -218,6 +218,11 @@
                     event.preventDefault();
                     event.stopPropagation();
                 }
+                if(grecaptcha.getResponse().length == 0){
+                    alert('Please click the reCAPTCHA checkbox');                    
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
             }
 
         </script>

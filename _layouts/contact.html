@@ -146,7 +146,7 @@
                         </div>                        
                         <div class="beam-item b-size-2">
                             <label class="checkbox">
-                                <input type="checkbox" id="consent" class="validate">                                
+                                <input type="checkbox" id="consent" class="validate" name="Consents" value="{{site.data.global.translations.yess}}>                                
                                 <svg class="check" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
                                     <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
@@ -162,7 +162,7 @@
             </div>
         </form>    
         <script>
-            
+
             function validateEmail( ) {
                 var submit =  document.getElementById('submit');
                 var email = document.getElementById('email');
@@ -210,7 +210,8 @@
                 validateConsent( )
                 validateEmail( )           
                 if (document.getElementById('email').classList.contains('danger')) {
-                    return false;
+                    event.preventDefault();
+                    event.stopPropagation();
                 }
             }
 

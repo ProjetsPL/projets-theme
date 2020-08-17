@@ -7,7 +7,7 @@
     <body>    
         {% include top-line.html %} 
         {% include parts/breadcrumbs.html %}               
-        <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam">
+        <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam contact-header">
             <div class="beam">
                 <div class="beam-item">
                     <h1>{{page.header.title}}</h1>
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </header>
-        <form id= "contactForm" name="contact" method="POST" data-netlify="true"  data-netlify-recaptcha="true" class="beams-wrapper small-beam-wrapper beam-background section-beam" onsubmit="return submitEvent()">
+        <form id= "contactForm" name="contact" method="POST" data-netlify="true"  data-netlify-recaptcha="true" class="beams-wrapper small-beam-wrapper beam-background section-beam section-contact-form" onsubmit="return submitEvent()">
             <div class="beam contact-form">               
                 <div class="beam-item contact-inputs">                        
                     <div class="section-header">

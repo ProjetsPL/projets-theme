@@ -23,7 +23,6 @@ header:
   intro: |-
     Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
 project_type:
-  title: Typ projektu
   header:
     title: Jakiego typu projekt chcesz zrealizować?
     content: |-
@@ -40,7 +39,6 @@ project_type:
       title: Strona internetowa
       icon: /uploads/icon-lg-web-design.svg
 project_range:
-  title: Zakres prac
   header:
     title: Jaki zakres prac będzie obejmował projekt?
     content: |-
@@ -49,18 +47,14 @@ project_range:
   types:
     -
       title: Back-end
-      id: back-end
       icon: /uploads/icon-lg-web-development.svg
     -
-      title: Front-end      
-      id: front-end
+      title: Front-end   
       icon: /uploads/icon-lg-admin-panel.svg
     -
       title: Design
-      id: design 
       icon: /uploads/icon-lg-product-design.svg
-form:
-  title: Zakres prac
+contact_form:
   header:
     title: Wypełnij poniższy formularz
     content: |-
@@ -68,21 +62,18 @@ form:
     icon: /assets/img/3.svg
   inputs:
     email:
-      title:
-      label:
-      placeholder:
+      title: Adres e-mail
+      placeholder: Wpisz tutaj ...
     phone:
-      title:
-      label:
-      placeholder:
+      title: Numer telefonu
+      placeholder: Wpisz tutaj ...
     name:
-      title:
-      label:
-      placeholder:
+      title: Imię i nazwisko (Nazwa firmy)
+      placeholder: Wpisz tutaj ...
     message:
-      title:
-      label:
-      placeholder:
+      title: Treść wiadomości
+      placeholder: Wpisz tutaj ...
+  consent: Zgadzam się na przetwarzanie moich danych osobowych przez Matlega sp. j. w celu odpowiedzi na moją wiadomość, drogą telefoniczną lub poprzez e-mail.
+  submit: Wyślij formularz
 
 ---
-CONTENT Kontakt

@@ -6,4 +6,33 @@
     .submit-btn {
         float: left;
     }
+    .contact-inputs {
+        order: 3;
+        .contact-form-input {
+            .name {
+                order: 3;
+            }
+            .message {
+                order: 4;
+            }
+            .email {
+                order: 1;
+            }
+            .phone {
+                order: 2;
+            }
+            .consent {
+                order: 5;
+            }
+        }
+    }
+    .product-type {
+        order: 1;
+    }
+    .product-range {
+        order: 2;
+    }
+    .contact-submit {
+        order: 4;
+    }
 }

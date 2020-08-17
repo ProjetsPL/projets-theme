@@ -15,8 +15,67 @@
                 </div>
             </div>
         </header>
-        <form name="contact" method="POST" data-netlify="true" class="beams-wrapper small-beam-wrapper beam-background section-beam" onsubmit="return submitEvent()">
-            <div class="beam contact-form">                 
+        <form id= "contactForm" name="contact" method="POST" data-netlify="true" class="beams-wrapper small-beam-wrapper beam-background section-beam" onsubmit="return submitEvent()">
+            <div class="beam contact-form">               
+                <div class="beam-item contact-inputs">                        
+                    <div class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <h2 class="h4 uppercase">{{page.contact_form.header.title}}</h2>
+                                {%if page.contact_form.header.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.contact_form.header.icon}}" alt="{{page.contact_form.header.title}}">
+                                </div>
+                                {%endif%}
+                            </div>
+                        </div>         
+                        {%if page.contact_form.header.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.contact_form.header.content}}</p>
+                        </div>                      
+                        {%endif%}
+                    </div>       
+                    <div class="beam b-size-2 contact-form-input ">
+                        <div class="beam-item b-size-2 name">
+                            <div class="inp">
+                                <p class="label">{{page.contact_form.inputs.name.title}}</p>
+                                <input class="" type="text" name="{{page.contact_form.inputs.name.title}}" placeholder="{{page.contact_form.inputs.name.placeholder}}">
+                                <div class="line alert"></div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-2 message">
+                            <div class="inp">
+                                <p class="label">{{page.contact_form.inputs.message.title}}</p>
+                                <textarea class="" type="text" name="{{page.contact_form.inputs.message.title}}" placeholder="{{page.contact_form.inputs.message.placeholder}}"></textarea>
+                                <div class="line alert"></div>
+                            </div>
+                        </div>      
+                        <div class="beam-item b-size-1 email">
+                            <div class="inp">
+                                <p class="label">{{page.contact_form.inputs.email.title}}</p>
+                                <input class="" id="email" type="text" name="{{page.contact_form.inputs.email.title}}" placeholder="{{page.contact_form.inputs.email.placeholder}}">
+                                <div class="line alert"></div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-1 phone">
+                            <div class="inp">
+                                <p class="label">{{page.contact_form.inputs.phone.title}}</p>
+                                <input class="" type="text" name="{{page.contact_form.inputs.phone.title}}" placeholder="{{page.contact_form.inputs.phone.placeholder}}">
+                                <div class="line alert"></div>
+                            </div>
+                        </div>                  
+                        <div class="beam-item b-size-2 consent">
+                            <label class="checkbox">
+                                <input type="checkbox" id="consent" class="" name="{{page.contact_form.consent}}" value="{{site.data.global.translations.yess}}">                                
+                                <svg class="check" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
+                                    <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
+                                </svg>
+                                <p class="content p3">{{page.contact_form.consent}}</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>          
                 <fieldset class=" beam-item product-type ">      
                     <div class="section-header">
                         <div class="head">
@@ -96,67 +155,8 @@
                         </div>
                         {%endfor%}                                  
                     </div>                                                        
-                </fieldset>            
-                <div class="beam-item">                        
-                    <div class="section-header">
-                        <div class="head">
-                            <div class="title">
-                                <h2 class="h4 uppercase">{{page.form.header.title}}</h2>
-                                {%if page.form.header.icon%}
-                                <div class="icon icon-bg icon-bg-sm">
-                                    <img src="{{page.form.header.icon}}" alt="{{page.form.header.title}}">
-                                </div>
-                                {%endif%}
-                            </div>
-                        </div>         
-                        {%if page.form.header.content %}
-                        <div class="section-intro">                                 
-                            <p>{{page.form.header.content}}</p>
-                        </div>                      
-                        {%endif%}
-                    </div>       
-                    <div class="beam b-size-2 contact-form-input">
-                        <div class="beam-item b-size-1">
-                            <div class="inp">
-                                <p class="label">adres email</p>
-                                <input class="" id="email" type="text" name="email" placeholder="Wpisz tutaj">
-                                <div class="line alert"></div>
-                            </div>
-                        </div>
-                        <div class="beam-item b-size-1">
-                            <div class="inp">
-                                <p class="label">Numer telefonu</p>
-                                <input class="" type="text" name="phone" placeholder="Wpisz tutaj">
-                                <div class="line alert"></div>
-                            </div>
-                        </div>
-                        <div class="beam-item b-size-2">
-                            <div class="inp">
-                                <p class="label">Imię i nazwisko (nazwa firmy)</p>
-                                <input class="" type="text" name="name" placeholder="Wpisz tutaj">
-                                <div class="line alert">Wprowadz dane</div>
-                            </div>
-                        </div>
-                        <div class="beam-item b-size-2">
-                            <div class="inp">
-                                <p class="label">Treść wiadomości</p>
-                                <textarea class="" type="text" name="message" placeholder="Wpisz tutaj"></textarea>
-                                <div class="line alert"></div>
-                            </div>
-                        </div>                        
-                        <div class="beam-item b-size-2">
-                            <label class="checkbox">
-                                <input type="checkbox" id="consent" class="validate" name="Consents" value="{{site.data.global.translations.yess}}">                                
-                                <svg class="check" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
-                                    <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
-                                </svg>
-                                <p class="content p3">Zgadzam się na przetwarzanie moich danych osobowych przez Matlega sp. j. w celu odpowiedzi na moją wiadomość, drogą telefoniczną lub poprzez e-mail.</p>
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="beam-item">
+                </fieldset>     
+                <div class="beam-item contact-submit">
                     <button type="submit" id ="submit" class="btn submit-btn">Wyślij formularz</button>
                 </div>
             </div>
@@ -209,7 +209,11 @@
             function submitEvent() {
                 validateConsent( )
                 validateEmail( )           
-                if (document.getElementById('email').classList.contains('danger')) {
+                if (email.classList.contains('danger') ) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }                
+                if ( checkbox.classList.contains('danger') ) {
                     event.preventDefault();
                     event.stopPropagation();
                 }

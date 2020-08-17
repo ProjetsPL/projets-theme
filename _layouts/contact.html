@@ -157,7 +157,7 @@
                     </div>                                                        
                 </fieldset>     
                 <div class="beam-item contact-submit">
-                    <div data-netlify-recaptcha="true" class="submit-recaptcha"></div>
+                    <div id="recaptcha" data-netlify-recaptcha="true" class="submit-recaptcha">sdfsdf</div>
                     <button type="submit" id ="submit" class="btn submit-btn">Wyślij formularz</button>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                     email.classList.remove("danger");
                     emailAlert.innerHTML = "";
                 }
-            }         
+            };         
 
             function validateConsent( ) {                
                 var checkbox =  document.getElementById('consent');
@@ -196,7 +196,17 @@
                 } else {                    
                     checkbox.classList.add("danger");
                 }
-            }
+            };
+
+            
+            function validateRecaptcha( ) {
+                var recaptcha =  document.getElementById('recaptcha');
+                if(grecaptcha.getResponse().length == 0){ 
+                    recaptcha.classList.add("danger");              
+                } else {                    
+                    recaptcha.classList.remove("danger");
+                }
+            } ;     
 
             var checkbox =  document.getElementById('consent'); 
             var email = document.getElementById('email');
@@ -208,6 +218,7 @@
                 validateConsent( )
             }, false);
             function submitEvent() {
+                validateRecaptcha( )
                 validateConsent( )
                 validateEmail( )           
                 if (email.classList.contains('danger') ) {
@@ -218,8 +229,7 @@
                     event.preventDefault();
                     event.stopPropagation();
                 }
-                if(grecaptcha.getResponse().length == 0){
-                    alert('Please click the reCAPTCHA checkbox');                    
+                if(grecaptcha.getResponse().length == 0){                  
                     event.preventDefault();
                     event.stopPropagation();
                 }

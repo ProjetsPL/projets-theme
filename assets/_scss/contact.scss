@@ -3,11 +3,21 @@
     .section-header {
         padding-bottom: 0;
     }
-    .submit-btn {
-        float: left;
-    }
-    .submit-recaptcha {
-        margin-bottom: 30px;
+    .contact-submit {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        .submit-btn {
+            float: left;
+        }
+        .submit-recaptcha {
+            margin-bottom: 30px;
+            display: inline-flex;
+            &.danger {
+                border: solid 2px $negative-1;
+            }
+        }
+
     }
     .contact-inputs {
         order: 3;

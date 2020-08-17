@@ -21,7 +21,7 @@
                         <span class="p3">{{site.data.global.translations.update_date}}: <time
                                 datetime="{{ page.dates.update  | date_to_xmlschema }}">{{page.dates.update  | date: '%d-%m-%Y'}}</time></span>
                     </div>
-                    {{page.intro | markdownify }}
+                    {{page.header.intro | markdownify }}
                     <figure>
                         <img src="{{ page.header.main_photo}}" class="img" alt="{{page.header.main_photo_desc}}">
                         <figcaption>{{page.header.main_photo_desc}}</figcaption>

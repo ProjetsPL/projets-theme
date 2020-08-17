@@ -22,9 +22,7 @@ header:
   title: <strong>Marka biznesowa</strong> - zbuduj swoją przewagę nad konkurencją
   intro: |-
     Każde gospodarstwo domowe generuje ścieki, które należy w jakiś sposób odprowadzić.
-    Kanalizacja to system rur służący do usuwania nieczystości poza teren budynku. Elementy
-    instalacji wodnej znajdują się zazwyczaj na terenie całej posesji, dlatego warto
-    dobrze ją zaplanować już na etapie projektowania budynku. W ten sposób zapewnisz
+    Kanalizacja to system rur służący do usuwania nieczystości poza teren budynku. Elementy instalacji wodnej znajdują się zazwyczaj na terenie całej posesji, dlatego warto dobrze ją zaplanować już na etapie projektowania budynku. W ten sposób zapewnisz
     sobie sprawne i bezawaryjne działanie systemu.
   small_intro: |-
     Każde gospodarstwo domowe generuje ścieki, które należy w jakiś sposób odprowadzić.

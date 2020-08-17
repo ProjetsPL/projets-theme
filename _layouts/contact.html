@@ -210,13 +210,20 @@
 
             var checkbox =  document.getElementById('consent'); 
             var email = document.getElementById('email');
+            var recaptcha =  document.getElementById('recaptcha');
 
             email.addEventListener("keyup", function(e) {
                 validateEmail( )   
-            }, false);                 
+            }, false);       
+
             checkbox.addEventListener("change", function(e) {
                 validateConsent( )
             }, false);
+            
+            recaptcha.addEventListener("click", function(e) {
+                validateRecaptcha( )
+            }, false);
+
             function submitEvent() {
                 validateRecaptcha( )
                 validateConsent( )

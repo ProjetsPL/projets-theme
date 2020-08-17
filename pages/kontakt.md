@@ -32,15 +32,12 @@ project_type:
   types:
     -
       title: Aplikacja
-      id: app
       icon: /uploads/icon-lg-admin-panel.svg
     -
       title: Sklep internetowy
-      id: shop
       icon: /uploads/icon-lg-e-commerce.svg
     -
       title: Strona internetowa
-      id: page
       icon: /uploads/icon-lg-web-design.svg
 project_range:
   title: Zakres prac

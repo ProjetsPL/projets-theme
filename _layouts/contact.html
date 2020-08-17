@@ -15,113 +15,206 @@
                 </div>
             </div>
         </header>
-        <section class="beams-wrapper small-beam-wrapper beam-background section-beam contact-form">
-            <div class="beam">
-                <div class="beam-item"> 
-                    <form name="contact" method="POST" data-netlify="true">                        
-                        <fieldset>      
-                            <div class="section-header">
-                                <div class="head">
-                                    <div class="title">
-                                        <h2 class="h4 uppercase"><legend>{{page.project_type.header.title}}</legend></h2>
-                                        {%if page.project_type.header.icon%}
-                                        <div class="icon icon-bg icon-bg-sm">
-                                            <img src="{{page.project_type.header.icon}}" alt="{{page.project_type.header.title}}">
-                                        </div>
-                                        {%endif%}
-                                    </div>
-                                </div>         
-                                {%if page.project_type.header.content %}
-                                <div class="section-intro">                                 
-                                    <p>{{page.project_type.header.content}}</p>
-                                </div>                      
+        <form name="contact" method="POST" data-netlify="true" class="beams-wrapper small-beam-wrapper beam-background section-beam" onsubmit="return submitEvent()">
+            <div class="beam contact-form">                 
+                <fieldset class=" beam-item product-type ">      
+                    <div class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <h2 class="h4 uppercase"><legend>{{page.project_type.header.title}}</legend></h2>
+                                {%if page.project_type.header.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.project_type.header.icon}}" alt="{{page.project_type.header.title}}">
+                                </div>
                                 {%endif%}
-                            </div>      
-                            <div class="beam b-size-2 big-checkboxes">      
-                                    {%assign project_types  = page.project_type.types %}
-                                    {%for item in project_types %}
-                                    <div class="beam-item b-size-1">
-                                        <div class="checkboxes-item"  name="typ">       
-                                            <label class="label">
-                                                <div class="content">
-                                                    <img src="{{item.icon}}" alt="{{item.title}}">
-                                                    <p class="h4">{{item.title}}</p>
-                                                </div>            
-                                                <input type="checkbox"  value="{{item.title}}">
-                                                <svg class="checkbox" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
-                                                    <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
-                                                </svg>     
-                                                <div class="border"></div>                         
-                                            </label>                           
-                                        </div> 
-                                    </div>
-                                    {%endfor%}              
-                            </div>                               
-                        </fieldset> 
-                        <input type="text" name="Name" placeholder="imię i nazwisko">
-                        <textarea name="message" id="" cols="30" rows="10"></textarea>
-                        <!-- <fieldset>       
-                        <div class="section-header">
-                            <div class="head">
-                                <div class="title">
-                                    <legend><h2 class="h4 uppercase">{{page.project_range.header.title}}</h2></legend>
-                                    {%if page.project_range.header.icon%}
-                                    <div class="icon icon-bg icon-bg-sm">
-                                        <img src="{{page.project_range.header.icon}}" alt="{{page.project_range.header.title}}">
-                                    </div>
-                                    {%endif%}
+                            </div>
+                        </div>         
+                        {%if page.project_type.header.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.project_type.header.content}}</p>
+                        </div>                      
+                        {%endif%}
+                    </div>      
+                    <div class="beam b-size-2 big-checkboxes">      
+                            {%assign project_types  = page.project_type.types %}
+                            {%for item in project_types %}
+                            <div class="beam-item b-size-1">
+                                <div class="checkboxes-item">       
+                                    <label class="label">
+                                        <div class="content">
+                                            <img src="{{item.icon}}" alt="{{item.title}}">
+                                            <p class="h4">{{item.title}}</p>
+                                        </div>            
+                                        <input type="checkbox" name="{{item.title}}" value="{{site.data.global.translations.yess}}">
+                                        <svg class="check" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
+                                            <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
+                                        </svg>     
+                                        <div class="border"></div>                         
+                                    </label>                           
+                                </div> 
+                            </div>
+                            {%endfor%}              
+                    </div>                               
+                </fieldset>                   
+                <fieldset class="beam-item product-range">      
+                    <div class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <legend><h2 class="h4 uppercase">{{page.project_range.header.title}}</h2></legend>
+                                {%if page.project_range.header.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.project_range.header.icon}}" alt="{{page.project_range.header.title}}">
                                 </div>
-                            </div>         
-                            {%if page.project_range.header.content %}
-                            <div class="section-intro">                                 
-                                <p>{{page.project_range.header.content}}</p>
-                            </div>                      
-                            {%endif%}
-                        </div>      
-                        <div class="beam b-size-2 big-checkboxes">
-                                {%assign project_range  = page.project_range.types %}
-                                {%for item in project_range %}
-                                <div class="beam-item b-size-1">
-                                    <div class="checkboxes-item">       
-                                        <input type="checkbox" id="{{item.id}}" name="{{page.project_range.title}}" value="{{item.title}}">
-                                        <label class="label" for="{{item.id}}">
-                                            <div class="content">
-                                                <img src="{{item.icon}}" alt="">
-                                                <p class="h4">{{item.title}}</p>
-                                            </div>
-                                            <svg class="checkbox" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
-                                                <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
-                                            </svg>                                                
-                                        </label>                             
-                                    </div> 
+                                {%endif%}
+                            </div>
+                        </div>         
+                        {%if page.project_range.header.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.project_range.header.content}}</p>
+                        </div>                      
+                        {%endif%}
+                    </div>      
+                    <div class="beam b-size-2 big-checkboxes">
+                        {%assign project_ranges  = page.project_range.types %}
+                        {%for item in project_ranges %}
+                        <div class="beam-item b-size-1">
+                            <div class="checkboxes-item">       
+                                <label class="label">
+                                    <div class="content">
+                                        <img src="{{item.icon}}" alt="{{item.title}}">
+                                        <p class="h4">{{item.title}}</p>
+                                    </div>            
+                                    <input type="checkbox" name="{{item.title}}" value="{{site.data.global.translations.yess}}">
+                                    <svg class="check" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
+                                        <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
+                                    </svg>     
+                                    <div class="border"></div>                         
+                                </label>                           
+                            </div> 
+                        </div>
+                        {%endfor%}                                  
+                    </div>                                                        
+                </fieldset>            
+                <div class="beam-item">                        
+                    <div class="section-header">
+                        <div class="head">
+                            <div class="title">
+                                <h2 class="h4 uppercase">{{page.form.header.title}}</h2>
+                                {%if page.form.header.icon%}
+                                <div class="icon icon-bg icon-bg-sm">
+                                    <img src="{{page.form.header.icon}}" alt="{{page.form.header.title}}">
                                 </div>
-                                {%endfor%}                             
-                        </div>                                                        
-                        </fieldset>                 -->
-                        <div class="section-header">
-                            <div class="head">
-                                <div class="title">
-                                    <h2 class="h4 uppercase">{{page.form.header.title}}</h2>
-                                    {%if page.form.header.icon%}
-                                    <div class="icon icon-bg icon-bg-sm">
-                                        <img src="{{page.form.header.icon}}" alt="{{page.form.header.title}}">
-                                    </div>
-                                    {%endif%}
-                                </div>
-                            </div>         
-                            {%if page.form.header.content %}
-                            <div class="section-intro">                                 
-                                <p>{{page.form.header.content}}</p>
-                            </div>                      
-                            {%endif%}
-                        </div>   
-                        <button type="submit" class="btn">Send</button>
-                    </form>
+                                {%endif%}
+                            </div>
+                        </div>         
+                        {%if page.form.header.content %}
+                        <div class="section-intro">                                 
+                            <p>{{page.form.header.content}}</p>
+                        </div>                      
+                        {%endif%}
+                    </div>       
+                    <div class="beam b-size-2 contact-form-input">
+                        <div class="beam-item b-size-1">
+                            <div class="inp">
+                                <p class="label">adres email</p>
+                                <input class="" id="email" type="text" name="email" placeholder="Wpisz tutaj">
+                                <div class="line alert"></div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-1">
+                            <div class="inp">
+                                <p class="label">Numer telefonu</p>
+                                <input class="" type="text" name="phone" placeholder="Wpisz tutaj">
+                                <div class="line alert"></div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-2">
+                            <div class="inp">
+                                <p class="label">Imię i nazwisko (nazwa firmy)</p>
+                                <input class="" type="text" name="name" placeholder="Wpisz tutaj">
+                                <div class="line alert">Wprowadz dane</div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-2">
+                            <div class="inp">
+                                <p class="label">Treść wiadomości</p>
+                                <textarea class="" type="text" name="message" placeholder="Wpisz tutaj"></textarea>
+                                <div class="line alert"></div>
+                            </div>
+                        </div>                        
+                        <div class="beam-item b-size-2">
+                            <label class="checkbox">
+                                <input type="checkbox" id="consent" class="validate">                                
+                                <svg class="check" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="24" height="24" rx="2" stroke="#E0DAE3" stroke-width="2"/>
+                                    <path d="M5 12.0542L10.9658 18L22 7" stroke="#4B2661" stroke-width="2"/>
+                                </svg>
+                                <p class="content p3">Zgadzam się na przetwarzanie moich danych osobowych przez Matlega sp. j. w celu odpowiedzi na moją wiadomość, drogą telefoniczną lub poprzez e-mail.</p>
+                            </label>
+                        </div>
+                    </div>
+                </div> 
+                <div class="beam-item">
+                    <button type="submit" id ="submit" class="btn submit-btn">Wyślij formularz</button>
                 </div>
             </div>
-        </section>    
+        </form>    
+        <script>
+            
+            function validateEmail( ) {
+                var submit =  document.getElementById('submit');
+                var email = document.getElementById('email');
+                var emailAlert = email.nextElementSibling;
+                var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                var add = document.createTextNode("Uzupełnij adres e-mail");
+                var error = document.createTextNode("Niepoprawny adres e-mail");
+                
+                if (email.value == "") {
+                    email.classList.add("danger");
+                    emailAlert.innerHTML = "";
+                    emailAlert.appendChild(add);
+                }
+                else if (!mailFormat.test(email.value)) {
+                    email.classList.add("danger");
+                    emailAlert.innerHTML = "";
+                    emailAlert.appendChild(error);
+                }
+                else {
+                    email.classList.remove("danger");
+                    emailAlert.innerHTML = "";
+                }
+            }         
+
+            function validateConsent( ) {                
+                var checkbox =  document.getElementById('consent');
+                var checkboxValue =  checkbox.checked;
+                if (checkboxValue) {
+                    checkbox.classList.remove("danger");
+                } else {                    
+                    checkbox.classList.add("danger");
+                }
+            }
+
+            var checkbox =  document.getElementById('consent'); 
+            var email = document.getElementById('email');
+
+            email.addEventListener("keyup", function(e) {
+                validateEmail( )   
+            }, false);                 
+            checkbox.addEventListener("change", function(e) {
+                validateConsent( )
+            }, false);
+            function submitEvent() {
+                validateConsent( )
+                validateEmail( )           
+                if (document.getElementById('email').classList.contains('danger')) {
+                    return false;
+                }
+            }
+
+        </script>
         {% include footer.html %}       
     </body>
 </html>

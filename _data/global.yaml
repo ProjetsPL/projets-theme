@@ -1,5 +1,6 @@
 title: "Projets"
 url: "https://projets.pl" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
 lang: "pl"
 
 og_random_photo: "/assets/img/default.jpg"
@@ -47,3 +48,4 @@ translations:
   yess: Tak
   noo: Nie
   consent: Zgoda
+  random_links_title: Może zainteresuje Cię również

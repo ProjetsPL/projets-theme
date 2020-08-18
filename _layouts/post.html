@@ -3,7 +3,6 @@
 
 <head>
     {% include head.html %}
-    <!--Dane struklturalne dla każdego layoutu-->
 </head>
 
 <body>
@@ -34,6 +33,7 @@
                 </nav>
                 {%endif%}
                 {{ content | inject_anchors }}
+                {%if page.display_faq_section %}
                 <section>
                     {% for question in page.faq limit:1 %}
                     {% if question.question and question.answer%}
@@ -49,6 +49,7 @@
                     {%endif%}
                     {% endfor %}
                 </section>
+                {% endif %}
                 <footer class="author">
                     <div class="photo">
                         <img src="{{page.author.photo}}" alt="{{page.author.name}}">
@@ -84,7 +85,7 @@
                         {% assign blog = site.pages | where: "layout", "blog" %}
                         {% for item in blog %}
                         <div class="link">
-                            <a href="{{item.url}}">{{item.top_line.cta_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                            <a href="{{item.url}}">{{site.data.global.translations.see_all_posts}}  <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
                         </div>
                         {% endfor %}
                     </div>
@@ -99,6 +100,7 @@
             </div>
         </div>
     </section>
+    {% include random-links.html %}    
     {% include footer.html %}
 </body>
 </html>

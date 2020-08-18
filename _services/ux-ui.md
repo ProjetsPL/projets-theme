@@ -3,11 +3,24 @@
 layout: services/service-ux-ui
 page_type: service
 title: UX & UI
+published: true
 
 #SEO
 seo_title:  SEO UX & UI
 seo_description: |-
   META UX & UI
+main_keywords:
+  - test UX UI 1
+  - test UX UI 2
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -28,6 +41,7 @@ header:
   title: Projektujemy layouty gwarantujące <strong>pozytywne doświadczenia</strong> użytkowe
   intro: |-
     Stworzymy projekt, który przełoży się na zadowolenie użytkownika od pierwszego momentu - funkcjonalny, użyteczny i niezawodny.
+  main_photo:
 promoted_casestudies:
   - _casestudies/strona-internetowa-arcom-net-pl.md
 cta_buttons:
@@ -90,5 +104,17 @@ process:
         Przygotowujemy kompletny layout bazujący na informacjach dotyczących użyteczności i estetyki. Projektujemy go zgodnie z makietami i przygotowujemy do wdrożenia.
       icon: /uploads/icon-lg-project.svg
       side: right
+display_faq_section: true
+faq:
+  -
+    question: |-
+      Tutaj mamy przykładowe pytanie?
+    answer: |-
+      odpowiedz 23
+  -
+    question: |-
+      pytanko 2
+    answer: |-
+      odpowiedz 2
 ---
 YO YO

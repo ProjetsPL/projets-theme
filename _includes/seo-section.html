@@ -1,0 +1,21 @@
+{%if page.display_seo_section %}
+<article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam">
+    <div class="beam b-size-5 " id="main-content">
+        <div class="beam-item b-size-3 post-content">
+        {{ content  | inject_anchors }}
+        </div>                
+        {%if page.toc %}
+        <div class="beam-item b-size-2  post-toc">
+            <div class="sticky-rail">
+                <div class="sticky-element">
+                    <nav class="table-of-content  table-of-content-desktop">
+                        <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                        {% toc %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+    </div>
+</article>
+{%endif%}    

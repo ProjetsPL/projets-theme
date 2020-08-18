@@ -3,11 +3,24 @@
 layout: casestudy
 page_type: casestudy
 title: agdmaster.com
+published: true
 
 #SEO
 seo_title:  SEO agdmaster.com
 seo_description: |-
   META agdmaster.com
+main_keywords:
+  - test agdmaster.com 1
+  - test agdmaster.com 2
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -22,6 +35,11 @@ intro:
   title: Proste zakupy bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
   content: |-
     Brak
+header:
+  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  intro: |-
+    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+  main_photo:
 screens:
   mobile: /uploads/casestudy-agdmaster-com-mobile.jpg
   desktop: /uploads/casestudy-agdmaster-com-desktop.jpg

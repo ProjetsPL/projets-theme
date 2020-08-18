@@ -3,11 +3,24 @@
 layout: services/service-app
 page_type: service
 title: Aplikacje internetowe
+published: true
 
 #SEO
 seo_title:  Aplikacje internetowe
 seo_description: |-
   META Aplikacje internetowe
+main_keywords:
+  - test aplikacje internetowe 1
+  - test aplikacje internetowe 2
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -28,6 +41,7 @@ header:
   title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
   intro: |-
     Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+  main_photo:
 promoted_casestudies:
   - _casestudies/system-wms-expano.md
 cta_buttons:
@@ -105,9 +119,20 @@ technologies:
     - _technologies/ruby-on-rails.md
     - _technologies/elastic-search.md
     - _technologies/react-js.md
-
+display_faq_section: true
+faq:
+  -
+    question: |-
+      Tutaj mamy przykładowe pytanie?
+    answer: |-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis augue pretium, malesuada risus sit amet, dapibus ipsum. Proin a nulla at lorem venenatis egestas vitae in massa. Sed rhoncus est massa, sed fermentum nisl efficitur ultrices. Curabitur laoreet lacus egestas purus vulputate semper. In vulputate consequat fermentum.
+  -
+    question: |-
+      pytanko 2
+    answer: |-
+      Curabitur rhoncus lacus sit amet dictum commodo. Sed a blandit augue. Nunc at arcu at magna convallis tristique. Etiam ligula sem, suscipit et tempor in, luctus ut ex.
 ---
 
 ## YO
 
-## YOYO
+## YOYO sdasdf asdf asdf 

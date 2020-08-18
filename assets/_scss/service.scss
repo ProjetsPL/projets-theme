@@ -13,6 +13,12 @@
             margin-top: 30px;
         }
     }
+    .app-feature-list {
+        order:0
+    }
+    .app-feature-title {
+        order: 1
+    }
 }
 @media (max-width: 860px) {
     .app-feature {
@@ -86,6 +92,12 @@
         .click-arrow {
             margin-top: 30px;
         }
+    }
+    .e-commerce-feature-title {
+        order: 1;
+    }
+    .e-commerce-feature-list {
+        order: 0;
     }
     .brands {
         width: 100%;
@@ -178,7 +190,11 @@
 .ux-ui-feature {
     padding-top: 60px;
     padding-bottom: 80px;
+    .ux-ui-feature-title {
+        order:1;
+    }
     .ux-ui-feature-list {
+        order:0;
         .feature-item {
             margin-top: 120px;
         }
@@ -240,7 +256,11 @@
 .branding-feature {
     padding-top: 30px;
     padding-bottom: 80px;
+    .branding-feature-title {
+        order:1;
+    }
     .branding-feature-list {
+        order:0;
         .feature-item {
             margin-top: 120px;
         }

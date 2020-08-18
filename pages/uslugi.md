@@ -3,11 +3,21 @@
 layout: services
 page_type: services
 title: Usługi
+published: true
 
 #SEO
 seo_title:  SEO Usługi
 seo_description: |-
   MEAT Usługi
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU
 top_line:

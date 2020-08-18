@@ -1,0 +1,129 @@
+{% if page.page_type == "index" %}
+
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+              "@type": "WebSite",
+              "name": "{{site.data.global.title}}",
+              "url": "{{site.data.global.url}}"
+            }
+        ]
+    }
+  </script>
+
+{% elsif page.page_type == "default" or page.page_type == "contact" or page.page_type == "blog" or page.page_type == "casestudies" or page.page_type == "technologies" or page.page_type == "services" %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{page.top_line.menu_title}}",
+      "item": "{{page.url | absolute_url}}"
+    }
+  }
+</script>
+
+{% elsif page.page_type == "post" or page.page_type == "casestudy" or page.page_type == "technology" or page.page_type == "service" %}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+        {%if page.display_faq_section %}
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+          {% for question in page.faq %}
+            {% if question.question and question.answer%}  
+              {
+                "@type": "Question",
+                "name": "{{question.question}}",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "{{question.answer}}"
+                }
+              }
+              {% if forloop.last == false %}
+                ,
+              {%endif%}
+            {%endif%}
+          {% endfor %}
+          ]
+        }
+        ,
+        {% endif %}
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            {% if  page.page_type == "post" %} 
+              {% assign blog = site.pages | where: "page_type", "blog" %}
+              {% for item in blog %}      
+                "name": "{{item.top_line.menu_title}}",
+                "item": "{{item.url | absolute_url}}"
+              {% endfor %}
+            {% elsif  page.page_type == "service" %}  
+              {% assign services = site.pages | where: "page_type", "services" %}
+              {% for item in services %}
+              "name": "{{item.top_line.menu_title}}",
+              "item": "{{item.url | absolute_url}}"        
+              {% endfor %}
+            {% elsif  page.page_type == "technology" %}  
+              {% assign technology = site.pages | where: "page_type", "technologies" %}
+              {% for item in technology %}
+              "name": "{{item.top_line.menu_title}}",
+              "item": "{{item.url | absolute_url}}"        
+              {% endfor %}
+            {% elsif  page.page_type == "casestudy" %}  
+              {% assign casestudies = site.pages | where: "page_type", "casestudies" %}
+              {% for item in casestudies %}
+              "name": "{{item.top_line.menu_title}}",
+              "item": "{{item.url | absolute_url}}"        
+              {% endfor %}
+            {% endif %}
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{page.top_line.menu_title}}",
+            "item": "{{page.url | absolute_url}}"
+          }]
+        }        
+        {% if  page.page_type == "post" %} 
+        ,
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{page.url | absolute_url}}"
+          },
+          "headline": "{{page.title}}",
+          "image": "{{ page.header.main_photo  | absolute_url}}",  
+          "author": {
+            "@type": "Person",
+            "name": "{{page.author.name}}"
+          },  
+          "publisher": {
+            "@type": "Organization",
+            "name": "{{site.data.global.title}}",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "{{site.url}}/assets/img/h-logo.svg",
+              "width": 121,
+              "height": 24
+            }
+          },
+          "datePublished": "{{ page.date | date: "%m-%d-%Y" }}",
+          "dateModified": "{{ page.date | date: "%m-%d-%Y" }}"
+        }
+        {% endif %}
+    ]
+}
+</script>
+
+{% endif %}

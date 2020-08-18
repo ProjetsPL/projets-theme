@@ -3,11 +3,21 @@
 layout: blog
 page_type: blog
 title: Blog
+published: true
 
 #SEO
 seo_title:  SEO Blog
 seo_description: |-
   MEAT Blog
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:

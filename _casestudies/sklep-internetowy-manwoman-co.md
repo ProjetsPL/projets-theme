@@ -3,11 +3,25 @@
 layout: casestudy
 page_type: casestudy
 title: manwoman.co
+published: true
 
 #SEO
 seo_title:  SEO manwoman.co
 seo_description: |-
   META manwoman.co
+main_keywords:
+  - test manwoman.co 1
+  - test manwoman.co 2
+
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -22,6 +36,11 @@ intro:
   title: +300 000 produktów i setki największych marek w jednym miejscu
   content: |-
     Brak
+header:
+  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  intro: |-
+    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+  main_photo:
 screens:
   mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
   desktop: /uploads/casestudy-arcom-net-pl-desktop.jpg

@@ -3,11 +3,21 @@
 layout: casestudies
 page_type: casestudies
 title: Realizacje
+published: false
 
 #SEO
 seo_title:  SEO Realizacje
 seo_description: |-
   MEAT Realizacje
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:

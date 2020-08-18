@@ -3,11 +3,24 @@
 layout: services/service-branding
 page_type: service
 title: Branding
+published: true
 
 #SEO
 seo_title:  SEO Branding
 seo_description: |-
   META Branding
+main_keywords:
+  - test branging 1
+  - test branging 2
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -28,6 +41,7 @@ header:
   title: Projektujemy <strong>identyfikacje wizualne</strong>, które zapadają w pamięć
   intro: |-
     Zaprojektujemy nieszablonowy i unikalny wizerunek Twojej firmy, produktu lub usługi, który zaskoczy klientów i przyciągnie ich uwagę.
+  main_photo:
 promoted_casestudies:
   - _casestudies/sklep-internetowy-agdmaster-com.md
 cta_buttons:
@@ -79,6 +93,18 @@ process:
         Stworzona przez nas tożsamość wizualna marki dostarcza klientom informacji, czego mogą oczekiwać od Twoich produktów i usług. Wskazuje, co wyróżnia je na tle konkurencji. Dzięki niej możesz prowadzić spójną komunikacją z odbiorcami swojego biznesu.
       icon: /uploads/icon-lg-ideas.svg
       side: left
+display_faq_section: true
+faq:
+  -
+    question: |-
+      Tutaj mamy przykładowe pytanie?
+    answer: |-
+      odpowiedz 23
+  -
+    question: |-
+      pytanko 2
+    answer: |-
+      odpowiedz 2
 ---
 YO YO
 ---

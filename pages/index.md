@@ -3,11 +3,21 @@
 layout: index
 page_type: index
 title: Strona główna
+published: true
 
 #SEO
 seo_title:  SEO Strona główna
 seo_description: |-
   META Strona głowna
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:

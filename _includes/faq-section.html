@@ -1,0 +1,21 @@
+{%if page.display_faq_section %}
+<div class="beams-wrapper small-beam-wrapper beam-background section-beam faq-beam">
+    <div class="beam b-size-5">
+        <section class="beam-item b-size-5 faq-content">
+            {% for question in page.faq limit:1 %}
+            {% if question.question and question.answer%}
+            <h2>FAQ</h2>
+            {%endif%}
+            {% endfor %}
+            {% for question in page.faq %}
+            {% if question.question and question.answer%}
+            <section class="faq distinction">
+                <h3 class="h4"> {{question.question}}</h3>
+                <p>{{question.answer}}</p>
+            </section>
+            {%endif%}
+            {% endfor %}
+        </section>
+    </div>
+</div>
+{%endif%}

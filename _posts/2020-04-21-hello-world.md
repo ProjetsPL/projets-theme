@@ -2,12 +2,25 @@
 # GLOBAL 
 layout: post
 page_type: post
-title: Marka biznesowa
+title: Marka biznesowa - zbuduj swoją przewagę nad konkurencją
+published: true
 
 #SEO
 seo_title:  SEO Przykładowy post
 seo_description: |-
   META Przykładowy post
+main_keywords:
+  - test Przykładowy post 1
+  - test Przykładowy post 2
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -37,6 +50,7 @@ author:
   name: Magdalena Data-Urban
   position: CTO
   photo: /uploads/przemyslaw-strzalka.jpg
+display_faq_section: true
 faq:
   -
     question: |-
@@ -53,13 +67,6 @@ faq:
       pytanko 3
     answer: |-
       Wentylacja w domu działa na bardzo prostej zasadzie. Dzięki odpowiednio skonstruowanemu systemowi możliwa jest wymiana powietrza we wszystkich pomieszczeniach budynku. Usunięte zostaje tak zwane zużyte powietrze i dostarczane jest świeże - zdecydowanie zdrowsze, pozbawione szkodliwych substancji i zanieczyszczeń.
-hreflangs:
-  -
-    lang: pl
-    link: https://instalguru.pl/
-  -
-    lang: en
-    link: https://instalguru.cs/
 ---
 ## Jak działa wentylacja w domu? Podstawowe informacje, które musisz znać!
 

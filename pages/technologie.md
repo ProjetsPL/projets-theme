@@ -3,11 +3,21 @@
 layout: technologies
 page_type: technologies
 title: Technologie
+published: false
 
 #SEO
 seo_title:  SEO Technologie
 seo_description: |-
   MEAT Technologie
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:

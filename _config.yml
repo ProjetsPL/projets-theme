@@ -21,11 +21,11 @@ collections:
     output: true
     permalink: /uslugi/:title:output_ext
   casestudies:    
-    output: true
-    permalink: /realizacje/:title:output_ext
+    output: false
+    # permalink: /realizacje/:title:output_ext
   technologies:    
-    output: true
-    permalink: /technologie/:title:output_ext
+    output: false
+    # permalink: /technologie/:title:output_ext
 
 
 defaults:  

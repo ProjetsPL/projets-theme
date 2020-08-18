@@ -14,6 +14,11 @@
             {% for item in services %}
                 <li><a href="{{item.url}}">{{item.top_line.menu_title}}</a></li>
             {% endfor %}
+        {% elsif  page.page_type == "technology" %}  
+            {% assign technology = site.pages | where: "page_type", "technologies" %}
+            {% for item in technology %}
+                <li><a href="{{item.url}}">{{item.top_line.menu_title}}</a></li>
+            {% endfor %}
         {% elsif  page.page_type == "casestudy" %}  
             {% assign casestudies = site.pages | where: "page_type", "casestudies" %}
             {% for item in casestudies %}

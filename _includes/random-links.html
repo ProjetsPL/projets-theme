@@ -1,0 +1,24 @@
+<section class="beams-wrapper small-beam-wrapper beam-background section-beam random-links-beam">
+    <div class="beam">
+        <header class="beam-item section-header">
+            <div class="head">
+                <div class="title">
+                    <h2 class="h4 uppercase">{{site.data.global.translations.random_links_title}}:</h2>
+                </div>
+            </div>
+        </header>
+        <div class="beam-item links-content">
+            {% assign services = site.services %}
+            {% assign casestudies = site.casestudies %}
+            {% assign technologies = site.technologies %}
+            {% assign articles = site.posts %}
+            {% assign random_pages = services  | concat: articles  | sample: 10 %}
+            {% for item in random_pages %}
+            {% assign main_keywords = item.main_keywords | sample: 1 %}
+            {% if main_keywords %}
+                <a href="{{ item.url }}" class="btn btn-sm btn-white">{{ main_keywords }}</a>
+            {% endif %}
+            {% endfor %}
+        </section>
+    </div>
+</section>

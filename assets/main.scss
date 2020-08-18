@@ -714,6 +714,17 @@ ul, ol {
         }
     }
 }
+.faq-beam {
+    .beam {
+        justify-content: flex-start;
+    }
+    .faq-content {
+        *:first-child {
+            margin-top:0;
+            padding-top: 0;
+        }
+    }
+}
 .futured-posts-beam {
     padding-bottom: calc(100px -  #{$beam-gutter-size});
 }

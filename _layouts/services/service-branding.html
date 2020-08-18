@@ -25,6 +25,13 @@
             </div>
         {%endif%}
         <section class="beams-wrapper global-beam-wrapper beam-background section-beam branding-feature">
+            <div class="beam b-size-3  branding-feature-title">
+                <div class="beam-item b-size-2 branding-advantage" >
+                    <h2>{{page.advantage.title}}</h2>
+                    <p>{{page.advantage.content}}</p>
+                    <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow">
+                </div>
+            </div>
             <div class="beam b-size-5  branding-feature-list">
                 {% assign features = page.features %}
                 {% for item in features %}
@@ -32,13 +39,6 @@
                     {% include parts/feature-item.html h="h3" content=item%}
                 </div>
                 {%endfor%}
-            </div>
-            <div class="beam b-size-3">
-                <div class="beam-item b-size-2 branding-advantage" >
-                    <h2>{{page.advantage.title}}</h2>
-                    <p>{{page.advantage.content}}</p>
-                    <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow">
-                </div>
             </div>
         </section>       
         {%if page.cta_buttons[1].link and page.cta_buttons[1].name%}
@@ -95,27 +95,9 @@
                 </div>
             </div>
         {%endif%}
-        {%if page.display_seo_section %}
-        <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam">
-            <div class="beam b-size-5 " id="main-content">
-                <div class="beam-item b-size-3 post-content">
-                {{ content  | inject_anchors }}
-                </div>                
-                {%if page.toc %}
-                <div class="beam-item b-size-2  post-toc">
-                    <div class="sticky-rail">
-                        <div class="sticky-element">
-                            <nav class="table-of-content  table-of-content-desktop">
-                                <span class="title">{{site.data.global.translations.table_of_contents}}</span>
-                                {% toc %}
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                {%endif%}
-            </div>
-        </article>
-        {%endif%}
+        {% include seo-section.html %}    
+        {% include faq-section.html %}
+        {% include random-links.html %}         
         {% include footer.html %}       
     </body>
 </html>

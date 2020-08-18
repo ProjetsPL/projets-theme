@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.data.global.lang }}">
     <head>
-        {% include head.html %}
-        <!--Dane struklturalne dla każdego layoutu-->
+        {% include head.html %}       
     </head>
     <body>    
         {% include top-line.html %}          
@@ -17,7 +16,7 @@
                         <img src="{{item.photo}}" alt="{{item.name}}" class="main">
                     </div>
                     <p class="content">{{item.content}}</p>
-                    <a class="cta"href="{{item.link}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <!-- <a class="cta"href="{{item.link}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
                 </div>
                 <div class="beam-item b-size-1 slide-photo  slide-photo-desktop">                    
                     <img src="{{item.photo}}" alt="{{item.name}}" class="main">
@@ -40,7 +39,7 @@
                     <header class="section-header">
                         <div class="head">
                             <div class="title">
-                                <h2 class="h4 uppercase">{{page.services_section.title}}</h2>
+                                <h1 class="h4 uppercase">{{page.services_section.title}}</h2>
                                 {%if page.services_section.icon%}
                                 <div class="icon icon-bg icon-bg-sm">
                                     <img src="{{page.services_section.icon}}" alt="{{page.services_section.title}}">
@@ -68,7 +67,7 @@
                                     <img src="{{item.icon}}" alt="{{item.title}}">
                                 </div>
                                 <div class="title">
-                                    <h3 class="h1">{{item.title}}</h3>
+                                    <h2 class="h1">{{item.title}}</h3>
                                 </div>
                             </header>
                             <div class="services-category-content">
@@ -104,7 +103,7 @@
                     <header class="section-header">
                         <div class="head">
                             <div class="title">
-                                <h2 class="h4 uppercase">{{page.testimonials_section.title}}</h2>
+                                <h3 class="h4 uppercase">{{page.testimonials_section.title}}</h2>
                                 {%if page.testimonials_section.icon%}
                                 <div class="icon icon-bg icon-bg-sm">
                                     <img src="{{page.testimonials_section.icon}}" alt="{{page.testimonials_section.title}}">
@@ -138,7 +137,7 @@
                             <div class="content">
                                 <p>"{{item.customer_opinion.quotation_small}}"</p>
                             </div>
-                            <a href="{{item.url}}" alt="{{item.title}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <!-- <a href="{{item.url}}" alt="{{item.title}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
                         </section>
                         {% endfor %}
                     </div>
@@ -160,7 +159,7 @@
                     <header class="section-header">
                         <div class="head">
                             <div class="title">
-                                <h2 class="h4 uppercase">{{page.case_studies_section.title}}</h2>
+                                <h3 class="h4 uppercase">{{page.case_studies_section.title}}</h2>
                                 {%if page.case_studies_section.icon%}
                                 <div class="icon icon-bg icon-bg-sm">
                                     <img src="{{page.case_studies_section.icon}}" alt="{{page.case_studies_section.title}}">
@@ -187,11 +186,11 @@
                                 <div class="circle-bg" style="background-color: #{{ item.colors.main }}"></div> 
                             </div>  
                             <div class="beam-item b-size-3 casestudy-content">
-                                <h3 class="h2">{{item.intro.title}}</h3>
+                                <h4 class="h2">{{item.intro.title}}</h3>
                                 <p>{{item.intro.content}}</p>
-                                <div class="link">
+                                <!-- <div class="link">
                                     <a href="{{item.url}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="beam-item b-size-2 casestudy-img">
                                 {% include parts/casestudy-mockup-mobile.html mockup=item%}       

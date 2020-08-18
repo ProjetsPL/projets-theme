@@ -3,11 +3,24 @@
 layout: services/service-e-commerce
 page_type: service
 title: Sklepy internetowe
+published: true
 
 #SEO
 seo_title:  Sklepy internetowe
 seo_description: |-
   META Sklepy internetowe
+main_keywords:
+  - test sklepy internetowe 1
+  - test sklepy internetowe 2
+
+#HREFLANGS
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
 
 #MENU 
 top_line:
@@ -28,6 +41,7 @@ header:
   title: <strong>Tworzymy sklepy</strong> dostosowane do potrzeb biznesu e-commerce
   intro: |-
     Postaw na rozwiązania dopasowane do specyfiki swojego biznesu - zwiększ konwersję i otwórz się na nowe rynki.
+  main_photo:
 promoted_casestudies:
   - _casestudies/sklep-internetowy-manwoman-co.md
 cta_buttons:
@@ -121,6 +135,18 @@ technologies:
     - _technologies/ruby-on-rails.md
     - _technologies/elastic-search.md
     - _technologies/react-js.md 
+display_faq_section: true
+faq:
+  -
+    question: |-
+      Tutaj mamy przykładowe pytanie?
+    answer: |-
+      odpowiedz 23
+  -
+    question: |-
+      pytanko 2
+    answer: |-
+      odpowiedz 2
 ---
 ## YO
 

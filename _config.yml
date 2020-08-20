@@ -1,3 +1,8 @@
+title: "projets.pl"
+url: "https://projets.pl" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+lang: "pl"
+
 markdown: kramdown
 
 sass:

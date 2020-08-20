@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    {% include parts/gtagmanager.html %}
     {% include top-line.html %}
     {% include parts/breadcrumbs.html %}
     <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam post-article">
@@ -93,7 +94,7 @@
                 <div class="beam b-size-3 futured-posts-listing ">
                     {% for item in site.posts limit:3 %}
                     <div class="beam-item b-size-1">
-                        {% include parts/post-item.html  post=item h="h2"%}
+                        {% include parts/post-item.html  post=item h="h3"%}
                     </div>
                     {% endfor %}
                 </div>

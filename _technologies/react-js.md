@@ -13,6 +13,16 @@ main_keywords:
   - test React 1
   - test React 2
 
+#HREFLANGS
+display_hreflangs: false
+hreflangs:
+  -
+    lang: x-default
+    link: https://projets.io
+  -
+    lang: en
+    link: https://projets.io
+
 #MENU 
 top_line:
   menu_title: React

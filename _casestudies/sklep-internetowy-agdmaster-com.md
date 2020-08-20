@@ -14,6 +14,7 @@ main_keywords:
   - test agdmaster.com 2
 
 #HREFLANGS
+display_hreflangs: false
 hreflangs:
   -
     lang: x-default

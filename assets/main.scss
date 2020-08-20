@@ -411,7 +411,7 @@ ul, ol {
     &.img-ratio-16-9 {
         position: relative;
         width: 100%;
-        padding-top: 56.25%;
+        padding-top: 52.5%;
     }
     &.img-ratio-16-6 {
         position: relative;
@@ -700,7 +700,9 @@ ul, ol {
                 display: block;
                 background-color: $bg-0;
                 padding: 10px;
-                border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px;    
+                font-size: 13px;
+                line-height: 23px;
             }
         }
         .title {

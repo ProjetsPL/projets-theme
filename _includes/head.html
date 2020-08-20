@@ -6,13 +6,15 @@
 <meta name="description" content="{{page.seo_description}}">
 <link rel="canonical" href="{{page.url | absolute_url}}">
 
-{% for heflang in page.hreflangs %}
-    {% if heflang.lang and heflang.link%}
-        <link rel="alternate" hreflang="{{heflang.lang}}" href="{{heflang.link}}">
+{% if page.display_hreflangs %}
+    {% for heflang in page.hreflangs %}
+        {% if heflang.lang and heflang.link%}
+            <link rel="alternate" hreflang="{{heflang.lang}}" href="{{heflang.link}}">
+        {%endif%}
+    {% endfor %}
+    {% if page.hreflangs[0].lang and page.hreflangs[0].link%}
+        <link rel="alternate" hreflang="{{site.data.global.lang}}" href="{{page.url | absolute_url}}">
     {%endif%}
-{% endfor %}
-{% if page.hreflangs[0].lang and page.hreflangs[0].link%}
-    <link rel="alternate" hreflang="{{site.data.global.lang}}" href="{{page.url | absolute_url}}">
 {%endif%}
 
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
@@ -32,7 +34,7 @@
 <meta property="og:site_name" content="{{site.data.global.title}}">
 <meta property="og:title" content="{{ page.seo_title }}">
 <meta property="og:description" content="{{ page.seo_description }}">
-<meta property="og:image" content="{{ page.photo | default: site.data.global.og_random_photo | absolute_url }}">
+<meta property="og:image" content="{{ page.header.main_photo | default: site.data.global.og_random_photo | absolute_url }}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
@@ -43,6 +45,31 @@
 
 <link rel="stylesheet" href="/assets/main.css?v=1">
 
-<meta name="google-site-verification" content="{{site.data.global.scvarificationnumber}}" />
-
 {% include parts/structured-data.html %}
+
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="{{site.data.global.scvarificationnumber}}" />
+<!-- End Google Search Console -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.global.analyticsvarificationnumber}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{site.data.global.analyticsvarificationnumber}}', {
+  'page_title' : '{{page.title}}',
+  'page_path': '{{page.url}}'
+});
+</script>
+<!-- End Google Analytics -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{site.data.global.gtagmanagervarificationnumber}}');</script> 
+<!-- End Google Tag Manager -->
+<!-- Google Optimie -->
+<script src="https://www.googleoptimize.com/optimize.js?id={{site.data.global.optimizevarificationnumber}}"></script>
+<!-- End Google Optimie -->

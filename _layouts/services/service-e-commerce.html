@@ -5,6 +5,7 @@
         <!--Dane struklturalne dla każdego layoutu-->
     </head>
     <body>    
+        {% include parts/gtagmanager.html %}
         {% include top-line.html %}   
         {% include parts/breadcrumbs.html %}             
         <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam service-header">
@@ -39,14 +40,17 @@
                 </div>
                 {%endfor%}
             </div>
-            <div class="brands">
-            {% for brand in page.advantage.brands %}
-                <div class="logo">
-                    <img src="{{brand.logo}}" alt="{{brand.name}}">
-                </div> 
-            {%endfor%}
+            <div class="e-commerce-feature-brands">
+                <div class="brands ">
+                {% for brand in page.advantage.brands %}
+                    <div class="logo">
+                        <img src="{{brand.logo}}" alt="{{brand.name}}">
+                    </div> 
+                {%endfor%}
+                </div>
+                <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow ">
+
             </div>
-            <img src="/assets/img/click-arrow.svg" alt="{{site.data.global.translations.click_at_button}}" class="click-arrow">
         </section>  
         {%if page.cta_buttons[1].link and page.cta_buttons[1].name%}
             <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">

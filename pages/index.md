@@ -11,6 +11,7 @@ seo_description: |-
   META Strona głowna
 
 #HREFLANGS
+display_hreflangs: false
 hreflangs:
   -
     lang: x-default
@@ -28,6 +29,9 @@ top_line:
 show_contact_in_footer: true
 
 # INDEX layout
+header:
+  main_photo: /uploads/strona-glowna-OG-image.jpg
+
 cta_buttons:
   - name: Rozpocznijmy współpracę
     link: /kontakt.html

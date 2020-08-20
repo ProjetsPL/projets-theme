@@ -15,6 +15,7 @@ main_keywords:
 
 
 #HREFLANGS
+display_hreflangs: false
 hreflangs:
   -
     lang: x-default

@@ -1,4 +1,4 @@
-title: "Projets"
+title: "projets.pl"
 url: "https://projets.pl" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 lang: "pl"
@@ -6,7 +6,9 @@ lang: "pl"
 og_random_photo: "/assets/img/default.jpg"
 
 scvarificationnumber: "" # numer identyfikacjyny google search console
-analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
+analyticsvarificationnumber: "UA-116358731-6" # numer identyfikacjyny google analyticks
+gtagmanagervarificationnumber: "GTM-TBWVMN7" # numer weryfikacyjny google tag manegera
+optimizevarificationnumber: "OPT-PGX25R6" # numer weryfikacyjny google optimize
 
 footer:
   contact_section:

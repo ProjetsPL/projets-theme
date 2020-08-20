@@ -4,6 +4,7 @@
 .casestudy-beam {
     // position: relative;
     .casestudy-bg{
+        display: none;
         position: absolute;        
         z-index: 0;
         top:0;
@@ -329,6 +330,19 @@
     a {
         color: $main-1;
     }
+    .img-box {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            top:0;
+            left:0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0.84) 100%);
+        }
+    }
     .content {
         padding: 0 30px 30px 30px;
         .more{
@@ -339,12 +353,13 @@
             flex-wrap: wrap;
             justify-content: space-between;
             img {
-                width: 80px;
+                width: 50px;
                 border-radius: 5px;
                 position: absolute;
                 top:0;
                 left:0;
                 transform: translateY(-90%);
+                box-shadow: $main-shadow;
             }
             .date {
                 min-width: 70px;
@@ -368,6 +383,8 @@
         }
     }
     &:hover {
+        position: relative;
+        transform: translateY(-10px);
         .content {
             .title {
                 color: $main-3;
@@ -552,7 +569,7 @@
     }
     .links-content {
         .btn {
-            margin-bottom:10px;
+            margin-bottom:20px;
             margin-right: 10px;
             // background-color: rgba(0,0,0,0);
             // box-shadow: none;

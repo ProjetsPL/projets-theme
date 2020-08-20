@@ -27,6 +27,7 @@
 .services-list {
     overflow: hidden;
     padding-top: 0;
+    padding-bottom: 150px;
     .service-beam {
         justify-content: flex-end;
         margin-bottom: 120px;
@@ -38,7 +39,7 @@
         .icon {
             position: absolute;
             left: 0;
-            top: 50%;
+            top: calc(50% + 50px);
             transform: translateY(-50%) translateX(calc(-100% - 60px));
         }
         .service-beam-title {
@@ -50,6 +51,7 @@
 @media (max-width:800px) { 
     .services-list {
         position: relative;
+        padding-bottom: 100px;
         .service-beam {
             position: static;
             margin-bottom: 90px;

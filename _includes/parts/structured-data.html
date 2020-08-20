@@ -35,27 +35,29 @@
     "@context": "https://schema.org",
     "@graph": [
         {%if page.display_faq_section %}
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-          {% for question in page.faq %}
-            {% if question.question and question.answer%}  
-              {
-                "@type": "Question",
-                "name": "{{question.question}}",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "{{question.answer}}"
+          {% if page.faq[0] %}  
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+            {% for question in page.faq %}
+              {% if question.question and question.answer%}  
+                {
+                  "@type": "Question",
+                  "name": "{{question.question}}",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{question.answer}}"
+                  }
                 }
-              }
-              {% if forloop.last == false %}
-                ,
+                {% if forloop.last == false %}
+                  ,
+                {%endif%}
               {%endif%}
-            {%endif%}
-          {% endfor %}
-          ]
-        }
-        ,
+            {% endfor %}
+            ]
+          }
+          ,
+          {% endif %}
         {% endif %}
         {
           "@type": "BreadcrumbList",

@@ -11,6 +11,7 @@ seo_description: |-
   MEAT Realizacje
 
 #HREFLANGS
+display_hreflangs: false
 hreflangs:
   -
     lang: x-default
@@ -32,4 +33,5 @@ header:
   title: <strong>Realizacje</strong> - chwalimi się naszą pracą
   intro: |-
     Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
+  main_photo:
 ---

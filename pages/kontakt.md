@@ -11,6 +11,7 @@ seo_description: |-
   META Kontakt
 
 #HREFLANGS
+display_hreflangs: false
 hreflangs:
   -
     lang: x-default
@@ -32,6 +33,8 @@ header:
   title: <strong>Formularz kontaktowy</strong><br>Wycenimy Twój projekt w 7 dni
   intro: |-
     Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
+  main_photo:
+  
 project_type:
   header:
     title: Jakiego typu projekt chcesz zrealizować?

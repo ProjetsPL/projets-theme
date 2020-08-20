@@ -11,6 +11,7 @@ seo_description: |-
   MEAT Blog
 
 #HREFLANGS
+display_hreflangs: false
 hreflangs:
   -
     lang: x-default
@@ -32,4 +33,5 @@ header:
   title: <strong>Blog</strong> - dzielimy się wiedzą dotyczącą biznesowych rozwiązań technicznych
   intro: |-
     Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
+  main_photo:
 ---

@@ -39,3 +39,8 @@ defaults:
       path: "pages"
     values:
       permalink: /:basename:output_ext
+  -
+    scope:
+      path: "pages/index.md"
+    values:
+      permalink: /

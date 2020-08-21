@@ -123,14 +123,13 @@
 <script type="text/javascript" src="/assets/js/sticky-sidebar.js"></script>
 <script type="text/javascript">
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    if (document.querySelector('.sticky-element')) {
+Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+  if (document.querySelector('.sticky-element')) {
     var sidebar = new StickySidebar('.sticky-rail', {
         innerWrapperSelector: '.sticky-element',
         topSpacing: 30,
         // bottomSpacing: 30
     });
   }
-})
-
+});
 </script>

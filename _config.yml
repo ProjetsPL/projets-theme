@@ -6,7 +6,7 @@ lang: "pl"
 markdown: kramdown
 
 sass:
-  sass_dir: _scss
+  sass_dir: assets
   style: compressed
 
 toc:

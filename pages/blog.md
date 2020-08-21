@@ -6,9 +6,9 @@ title: Blog
 published: true
 
 #SEO
-seo_title:  SEO Blog
+seo_title:  Dzielimy się wiedzą dotyczącą biznesowych rozwiązań technicznych
 seo_description: |-
-  MEAT Blog
+  Dzielimy się wiedzą dotyczącą rozwiązań technicznych i trendów biznesowych. Poznaj wskazówki przygotowane przez ekspertów i wyróżnij swój biznes.
 
 #HREFLANGS
 display_hreflangs: false
@@ -33,5 +33,5 @@ header:
   title: <strong>Blog</strong> - dzielimy się wiedzą dotyczącą biznesowych rozwiązań technicznych
   intro: |-
     Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
-  main_photo:
+  main_photo: /uploads/blog-OG-image.jpg
 ---

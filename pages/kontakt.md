@@ -6,9 +6,9 @@ title: Kontakt
 published: true
 
 #SEO
-seo_title:  SEO Kontakt
+seo_title:  Wycenimy Twój projekt w 7 dni
 seo_description: |-
-  META Kontakt
+  Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
 
 #HREFLANGS
 display_hreflangs: false
@@ -33,13 +33,13 @@ header:
   title: <strong>Formularz kontaktowy</strong><br>Wycenimy Twój projekt w 7 dni
   intro: |-
     Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
-  main_photo:
+  main_photo: uploads/kontakt-OG-image.jpg
   
 project_type:
   header:
     title: Jakiego typu projekt chcesz zrealizować?
     content: |-
-      Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
+      Zastanawiasz się jak stworzyć sklep internetowy? Potrzebujesz funkcjonalnej aplikacji? A może masz pomysł na stronę internetową, ale nie wiesz jak go zrealizować? Wybierz jedną z opcji, abyśmy wiedzieli, jak możemy Ci pomóc. 
     icon: /assets/img/1.svg
   types:
     -
@@ -55,7 +55,7 @@ project_range:
   header:
     title: Jaki zakres prac będzie obejmował projekt?
     content: |-
-      Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
+      Interesuje Cię zaprogramowanie aplikacji i umieszczenie jej na serwerze? Zależy Ci na przygotowaniu projektu, który będzie wyróżniał się nowoczesnym designem i praktycznymi technologiami? Szukasz pomocy związanej z identyfikacją wizualną? Postaw na obszar, który Cię interesuje lub wybierz kompleksową pomoc.
     icon: /assets/img/2.svg
   types:
     -
@@ -71,7 +71,7 @@ contact_form:
   header:
     title: Wypełnij poniższy formularz
     content: |-
-      Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
+      
     icon: /assets/img/3.svg
   inputs:
     email:

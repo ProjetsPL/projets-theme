@@ -12,7 +12,7 @@
                 </a>
                 {% include parts/top-line-nav.html %}
                 <div class="burger-button" id="mobileMenuBtn">
-                    <img src="/assets/img/icon-menu.svg" alt="">
+                    <img src="/assets/img/icon-menu.svg" alt="{{site.data.global.translations.open_menu}}">
                 </div>
             </header>
         </div>
@@ -21,16 +21,16 @@
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-head">
         <div class="title h4 uppercase">Menu</div>
-        <div class="close-button"><img src="/assets/img/icon-close.svg" alt=""></div>
+        <div class="close-button"><img src="/assets/img/icon-close.svg" alt="{{site.data.global.translations.close_menu}}"></div>
     </div>
     <div class="mobile-menu-content">
         {% include parts/top-line-nav.html %}
         <div class="contact-section">
             <a href="tel:{{site.data.global.footer.phone}}" class="pb"><img src="/assets/img/icon-sm-phone-gray.svg"
-                    alt="">
+                    alt="{{site.data.global.translations.phone_number}}">
                 {{site.data.global.footer.phone}}</a>
             <a href="mailto:{{site.data.global.footer.mail}}" class="pb"><img src="/assets/img/icon-sm-email-gray.svg"
-                    alt="">
+                    alt="{{site.data.global.translations.email_adress}}">
                 {{site.data.global.footer.email}}</a>
         </div>
     </div>

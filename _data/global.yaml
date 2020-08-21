@@ -1,9 +1,9 @@
 og_random_photo: "/assets/img/default.jpg"
 
-scvarificationnumber: "Znt1MIzFfcefhplscekuzFtz-HmIceb1ZI29zm27VkQ" # numer identyfikacjyny google search console
-analyticsvarificationnumber: "UA-116358731-6" # numer identyfikacjyny google analyticks
-gtagmanagervarificationnumber: "GTM-TBWVMN7" # numer weryfikacyjny google tag manegera
-optimizevarificationnumber: "OPT-PGX25R6" # numer weryfikacyjny google optimize
+scvarificationnumber: "" # numer identyfikacjyny google search console
+analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
+gtagmanagervarificationnumber: "" # numer weryfikacyjny google tag manegera
+optimizevarificationnumber: "" # numer weryfikacyjny google optimize
 
 footer:
   contact_section:

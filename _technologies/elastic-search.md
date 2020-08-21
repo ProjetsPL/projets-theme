@@ -10,8 +10,7 @@ seo_title:  SEO Elastic Search
 seo_description: |-
   META Elastic Search
 main_keywords:
-  - test Elastic Search 1
-  - test Elastic Search 2
+  - Elastic Search
 
 #HREFLANGS
 display_hreflangs: false
@@ -34,12 +33,12 @@ show_contact_in_footer: true
 #TECHNOLOGY layout
 logo: /uploads/elasticsearch.svg
 intro: 
-  title: 
+  title: Elastic Search
   content: |-
     Technologia niezwykle skuteczna podczas przeszukiwania i przetwarzania dużej ilości danych - wpływająca na doświadczenia i zadowolenie użytkowników aplikacji.
 header:
-  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  title:
   intro: |-
-    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+    
   main_photo:
 ---

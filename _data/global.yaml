@@ -8,9 +8,9 @@ optimizevarificationnumber: "OPT-PGX25R6" # numer weryfikacyjny google optimize
 footer:
   contact_section:
     title: Z niecierpliwością czekamy na Twój projekt
-    content: Z niecierpliwością czekamy na Twój projekt
+    content: Masz pomysł na innowacyjny projekt? Stwórzmy go wspólnie. Skontaktuj się z nami - omówimy wszystkie szczegóły i zaproponujemy ciekawe rozwiązania.
     link: /kontakt.html
-    cta: Napisz do nas
+    cta: Wyceń projekt
     icon: /uploads/icon-sm-email.svg  
 
   other_version:

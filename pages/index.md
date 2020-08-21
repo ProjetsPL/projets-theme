@@ -6,9 +6,9 @@ title: Strona główna
 published: true
 
 #SEO
-seo_title:  SEO Strona główna
+seo_title:  Projektujemy i rozwijamy aplikacje internetowe
 seo_description: |-
-  META Strona głowna
+  Projektujemy i rozwijamy dedykowane aplikacje internetowe. Oferujemy usługi z zakresu Web Development i Product Design.
 
 #HREFLANGS
 display_hreflangs: false
@@ -33,27 +33,27 @@ header:
   main_photo: /uploads/strona-glowna-OG-image.jpg
 
 cta_buttons:
-  - name: Rozpocznijmy współpracę
+  - name: Wyceń projekt
     link: /kontakt.html
-  - name: Napisz do nas
+  - name: Wyceń projekt
     link: /kontakt.html
-  - name: Jakieś inne CTA
+  - name: Wyceń projekt
     link: /kontakt.html
 
 header_slider:
   -
     name: Sklep internetowy manwoman.co
-    title: <strong>+300 000 produktów</strong> i&nbsp;setki największych marek w jednym miejscu
+    title: <strong>+600 000 produktów</strong> i&nbsp;setki największych marek w jednym miejscu
     content: Nowoczesny portal stworzony dla miłośników mody, który gromadzi tysiące produktów i setki marek. Łatwe wyszukiwanie, przejrzysty proces zakupowy i nowoczesny design czynią serwis przyjaznym użytkownikom.
     photo: /uploads/manwoman-header-slider.png
     link: /realizacje/sklep-internetowy-manwoman-co.html
     cta: Przeczytaj o sukcesie sklepu
 
 services_section:
-  title: W czym możemy Ci pomóc
+  title: Projektujemy i rozwijamy aplikacje internetowe
   cta: Dowiedz się wiecej
   link: /uslugi.html
-  content: Portal stworzony dla miłośników mody. Tysiące produktów topowych marek zgromadzone w jednym miejscu. Setki inspiracji zgodnych z najnowszymi trendami.
+  content: Chcesz założyć sklep internetowy? Potrzebujesz użytecznej aplikacji dopasowanej do potrzeb użytkowników? A może interesuje Cię identyfikacja wizualna, która wyróżni Twój biznes na tle konkurencji? Sprawdź, jak możemy Ci pomóc.
   icon: 
   services:
     -
@@ -66,7 +66,7 @@ services_section:
     -
       title: Product design
       icon: /uploads/icon-lg-product-design.svg
-      content: Tworzymy identyfikacje wizualne firmy, produktu lub usługi. Projektujemy i wdrażamy layouty, które zaskakują klientów, przyciągają ich uwagę i gwarantują pozytywne doświadczenia.
+      content: Tworzymy projekty, które zaskakują klientów swoją skutecznością, przyciągają ich uwagę i gwarantuję wyłącznie pozytywne doświadczenia oraz praktyczne korzyści. 
       pages:
         - _services/ux-ui.md
         - _services/branding.md

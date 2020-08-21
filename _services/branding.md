@@ -6,12 +6,13 @@ title: Branding
 published: true
 
 #SEO
-seo_title:  SEO Branding
+seo_title:  Projektujemy identyfikacje wizualne, które zapadają w pamięć
 seo_description: |-
-  META Branding
+  Stwórz wizerunek profesjonalisty w swojej branży. Sprawdź, jak zachować spójność w komunikacji z klientami i wykreować tożsamość wizualną marki.
 main_keywords:
-  - test branging 1
-  - test branging 2
+  - branding
+  - logo
+  - identyfikacja wizualna
 
 #HREFLANGS
 display_hreflangs: false
@@ -36,23 +37,23 @@ intro:
   title: Branding
   content: |-
     Stworzymy tożsamość wizualną Twojej marki, która będzie podstawą dla rozwoju produktów i usług zapadających w pamięć użytkowników. Będą one nie tylko użyteczne, ale też estetyczne. Pozytywne wrażenie i spójność przekazu będzie kluczem do sukcesu Twojej firmy. 
-  cta_title: Stwórzmy identyfikację
+  cta_title: Poznaj szczegóły
   icon: /uploads/icon-lg-project.svg
 header:
   title: Projektujemy <strong>identyfikacje wizualne</strong>, które zapadają w pamięć
   intro: |-
     Zaprojektujemy nieszablonowy i unikalny wizerunek Twojej firmy, produktu lub usługi, który zaskoczy klientów i przyciągnie ich uwagę.
-  main_photo:
+  main_photo: /uploads/branding-OG-image.jpg
 promoted_casestudies:
   - _casestudies/sklep-internetowy-agdmaster-com.md
 cta_buttons:
-  - name: Rozpocznijmy współpracę
+  - name: Wyceń projekt
     link: /kontakt.html
-  - name: Napisz do nas
+  - name: Wyceń projekt
     link: /kontakt.html
-  - name: Jakieś inne CTA
+  - name: Wyceń projekt
     link: /kontakt.html
-display_seo_section: true
+display_seo_section: false
 toc: true 
 
 #SERVICE BRANDING layout
@@ -94,7 +95,7 @@ process:
         Stworzona przez nas tożsamość wizualna marki dostarcza klientom informacji, czego mogą oczekiwać od Twoich produktów i usług. Wskazuje, co wyróżnia je na tle konkurencji. Dzięki niej możesz prowadzić spójną komunikacją z odbiorcami swojego biznesu.
       icon: /uploads/icon-lg-ideas.svg
       side: left
-display_faq_section: true
+display_faq_section: false
 faq:
   -
     question: |-
@@ -107,5 +108,4 @@ faq:
     answer: |-
       odpowiedz 2
 ---
-YO YO
----
+## Branding

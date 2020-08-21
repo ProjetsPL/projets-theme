@@ -33,30 +33,31 @@ show_contact_in_footer: true
 
 # CASESTUDY layout
 intro: 
-  title: Aplikacja typu WMS - Kontrola magazynu na wyższym pziomie
+  title: Aplikacja typu <strong>WMS</strong> - Kontrola magazynu na wyższym pziomie
   content: |-
-    Brak
+    Nowoczesny magazynowy system informatyczny pozwalający na zarządzenie produktami w kontekście logistycznym. Sprawna komunikacja wewnętrzna i praktyczna pomoc w zarządzaniu pracą całego przedsiębiorstwa.
 header:
-  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  title:
   intro: |-
-    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+    
   main_photo:
 screens:
-  mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
-  desktop: /uploads/casestudy-arcom-net-pl-desktop.jpg
+  mobile: /uploads/casestudy-instalguru-wms-mobile.jpg
+  desktop: /uploads/casestudy-instalguru-wms-desktop.jpg
 colors:
-  main: "610399"
+  main: "9A18E5"
   devices_border: "FFFFFF"
 company: Tradecron
 company_logo: /uploads/logo-agdmaster.svg
 testimonial_on_index: true
 casestudy_on_index: false
-cta: Poznaj szczegóły realizacji
+cta: Sprawdz Case Study aplikacji WMS
 customer_opinion:
   person: Konrad Ignacyk
-  position: Head of Logistics  
+  position: Head of Logistics
   photo: /uploads/przemyslaw-strzalka.jpg
-  quotation: 
+  quotation: |-
+    Wybrane przez specjalistów rozwiązania w pełni zadowoliły nasze oczekiwania. Jesteśmy pod dużym wrażeniem sposobu działania, według którego realizowane były kolejne etapy projektu. W relatywnie krótkim czasie wspólnie udało się nam stworzyć funkcjonalne rozwiązania znacznie ułatwiające codzienną pracę magazynu.
   quotation_small: |-
     Zastosowane przez zespół rozwiązania przyczyniły się do stworzenia nowoczesnego, a jednocześnie przyjaznego użytkownikowi sklepu. Oprócz wykonanego projektu specjaliści zapewniają także pełne wsparcie dla naszego serwisu.
 ---

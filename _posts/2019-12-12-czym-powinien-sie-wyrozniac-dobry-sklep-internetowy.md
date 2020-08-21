@@ -10,7 +10,7 @@ seo_title: Dobry sklep internetowy - co go wyróżnia na tle konkurencji?
 seo_description: |-
   Jakie elementy powinien posiadać sklep internetowy przyjazny dla użytkownika? Sprawdź najważniejsze informacje o branży e-commerce, wyprzedź konkurencję.
 main_keywords:
-  - sklep internetowy
+  - cechy dobrego sklepu internetowego
 
 #HREFLANGS
 display_hreflangs: false

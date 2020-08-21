@@ -10,9 +10,7 @@ seo_title:  SEO manwoman.co
 seo_description: |-
   META manwoman.co
 main_keywords:
-  - test manwoman.co 1
-  - test manwoman.co 2
-
+  - realizacja sklepu manwoman.co
 
 #HREFLANGS
 display_hreflangs: false
@@ -27,27 +25,27 @@ hreflangs:
 #MENU 
 top_line:
   menu_title: manwoman.co
-  cta_title:
-
+  cta_title: Przeczytaj o sukcesie sklepu
+ 
 #SETTINGS
 show_contact_in_footer: true
 
 # CASESTUDY layout
 intro: 
-  title: +300 000 produktów i setki największych marek w jednym miejscu
+  title: <strong>+600 000</strong> produktów i setki największych marek w jednym miejscu
   content: |-
-    Brak
+    Nowoczesny portal stworzony dla miłośników mody, który gromadzi tysiące produktów i setki marek. Łatwe wyszukiwanie, przejrzysty proces zakupowy i nowoczesny design czynią serwis przyjaznym użytkownikom.
 header:
-  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  title: 
   intro: |-
-    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+
   main_photo:
 screens:
-  mobile: /uploads/casestudy-arcom-net-pl-mobile.jpg
-  desktop: /uploads/casestudy-arcom-net-pl-desktop.jpg
+  mobile: /uploads/casestudy-manwoman-mobile.jpg
+  desktop: /uploads/casestudy-manwoman-desktop.jpg
 colors:
-  main: "000000" 
-  devices_border: "FFFFFF"
+  main: "00104E" 
+  devices_border: "F9F9F9"
 company: manwoman.com
 company_logo: /uploads/logo-manwoman.svg
 testimonial_on_index: true
@@ -57,8 +55,8 @@ customer_opinion:
   person: Robert Niechciał
   position: CEO
   photo: /uploads/robert-niechcial.jpg
-  quotation: 
+  quotation: |-
+    Zaprojektowanie strony obsługującej programy partnerskie jest zadaniem wymagającym doświadczenia i odpowiednich umiejętności. To właśnie te dwa czynniki zadecydowały o tym, że podjęliśmy współpracę z Projets. Na szczególną uwagę zasługuje komunikacja, która od początku była bardzo sprawna i przyjemna. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez specjalistów w zupełności spełniły nasze oczekiwania. Dlatego z całą odpowiedzialnością możemy polecić Projets jako zespół do zadań specjalnych.
   quotation_small: |-
-    Komunikacja od samego początku przebiegała bardzo sprawnie. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez Projets zostały dopasowane do naszych wszystkich oczekiwań.
-  promoted: true
+    Nowoczesne i funkcjonalne rozwiązania zaproponowane przez specjalistów w zupełności spełniły nasze oczekiwania. Dlatego z całą odpowiedzialnością możemy polecić Projets (...)
 ---

@@ -10,8 +10,7 @@ seo_title:  SEO Ruby on Rails
 seo_description: |-
   META Ruby on Rails
 main_keywords:
-  - test Ruby on Rails 1
-  - test Ruby on Rails 2
+  - Ruby on Rails
 
 #HREFLANGS
 display_hreflangs: false
@@ -34,12 +33,12 @@ show_contact_in_footer: true
 #TECHNOLOGY layout
 logo:  /uploads/rails.svg
 intro: 
-  title: 
+  title: Ruby on Rails
   content: |-
     Technologia gwarantująca szybki proces realizacji Twojego projektu i jego przejrzystość. To również możliwość rozbudowy aplikacji o dodatkowe funkcje.
 header:
-  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  title:
   intro: |-
-    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+    
   main_photo:
 ---

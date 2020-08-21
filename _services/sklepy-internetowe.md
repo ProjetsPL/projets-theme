@@ -6,12 +6,12 @@ title: Sklepy internetowe
 published: true
 
 #SEO
-seo_title:  Sklepy internetowe
+seo_title:  Tworzymy sklepy dostosowane do potrzeb biznesu e-commerce
 seo_description: |-
-  META Sklepy internetowe
+  Postaw na rozwiązania e-commerce dostosowane do potrzeb użytkowników. Wykorzystuj inteligentne rozwiązania i zwiększaj sprzedaż nawet kilkukrotnie.
 main_keywords:
-  - test sklepy internetowe 1
-  - test sklepy internetowe 2
+  - sklepy internetowe
+  - e-commerce
 
 #HREFLANGS
 display_hreflangs: false
@@ -36,23 +36,23 @@ intro:
   title: Sklepy internetowe
   content: |-
     Opracujemy responsywne wersje sklepu dobrze prezentujące się na każdym urządzeniu. Stworzymy strukturę przyjazną wyszukiwarkom internetowym - dającą nieograniczone możliwości jego rozwoju. Otrzymasz także prosty i przejrzysty panel zarządzania.
-  cta_title: Dowiedz się więcej
+  cta_title: Poznaj szczegóły
   icon: /uploads/icon-lg-e-commerce.svg
 header:
   title: <strong>Tworzymy sklepy</strong> dostosowane do potrzeb biznesu e-commerce
   intro: |-
     Postaw na rozwiązania dopasowane do specyfiki swojego biznesu - zwiększ konwersję i otwórz się na nowe rynki.
-  main_photo:
+  main_photo: /uploads/sklepy-OG-image.jpg
 promoted_casestudies:
   - _casestudies/sklep-internetowy-manwoman-co.md
 cta_buttons:
-  - name: Rozpocznijmy współpracę
+  - name: Wyceń projekt sklep
     link: /kontakt.html
-  - name: Napisz do nas
+  - name: Wyceń projekt sklep
     link: /kontakt.html
-  - name: Jakieś inne CTA
+  - name: Wyceń projekt sklep
     link: /kontakt.html
-display_seo_section: true
+display_seo_section: false
 toc: true 
 
 #SERVICE E-COMMERCE layout
@@ -60,7 +60,7 @@ features_list:
   -
     title: Optymalizacja SEO
     content: |-
-      Optymalizacją pod kątem wyszukiwarek
+      Tworzymy sklepy generujące ruch organiczny
     icon: /uploads/icon-lg-technical-seo.svg
   -
     title: Dostosowanie do potrzeb
@@ -114,7 +114,7 @@ advantage:
       name: FedEx
       logo: /uploads/fedex.svg
 features:
-  title: Zapewniamy profesjonalne wsparcie na każdym etapie rozwoju sklepu internetowego
+  title: Zapewniamy profesjonalne <strong>wsparcie na każdym etapie</strong> rozwoju sklepu internetowego
   content: |-
     Wdrażamy rozwiązania, które w efektywny sposób wpływają na biznes. Otrzymujesz od nas kompletny projekt łączący wizję z nowoczesnymi technikami i odpowiednim modelem biznesowym - to wszystko, czego potrzebujesz, żeby odnieść sukces.
   items:
@@ -129,14 +129,14 @@ features:
         Przygotowujemy indywidualną strategię sprzedażową dopasowaną do specyfiki branży, w której działasz. To daje Ci nieograniczone możliwości w zakresie personalizacji sklepu internetowego. Przy naszej pomocy Twoja witryna będzie odpowiedzią na oczekiwania Twoich klientów i wesprze wewnętrzne procesy przedsiębiorstwa.
       icon: /uploads/graphic-e-commerce-2.svg
 technologies:
-  title: Specjalizujemy się w technologiach umożliwiających rozwój małych i dużych biznesów oraz startupów
+  title: Specjalizujemy się w technologiach umożliwiających rozwój małych i dużych sklepów internetowych
   content: |-
-    Dopasujemy odpowiednią technologię, która będzie odpowiedzią na Twoje oczekiwania niezależnie od tego, w jakiej działasz branży i pozwoli Ci zbudować przewagę nad konkurencją.
+    Dopasujemy odpowiednią technologię, która będzie odpowiedzią na Twoje oczekiwania. Dzięki najlepszym, personalizowanym rozwiązaniom stworzymy dla Ciebie sklep internetowy, który pozwoli Ci zdobyć przewagę nad konkurencją.
   items:
     - _technologies/ruby-on-rails.md
     - _technologies/elastic-search.md
     - _technologies/react-js.md 
-display_faq_section: true
+display_faq_section: false
 faq:
   -
     question: |-
@@ -149,6 +149,4 @@ faq:
     answer: |-
       odpowiedz 2
 ---
-## YO
-
-Lorem ipsum tu dorum
+## Sklepy internetowe

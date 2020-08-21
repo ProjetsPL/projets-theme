@@ -6,12 +6,12 @@ title: Aplikacje internetowe
 published: true
 
 #SEO
-seo_title:  Aplikacje internetowe
+seo_title:  Rozwijamy aplikacje dostosowane do każdych potrzeb biznesowych
 seo_description: |-
-  META Aplikacje internetowe
+  Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe odpowiednio dopasowane do Twojego biznesu.
 main_keywords:
-  - test aplikacje internetowe 1
-  - test aplikacje internetowe 2
+  - aplikacje internetowe
+  - aplikacje
 
 #HREFLANGS
 display_hreflangs: false
@@ -33,26 +33,26 @@ show_contact_in_footer: true
 
 #SERVICE layout
 intro: 
-  title: Aplikacje
+  title: Aplikacje internetowe
   content: |-
     Korzystając z nowoczesnych technologii i najlepszych rozwiązań dopasowanych do Twoich potrzeb stworzymy aplikacje internetowe - funkcjonalne, bezpieczne i łatwe w użyciu. Zdobędziesz zaufanie klientów, którzy chętnie będą korzystać z proponowanych przez Ciebie rozwiązań.
-  cta_title: Stwórzmy aplikację
+  cta_title: Poznaj szczegóły
   icon: /uploads/icon-lg-web-app.svg  
 header:
   title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
   intro: |-
     Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
-  main_photo:
+  main_photo: /uploads/aplikacje-OG-image.jpg
 promoted_casestudies:
   - _casestudies/system-wms-expano.md
 cta_buttons:
-  - name: Rozpocznijmy współpracę
+  - name: Wyceń projekt aplikacji
     link: /kontakt.html
-  - name: Napisz do nas
+  - name: Wyceń projekt aplikacji
     link: /kontakt.html
-  - name: Jakieś inne CTA
+  - name: Wyceń projekt aplikacji
     link: /kontakt.html
-display_seo_section: true
+display_seo_section: false
 toc: true 
   
 
@@ -109,7 +109,7 @@ process:
     -
       title: Utrzymanie aplikacji i rozwój
       content: |-
-        Dostosowujemy projekt aplikacji do możliwych zmian i przekształceń, które mogą pojawić się na każdym etapie jego realizacji i wpływać na funkcjonalność. 
+        Po zrealizowaniu projektu utrzymujemy go, rozwijamy oraz udoskonalamy poprzez wprowadzenie kolejnych funkcjonalności.
       icon: /uploads/icon-lg-app-service.svg
       side: left
 technologies:
@@ -120,7 +120,7 @@ technologies:
     - _technologies/ruby-on-rails.md
     - _technologies/elastic-search.md
     - _technologies/react-js.md
-display_faq_section: true
+display_faq_section: false
 faq:
   -
     question: |-
@@ -134,6 +134,4 @@ faq:
       Curabitur rhoncus lacus sit amet dictum commodo. Sed a blandit augue. Nunc at arcu at magna convallis tristique. Etiam ligula sem, suscipit et tempor in, luctus ut ex.
 ---
 
-## YO
-
-## YOYO sdasdf asdf asdf 
+## Aplikacja

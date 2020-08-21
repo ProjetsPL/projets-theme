@@ -33,30 +33,31 @@ show_contact_in_footer: true
 
 # CASESTUDY layout
 intro: 
-  title: Proste zakupy bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
+  title: <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
   content: |-
-    Brak
+    Funkcjonalny i spersonalizowany sklep internetowy w którym zgromadzony jest bardzo duży asortyment. Atrakcyjny design i brak konieczności tworzenia konta w celu dokonania zakupu zachęcają klientów do skorzystania z oferty.
 header:
-  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  title: 
   intro: |-
-    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+    
   main_photo:
 screens:
-  mobile: /uploads/casestudy-agdmaster-com-mobile.jpg
-  desktop: /uploads/casestudy-agdmaster-com-desktop.jpg
+  mobile: /uploads/casestudy-agdmaster-mobile.jpg
+  desktop: /uploads/casestudy-agdmaster-desktop.jpg
 colors:
-  main: "2C4C60"
+  main: "223B4E"
   devices_border: "FFFFFF"
 company: agdmaster.com
 company_logo: /uploads/logo-agdmaster.svg
 testimonial_on_index: true
 casestudy_on_index: false
-cta: Poznaj szczegóły realizacji
+cta: Poznaj szczegóły realizacji sklepu
 customer_opinion:
   person: Przemysław Strzałka
   position: CTO 
   photo: /uploads/przemyslaw-strzalka.jpg
-  quotation: 
+  quotation: |-
+    Nasza firma ceni sobie zasadę - jeżeli pracować to tylko z najlepszymi. W myśl tego hasła nawiązaliśmy współpracę z Projets. Zastosowane przez zespół rozwiązania przyczyniły się do stworzenia nowoczesnego, a jednocześnie przyjaznego użytkownikowi sklepu. Oprócz wykonanego projektu specjaliści zapewniają także pełne wsparcie dla naszego serwisu. Mamy nadzieję, że kolejne wspólne projekty przed nami.
   quotation_small: |-
     Zastosowane przez zespół rozwiązania przyczyniły się do stworzenia nowoczesnego, a jednocześnie przyjaznego użytkownikowi sklepu. Oprócz wykonanego projektu specjaliści zapewniają także pełne wsparcie dla naszego serwisu.
 ---

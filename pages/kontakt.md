@@ -23,7 +23,7 @@ hreflangs:
 #MENU 
 top_line:
   menu_title: Kontakt
-  cta_title: Skontaktuj się
+  cta_title:  Wyceń projekt
 
 #SETTINGS
 show_contact_in_footer: false

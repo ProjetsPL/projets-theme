@@ -34,12 +34,12 @@ show_contact_in_footer: true
 #TECHNOLOGY layout
 logo: /uploads/react.svg
 intro: 
-  title: 
+  title: React
   content: |-
     Technologia przekładająca się na maksymalizację płynności aplikacji. Dzięki niej budujemy bardzo dynamiczne i wydajne interfejsy przyjazne użytkownikom.
 header:
-  title: <strong>Rozwijamy aplikacje</strong> dostosowane do każdych potrzeb biznesowych
+  title: 
   intro: |-
-    Tworzymy nowoczesne, szybkie i bezpieczne aplikacje internetowe idealnie dopasowane do Twojego biznesu.
+    
   main_photo:
 ---

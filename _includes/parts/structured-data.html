@@ -120,8 +120,8 @@
               "height": 24
             }
           },
-          "datePublished": "{{ page.date | date: "%m-%d-%Y" }}",
-          "dateModified": "{{ page.date | date: "%m-%d-%Y" }}"
+          "datePublished": "{{ page.dates.publication | date: "%m-%d-%Y" }}",
+          "dateModified": "{{ page.dates.update | date: "%m-%d-%Y" }}"
         }
         {% endif %}
     ]

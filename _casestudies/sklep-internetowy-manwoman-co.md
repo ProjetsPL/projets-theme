@@ -47,7 +47,7 @@ intro:
 header:
   title: <strong>+600 000</strong> produktów i setki największych marek w jednym miejscu
   intro: |-
-
+    Koncepcja projektu zakładała stworzenie strony z myślą o wszystkich miłośnikach mody. Ogromnym udogodnieniem jest w tym przypadku dostęp do najpopularniejszych oraz najbardziej pożądanych marek na rynku. Na wyciągnięcie ręki klient ma dostęp do wielu sklepów. Promocje, inspiracje i produkty wpisujące się w najnowsze trendy modowe - wszystko dostępne jest w jednym miejscu. Ponadto stworzony przez nasz zespół system pozwala na sprawne zarządzanie ogromną ilością informacji na temat produktów.
   main_photo:
 screens:
   mobile: /uploads/casestudy-manwoman-mobile.jpg

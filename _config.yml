@@ -26,8 +26,8 @@ collections:
     output: true
     permalink: /uslugi/:title:output_ext
   casestudies:    
-    output: false
-    # permalink: /realizacje/:title:output_ext
+    output: true
+    permalink: /realizacje/:title:output_ext
   technologies:    
     output: false
     # permalink: /technologie/:title:output_ext

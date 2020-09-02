@@ -3,7 +3,7 @@
 layout: casestudies
 page_type: casestudies
 title: Realizacje
-published: false
+published: true
 
 #SEO
 seo_title:  SEO Realizacje
@@ -34,4 +34,7 @@ header:
   intro: |-
     Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
   main_photo:
+cta_buttons:
+  - name: Wyceń projekt
+    link: /kontakt.html
 ---

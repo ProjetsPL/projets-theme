@@ -14,11 +14,12 @@
                 <img src="{{include.casestudy.customer_opinion.photo}}" alt="{{include.casestudy.customer_opinion.person}}">
             </div>
             <div class="desc">
-                <!-- <div class="logo"><img src="{{item.company_logo}}" alt="{{item.company}}"></div> -->
                 <div class="name h4">{{include.casestudy.customer_opinion.person}}</div>
                 <p class="p3">{{include.casestudy.customer_opinion.position}} @ {{include.casestudy.company}}</p>
             </div>
         </div>
-        <!-- <a href="{{include.casestudy.url}}">{{include.casestudy.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>                 -->
+        {% if include.casestudy.published %}
+        <a href="{{include.casestudy.url}}">{{include.casestudy.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        {% endif %}
     </div>    
 </div>

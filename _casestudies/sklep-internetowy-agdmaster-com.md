@@ -31,6 +31,16 @@ top_line:
 #SETTINGS
 show_contact_in_footer: true
 
+#new
+date: 2020-08-31T16:02:04.000+00:00
+project_categories:
+  - _services/sklepy-internetowe.md
+  - _services/ux-ui.md
+range:
+  - back-end
+  - front-end
+  - design
+
 # CASESTUDY layout
 intro: 
   title: <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.

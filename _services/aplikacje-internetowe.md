@@ -25,7 +25,7 @@ hreflangs:
 
 #MENU 
 top_line:
-  menu_title: Aplikacje internetowe
+  menu_title: Aplikacje
   cta_title:
 
 #SETTINGS

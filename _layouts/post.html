@@ -63,8 +63,8 @@
             </div>            
             {%if page.toc %}
             <div class="beam-item b-size-2  post-toc">
-                <div class="sticky-rail">
-                    <div class="sticky-element">
+                <div class="sticky-rail rail-sidebar">
+                    <div class="sticky-sidebar">
                         <nav class="table-of-content  table-of-content-desktop">
                             <span class="title">{{site.data.global.translations.table_of_contents}}</span>
                             {% toc %}
@@ -103,5 +103,6 @@
     </section>
     {% include random-links.html %}    
     {% include footer.html %}
+    {% include parts/stickby-sidebar.html %}
 </body>
 </html>

@@ -169,7 +169,8 @@
                         font-size: 16px;
                         line-height: 23px;
                         letter-spacing: 0.02em;
-                        color: $main-2;                   
+                        color: $main-2;     
+                        text-align:left;              
                     }
                 }
             }
@@ -190,6 +191,7 @@
                 color: $bg-0;                  
                 text-transform: none;
                 box-shadow: none;
+                text-align:left;        
                 &:active {
                     transform: scale(1);
                 }

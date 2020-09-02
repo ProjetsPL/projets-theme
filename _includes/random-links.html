@@ -12,7 +12,7 @@
             {% assign casestudies = site.casestudies %}
             {% assign technologies = site.technologies %}
             {% assign articles = site.posts %}
-            {% assign random_pages = services  | concat: articles  | sample: 10 %}
+            {% assign random_pages = services  | concat: articles  | concat: casestudies  | sample: 10 %}
             {% for item in random_pages %}
             {% assign main_keywords = item.main_keywords | sample: 1 %}
             {% if main_keywords %}

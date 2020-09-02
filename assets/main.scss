@@ -38,6 +38,10 @@ $slow: 0.4s;
 $normal: 0.2s;
 $fast: 0.1s;
 
+//fonts 
+$montserrat: Montserrat, sans-serif;
+$ubuntu: Ubuntu, sans-serif;
+
 //Main elements
 *,
  ::before,
@@ -52,7 +56,7 @@ body {
     margin: 0 auto;    
     color: $main-1;    
     overflow-x: hidden;
-    font-family: Montserrat, sans-serif;
+    font-family: $montserrat;
     scroll-behavior: smooth;
 }
 button {
@@ -91,7 +95,7 @@ legend {
 
 //Typo
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {    
-    font-family: Ubuntu, sans-serif;
+    font-family: $ubuntu;
     font-weight: 600;
     margin-top: 30px;
     padding-top: 20px;
@@ -344,7 +348,7 @@ ul, ol {
      color: $bg-1;
      display: inline-flex;
      align-items: center;
-     font-family: 'Ubuntu', sans-serif;
+     font-family: $ubuntu;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
@@ -371,7 +375,7 @@ ul, ol {
         color: $main-2;
         text-transform: none;
         font-weight: normal;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $montserrat;
     }
     &.btn-lefticon {
         img {
@@ -433,7 +437,7 @@ ul, ol {
     // background-color:  $bg-1;
     margin-top: 50px;
     .title {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: $ubuntu;
         display: block;
         font-weight: 600;
         margin-top: 0px;
@@ -942,7 +946,7 @@ ul, ol {
         min-height: 130px;
     }
     input, textarea {
-        font-family: Montserrat;
+        font-family: $montserrat;
         font-style: normal;
         font-weight: normal;
         padding: 10px 0px;
@@ -972,7 +976,7 @@ ul, ol {
             }
         }
         &::-webkit-input-placeholder {
-            font-family: Montserrat;
+            font-family: $montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 17px;
@@ -980,7 +984,7 @@ ul, ol {
             color: $bg-4;
         }          
         &:-ms-input-placeholder {
-            font-family: Montserrat;
+            font-family: $montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 17px;
@@ -988,7 +992,7 @@ ul, ol {
             color: $bg-4;
         }          
         &::placeholder {
-            font-family: Montserrat;
+            font-family: $montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 17px;
@@ -1041,3 +1045,5 @@ ul, ol {
 @import "blog.scss";
 @import "post.scss";
 @import "contact.scss";
+@import "casestudies.scss";
+@import "casestudy.scss";

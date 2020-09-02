@@ -7,24 +7,54 @@
         {% include parts/gtagmanager.html %}
         {% include top-line.html %} 
         {% include parts/breadcrumbs.html %}               
-        <header class="beams-wrapper global-beam-wrapper beam-background section-beam header-beam">
+        <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam casestudies-header">
             <div class="beam">
                 <div class="beam-item">
                     <h1>{{page.header.title}}</h1>
                     <p>{{page.header.intro}}</p>
                 </div>
             </div>
-        </header>       
-        <section class="beams-wrapper global-beam-wrapper beam-background section-beam">
-            <div class="beam">
+        </header>                   
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
                 <div class="beam-item">
-                    {% for post in site.casestudies %}
-                    <ul>
-                      <li><a href="{{post.url}}">{{post.title}}</a></li>          
-                    </ul>        
-                    {% endfor %}       
+                    <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
                 </div>
             </div>
+        </div>
+        {%endif%}   
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam casestudies-list">
+            <ul class="beam main-list">
+                {% assign casestudies = site.casestudies |  sort:  page.date | reverse %}    
+                {% for casestudy in casestudies %}
+                    <li class="beam-item">
+                        <div class="beam b-size-2 casestudy-item">
+                            <div class="beam-item b-size-1  casestudy-img" >  
+                                <div class="mockups">
+                                    {% include parts/casestudy-mockup-mobile.html mockup=casestudy%}  
+                                    {% include parts/casestudy-mockup-desktop.html mockup=casestudy%}  
+                                </div>
+                            </div>
+                            <div class="beam-item b-size-1 casestudy-desc">
+                                <ul class="categories">
+                                    {% for category in casestudy.project_categories%}
+                                        {% assign services = site.services | where: "path" , category %}
+                                        {% for service in services %}
+                                            <li>
+                                                <a href="{{service.url}}" class="p2">{{service.top_line.menu_title}}</a>  
+                                            </li>
+                                        {% endfor %}
+                                    {% endfor %}
+                                </ul>
+                                <h2 class="h3 title">{{casestudy.intro.title}}</h2>
+                                <p class="intro">{{casestudy.intro.content}}</p>
+                                <a href="{{casestudy.url}}">{{casestudy.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>                
+                            </div>
+                        </div>
+                    </li>          
+                {% endfor %}       
+            </ul>        
         </section>                 
         {% include footer.html %}       
     </body>

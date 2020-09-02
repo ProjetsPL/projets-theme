@@ -17,7 +17,7 @@
                         <img src="{{item.photo}}" alt="{{item.name}}" class="main">
                     </div>
                     <p class="content">{{item.content}}</p>
-                    <!-- <a class="cta"href="{{item.link}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
+                    <a class="cta"href="{{item.link}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
                 <div class="beam-item b-size-1 slide-photo  slide-photo-desktop">                    
                     <img src="{{item.photo}}" alt="{{item.name}}" class="main">
@@ -138,7 +138,7 @@
                             <div class="content">
                                 <p>"{{item.customer_opinion.quotation_small}}"</p>
                             </div>
-                            <!-- <a href="{{item.url}}" alt="{{item.title}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
+                            <a href="{{item.url}}" alt="{{item.title}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </section>
                         {% endfor %}
                     </div>
@@ -189,9 +189,9 @@
                             <div class="beam-item b-size-3 casestudy-content">
                                 <h4 class="h2">{{item.intro.title}}</h3>
                                 <p>{{item.intro.content}}</p>
-                                <!-- <div class="link">
+                                <div class="link">
                                     <a href="{{item.url}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="beam-item b-size-2 casestudy-img">
                                 {% include parts/casestudy-mockup-mobile.html mockup=item%}       

@@ -25,7 +25,7 @@ hreflangs:
 
 #MENU 
 top_line:
-  menu_title: Sklepy internetowe
+  menu_title: Sklepy
   cta_title:
 
 #SETTINGS

@@ -7,15 +7,224 @@
         {% include parts/gtagmanager.html %}
         {% include top-line.html %}         
         {% include parts/breadcrumbs.html %}       
-        <header class="beams-wrapper global-beam-wrapper beam-background section-beam header-beam">
-            <div class="beam">
-                <div class="beam-item">
-                    <h1>{{page.title}}</h1>
-                    {{content}}              
+        <div class=" beam-background casestudy-top-beam">
+            <header class="beams-wrapper small-beam-wrapper section-beam header-beam casestudy-header">
+                <div class="beam  b-size-6">
+                    <div class="beam-item  b-size-6">
+                        <h1>{{page.header.title}}</h1>
+                        <span class="p2">{{site.data.global.translations.implementation_data}}: <time
+                            datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%d-%m-%Y'}}</time></span>
+                    </div>   
+                </div>
+            </header>    
+            <section class="mockup-beam">
+                <div class="mockup-wrapper">
+                    {% include parts/casestudy-mockup-mobile.html mockup=page%}  
+                    {% include parts/casestudy-mockup-desktop.html mockup=page%}  
+                </div>
+            </section>  
+            {% if page.watermark %}      
+            <div class="background"><img src="{{ page.watermark }}" alt="{{page.company}}"></div>
+            {%endif%}
+        </div>    
+        <section class="beams-wrapper global-beam-wrapper section-beam intro-beam">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-4">
+                    <ul class="beam  b-size-3 project-properties">
+                        <li  class="beam-item b-size-1">
+                            <p>{{site.data.global.translations.project_type}}: </p>
+                            <ul>
+                                {% for category in page.project_categories%}
+                                    {% assign services = site.services | where: "path" , category %}
+                                    {% for service in services %}
+                                        <li>
+                                            <a href="{{service.url}}">{{service.top_line.menu_title}}</a>  
+                                        </li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li  class="beam-item b-size-1">
+                            <p>{{site.data.global.translations.work_scopes}}: </p>
+                            <ul>
+                                {% for range in page.project_range%}
+                                    <li>
+                                        {{range}}
+                                    </li>
+                            {% endfor %}
+                            </ul>
+                        </li>
+                        <li  class="beam-item b-size-1">
+                            <p>{{site.data.global.translations.technologies}}: </p>
+                            <ul>
+                                {% for technologies in page.project_technologies%}
+                                    {% assign technology = site.technologies | where: "path" , technologies %}
+                                    {% for item in technology %}
+                                        <li>
+                                            {{item.top_line.menu_title}}
+                                        </li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>            
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-4 project-intro">
+                    <p>{{page.start_content | markdownify }}</p>
+                </div>
+            </div>
+        </section> 
+        {% if page.customer_opinion.quotation_sentence%}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam quotation-sentence-beam">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-4 ">
+                    <div class="quotation">
+                        <q class="h3">{{page.customer_opinion.quotation_sentence}}</q>
+                    </div>
+                    <div class="person">
+                        <div class="photo">
+                            <img src="{{page.customer_opinion.photo}}" alt="{{page.customer_opinion.person}}">
+                        </div>
+                        <div class="details">
+                            <p class="name h4">{{page.customer_opinion.person}}</p>
+                            <p class="position p2">{{page.customer_opinion.position}} @ {{page.company}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {%endif%}   
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                </div>
+            </div>
+        </div>
+        {%endif%}   
+        {% if page.project_challenges or page.project_process  or page.project_result %}
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam main-points-beam">
+            <ol class="beam b-size-6 main-points-list">
+                {% if page.project_challenges%}
+                <li class="beam-item b-size-6 main-point">
+                    <div class="beam b-size-6">
+                        <div class="beam-item b-size-1 label-wrapper">
+                            <div class="sticky-rail rail-sidebar">
+                                <div class="sticky-element label">
+                                    <div class="number">01</div>
+                                    <div class="name h4">{{site.data.global.translations.challenges}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-4 content">{{page.project_challenges | markdownify }}</div>
+                    </div>
+                </li>    
+                {%endif%}
+                {% if page.project_process %}
+                <li class="beam-item b-size-6 main-point">
+                    <div class="beam b-size-6">
+                        <div class="beam-item b-size-1">
+                            <div class="sticky-rail rail-sidebar">
+                                <div class="sticky-element label">
+                                    <div class="number">02</div>
+                                    <div class="name h4">{{site.data.global.translations.process}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-4 content">{{page.project_challenges | markdownify }}</div>
+                    </div>
+                </li>    
+                {%endif%}
+                {% if page.project_result %}
+                <li class="beam-item b-size-6 main-point">
+                    <div class="beam b-size-6">
+                        <div class="beam-item b-size-1">
+                            <div class="sticky-rail rail-sidebar">
+                                <div class="sticky-element label">
+                                    <div class="number">03</div>
+                                    <div class="name h4">{{site.data.global.translations.results}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-4 content">{{page.project_challenges | markdownify }}</div>
+                    </div>
+                </li>    
+                {%endif%}
+            </ol>
+        </section>        
+        {%endif%}
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                </div>
+            </div>
+        </div>
+        {%endif%}  
+        {% if page.presentation[0] %}
+        <section class="presentation-beam">
+            {% for item in page.presentation %}
+                {% if item.graphic %}
+                    <div class="img-beam {% if item.graphic_full_width == true %}full-width{%else%}size-{{item.graphic_size}}{%endif%}">
+                        <img src="{{item.graphic}}" alt="{{item.graphic_title}}">
+                    </div>
+                {%endif%}
+                {% if item.content %}
+                    <div class="beams-wrapper global-beam-wrapper content-beam">
+                        <div class="beam b-size-6">
+                            <div class="beam-item b-size-{{item.content_size}} content">
+                                {{item.content | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                {%endif%}
+            {% endfor %}
+        </section>
+        {%endif%}  
+        <section class="beams-wrapper global-beam-wrapper beam-background section-beam quotation-sentence-beam">
+            <div class="beam b-size-6">
+                <div class="beam-item b-size-4 ">
+                    <div class="quotation">
+                        <q class="p1">{{page.customer_opinion.quotation}}</q>
+                    </div>
+                    <div class="person">
+                        <div class="photo">
+                            <img src="{{page.customer_opinion.photo}}" alt="{{page.customer_opinion.person}}">
+                        </div>
+                        <div class="details">
+                            <p class="name h4">{{page.customer_opinion.person}}</p>
+                            <p class="position p2">{{page.customer_opinion.position}} @ {{page.company}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {%if page.cta_buttons[0].link and page.cta_buttons[0].name%}
+        <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
+            <div class="beam b-size-6">
+                <div class="beam-item">
+                    <a class="btn" href="{{page.cta_buttons[0].link}}">{{page.cta_buttons[0].name}}</a>
+                </div>
+            </div>
+        </div>
+        {%endif%}  
+        <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg overflow-beam">
+            {%assign casestudies = site.casestudies%}
+            {% for item in casestudies  %}
+                {% if item.path == page.path %}                
+                    {% continue %}
+                {% else %}
+                    {% include parts/casestudy-beam.html  casestudy=item%} 
+                    {% break %}
+                {% endif %}
+            {%endfor%}
+            </section>
         {% include random-links.html %}    
         {% include footer.html %}       
+        {% include parts/stickby-element.html %}
     </body>
 </html>

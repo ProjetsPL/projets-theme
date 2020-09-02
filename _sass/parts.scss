@@ -197,6 +197,9 @@
 &.mobile-mockup {    
     --mobile-mockup-size:  376px;
     border-radius: calc(var(--mobile-mockup-size) * 0.10106);
+        .mockup-img {
+            border: calc(var(--mobile-mockup-size) * 0.02) solid $bg-0;
+        }
         .mockup-shadow {
             width: 100%;
             height: 6%;
@@ -213,19 +216,22 @@
     &.desktop-mockup {    
         --desktop-mockup-size: 1580px;
         border-radius: calc(var(--desktop-mockup-size) * 0.02468);
-            .mockup-shadow {
-                width: 100%;
-                height: 10%;
-                background:  linear-gradient(180deg, #FFF 0%, #FFFFFF00 100%);
-                position: absolute;
-                top:0;
-                left:0;
-                z-index: 1;
-            }
-            .mockup-border {
-                width: var(--desktop-mockup-size);
-            }
+        .mockup-img {
+            border: calc(var(--desktop-mockup-size) * 0.005) solid $bg-0;
         }
+        .mockup-shadow {
+            width: 100%;
+            height: 10%;
+            background:  linear-gradient(180deg, #FFF 0%, #FFFFFF00 100%);
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 1;
+        }
+        .mockup-border {
+            width: var(--desktop-mockup-size);
+        }
+    }
 }
 
 //breadcrumbs.html

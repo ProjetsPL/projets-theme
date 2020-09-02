@@ -81,7 +81,7 @@
                 <header class="section-header">
                     <div class="head">
                         <div class="title">
-                            <h2 class="h4 uppercase">{{site.data.global.translations.featured_posts}}</h2>
+                            <p class="h4 uppercase">{{site.data.global.translations.featured_posts}}</p>
                         </div>
                         {% assign blog = site.pages | where: "layout", "blog" %}
                         {% for item in blog %}
@@ -94,7 +94,7 @@
                 <div class="beam b-size-3 futured-posts-listing ">
                     {% for item in site.posts limit:3 %}
                     <div class="beam-item b-size-1">
-                        {% include parts/post-item.html  post=item h="h3"%}
+                        {% include parts/post-item.html  post=item h="p"%}
                     </div>
                     {% endfor %}
                 </div>

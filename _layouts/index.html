@@ -17,7 +17,9 @@
                         <img src="{{item.photo}}" alt="{{item.name}}" class="main">
                     </div>
                     <p class="content">{{item.content}}</p>
+                    {% if item.cta %}
                     <a class="cta"href="{{item.link}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    {%endif%}
                 </div>
                 <div class="beam-item b-size-1 slide-photo  slide-photo-desktop">                    
                     <img src="{{item.photo}}" alt="{{item.name}}" class="main">

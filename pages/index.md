@@ -13,11 +13,8 @@ seo_description: |-
   Projektujemy i rozwijamy dedykowane aplikacje internetowe. Oferujemy usługi z zakresu Web Development i Product Design.
 
 #HREFLANGS
-display_hreflangs: false
+display_hreflangs: true
 hreflangs:
-  -
-    lang: x-default
-    link: https://projets.io
   -
     lang: en
     link: https://projets.io

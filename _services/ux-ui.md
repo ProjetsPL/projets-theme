@@ -4,7 +4,7 @@ layout: services/service-ux-ui
 page_type: service
 title: UX & UI
 published: true
-hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  Projektujemy layouty gwarantujące pozytywne doświadczenia użytkowe

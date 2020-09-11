@@ -4,7 +4,7 @@ layout: technology
 page_type: technology
 title: Ruby on Rails
 published: true
-hide_links: true
+links_visible: false
 
 #SEO
 seo_title:  SEO Ruby on Rails

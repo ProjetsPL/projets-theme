@@ -5,6 +5,7 @@ page_type: casestudies
 title: Realizacje
 published: true
 hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  SEO Realizacje

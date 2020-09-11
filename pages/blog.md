@@ -5,6 +5,7 @@ page_type: blog
 title: Blog
 published: true
 hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  Dzielimy się wiedzą dotyczącą biznesowych rozwiązań technicznych

@@ -4,7 +4,7 @@ layout: casestudy
 page_type: casestudy
 title: Expano WMS
 published: true
-hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  SEO Expano WMS

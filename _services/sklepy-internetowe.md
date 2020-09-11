@@ -4,7 +4,7 @@ layout: services/service-e-commerce
 page_type: service
 title: Sklepy internetowe
 published: true
-hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  Tworzymy sklepy dostosowane do potrzeb biznesu e-commerce

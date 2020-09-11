@@ -5,6 +5,7 @@ page_type: index
 title: Strona główna
 published: true
 hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  Projektujemy i rozwijamy aplikacje internetowe

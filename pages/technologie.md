@@ -5,6 +5,7 @@ page_type: technologies
 title: Technologie
 published: false
 hide_links: false
+links_visible: true
 
 #SEO
 seo_title:  SEO Technologie

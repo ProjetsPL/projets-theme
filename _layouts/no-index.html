@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+    <head>
+        {% include head.html %}
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>    
+        {% include parts/gtagmanager.html %}
+        {% include top-line.html %}              
+        <header class="beams-wrapper global-beam-wrapper beam-background section-beam  no-index-beam">
+            <div class="beam">
+                <div class="beam-item">
+                    <h1>{{page.header.title}}</h1>
+                    <p>{{page.header.intro}}</p>
+                    <a href="{{site.url}}">{{site.data.global.translations.back_to_homepage}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </div>
+            </div>
+        </header>            
+
+        {% include footer.html %}       
+    </body>
+</html>

@@ -1,7 +1,7 @@
 ---
 # GLOBAL 
-layout: default
-page_type: default
+layout: no-index
+page_type: no-index
 title: Wysłano formularz
 published: true
 permalink: kontakt/:basename:output_ext

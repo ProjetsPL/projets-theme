@@ -32,7 +32,7 @@ header:
   title: <strong>Projektujemy i programujemy</strong> rozwiązania dla Twojego biznesu
   intro: |-
     Wspólnie opracujemy rozwiązanie odpowiadające potrzebom Twojego biznesu. Dzięki dobrze dopasowanym narzędziom wykorzystasz wszystkie możliwości do rozwoju i przeniesiesz swoją firmę lub startup na wyższy poziom.
-  main_photo: /uploads/usługi-OG-image.jpg
+  main_photo: /uploads/uslugi-OG-image.jpg
 services:
   -
     service: _services/aplikacje-internetowe.md

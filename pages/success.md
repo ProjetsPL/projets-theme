@@ -4,6 +4,7 @@ layout: default
 page_type: default
 title: Wysłano formularz
 published: true
+permalink: kontakt/:basename:output_ext
 
 #SEO
 seo_title:  Wysłano formularz

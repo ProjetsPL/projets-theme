@@ -15,7 +15,7 @@
                 </div>
             </div>
         </header>
-        <form id= "contactForm" name="contact" method="POST" data-netlify="true"  data-netlify-recaptcha="true" class="beams-wrapper small-beam-wrapper beam-background section-beam section-contact-form" onsubmit="return submitEvent()">
+        <form id= "contactForm" name="contact" method="POST" data-netlify="true"  data-netlify-recaptcha="true" class="beams-wrapper small-beam-wrapper beam-background section-beam section-contact-form" onsubmit="return submitEvent()" action="success.html">
             <div class="beam contact-form">               
                 <div class="beam-item contact-inputs">                        
                     <div class="section-header">
@@ -235,6 +235,7 @@
                     event.preventDefault();
                     event.stopPropagation();
                 }
+                
             }
 
         </script>

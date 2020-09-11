@@ -4,6 +4,7 @@ layout: contact
 page_type: contact
 title: Kontakt
 published: true
+hide_links: false
 
 #SEO
 seo_title:  Wycenimy Twój projekt w 7 dni

@@ -4,6 +4,7 @@ layout: casestudy
 page_type: casestudy
 title: arcom.net.pl
 published: true
+hide_links: true
 
 #SEO
 seo_title:  SEO arcom.net.pl

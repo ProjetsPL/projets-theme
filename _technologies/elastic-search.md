@@ -4,6 +4,7 @@ layout: technology
 page_type: technology
 title: Elastic Search
 published: true
+hide_links: true
 
 #SEO
 seo_title:  SEO Elastic Search

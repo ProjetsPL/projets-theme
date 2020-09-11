@@ -4,6 +4,7 @@ layout: services/service-app
 page_type: service
 title: Aplikacje internetowe
 published: true
+hide_links: false
 
 #SEO
 seo_title:  Rozwijamy aplikacje dostosowane do każdych potrzeb biznesowych

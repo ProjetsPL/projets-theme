@@ -4,6 +4,7 @@ layout: casestudy
 page_type: casestudy
 title: agdmaster.com
 published: true
+hide_links: false
 
 #SEO
 seo_title:  SEO agdmaster.com

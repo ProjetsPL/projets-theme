@@ -79,7 +79,7 @@
                                 {% for item in services_items %}
                                     {% assign service_item =  site.services |  where: "path", item %}
                                     {% for item in service_item %}
-                                        {% if item.published %}
+                                        {% if item.hide_links == false %}
                                         <li><a href="{{item.url}}">{{item.top_line.menu_title}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>             
                                         {%endif%}    
                                     {% endfor %}   
@@ -140,7 +140,7 @@
                             <div class="content">
                                 <p>"{{item.customer_opinion.quotation_small}}"</p>
                             </div>
-                            {% if item.cta %}
+                            {% if item.hide_links == false %}
                             <a href="{{item.url}}" alt="{{item.title}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                             {%endif%}
                         </section>
@@ -194,7 +194,7 @@
                                 <p class="h2">{{item.intro.title}}</p>
                                 <p>{{item.intro.content}}</p>
                                 <div class="link">
-                                    {% if item.cta %}
+                                    {% if item.hide_links == false %}
                                     <a href="{{item.url}}">{{item.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                                     {% endif %}
                                 </div>

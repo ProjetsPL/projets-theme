@@ -4,6 +4,7 @@ layout: services/service-branding
 page_type: service
 title: Branding
 published: true
+hide_links: false
 
 #SEO
 seo_title:  Projektujemy identyfikacje wizualne, które zapadają w pamięć

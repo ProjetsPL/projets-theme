@@ -4,6 +4,7 @@ layout: services
 page_type: services
 title: Usługi
 published: true
+hide_links: false
 
 #SEO
 seo_title:  Projektujemy i programujemy rozwiązania dla Twojego biznesu

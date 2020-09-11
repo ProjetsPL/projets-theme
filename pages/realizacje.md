@@ -4,6 +4,7 @@ layout: casestudies
 page_type: casestudies
 title: Realizacje
 published: true
+hide_links: false
 
 #SEO
 seo_title:  SEO Realizacje

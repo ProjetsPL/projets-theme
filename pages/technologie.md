@@ -4,6 +4,7 @@ layout: technologies
 page_type: technologies
 title: Technologie
 published: false
+hide_links: false
 
 #SEO
 seo_title:  SEO Technologie

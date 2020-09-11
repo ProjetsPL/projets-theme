@@ -61,7 +61,7 @@ company: Arcom
 company_logo: /uploads/logo-arcom.svg
 testimonial_on_index: true
 casestudy_on_index: true
-cta: Case study arcom.net.pl
+cta: 
 customer_opinion:
   person: Marcin Smulski
   position: Sales Manager

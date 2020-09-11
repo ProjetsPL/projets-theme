@@ -59,7 +59,7 @@ company: manwoman.com
 company_logo: /uploads/logo-manwoman.svg
 testimonial_on_index: true
 casestudy_on_index: false
-cta: Przeczytaj o sukcesie
+cta: 
 customer_opinion:
   person: Robert Niechciał
   position: CEO

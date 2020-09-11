@@ -5,6 +5,7 @@ page_type: no-index
 title: Wysłano formularz
 published: true
 permalink: kontakt/:basename:output_ext
+sitemap: false
 
 #SEO
 seo_title:  Wysłano formularz

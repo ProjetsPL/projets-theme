@@ -46,42 +46,42 @@
 {% include parts/structured-data.html %}
 
 
-{% if site.data.globa.scvarificationnumber %}
+{% if site.data.global.scvarificationnumber %}
 <!-- Google Search Console -->
-  <meta name="google-site-verification" content="{{site.data.globa.scvarificationnumber}}" />
+  <meta name="google-site-verification" content="{{site.data.global.scvarificationnumber}}" />
 <!-- End Google Search Console -->    
 {% endif %}
 
-{% if site.data.globa.analyticsvarificationnumber %}
+{% if site.data.global.analyticsvarificationnumber %}
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.globa.analyticsvarificationnumber}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.global.analyticsvarificationnumber}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{site.data.globa.analyticsvarificationnumber}}');
+  gtag('config', '{{site.data.global.analyticsvarificationnumber}}');
 </script>
 <!-- End Google Analytics -->
 {% endif %}
 
-{% if site.data.globa.gtagmanagervarificationnumber %}
+{% if site.data.global.gtagmanagervarificationnumber %}
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','{{site.data.globa.gtagmanagervarificationnumber}}');</script> 
+    })(window,document,'script','dataLayer','{{site.data.global.gtagmanagervarificationnumber}}');</script> 
 <!-- End Google Tag Manager -->
 {% endif %}
 
-{% if site.data.globa.optimizevarificationnumber %}
+{% if site.data.global.optimizevarificationnumber %}
 <!-- Google Optimie -->
-<script src="https://www.googleoptimize.com/optimize.js?id={{site.data.globa.optimizevarificationnumber}}"></script>
+<script src="https://www.googleoptimize.com/optimize.js?id={{site.data.global.optimizevarificationnumber}}"></script>
 <!-- End Google Optimie -->
 {% endif %}
 
-{% if site.data.globa.facebookpixelnumber %}
+{% if site.data.global.facebookpixelnumber %}
 <!-- Facebook Pixel Code -->
 <script>
     !function(f,b,e,v,n,t,s)
@@ -92,11 +92,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '{{site.data.globa.facebookpixelnumber}}');
+    fbq('init', '{{site.data.global.facebookpixelnumber}}');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id={{site.data.globa.facebookpixelnumber}}&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id={{site.data.global.facebookpixelnumber}}&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
   {% endif %}

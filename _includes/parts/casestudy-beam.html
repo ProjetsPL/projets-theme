@@ -7,7 +7,11 @@
         {% include parts/casestudy-mockup-desktop.html mockup=include.casestudy%}  
     </div>
     <div class="beam-item b-size-1  casestudy-content" >
+        {% if include.casestudy.links_visible %}
+        <a href="{{include.casestudy.url}}"><p class="h3">{{include.casestudy.intro.title}}</p></a>
+        {% else %}
         <p class="h3">{{include.casestudy.intro.title}}</p>
+        {% endif %}
         <p>"{{include.casestudy.customer_opinion.quotation_small}}"</p>        
         <div class="person">
             <div class="photo">

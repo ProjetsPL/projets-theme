@@ -15,12 +15,6 @@ main_keywords:
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: x-default
-    link: https://projets.io
-  -
-    lang: en
-    link: https://projets.io
 
 #MENU 
 top_line:
@@ -94,7 +88,7 @@ Klienci wybiorą ten **sklep internetowy**, który wydaje się im najbardziej wi
 
 **Możliwość zrobienia zakupów z dowolnego miejsca** - podczas drogi do szkoły, pracy, czy podczas podróży, to obecnie podstawa. Coraz większa liczba osób częściej korzysta ze smartfona niż z komputera. Dlatego tak ważna jest fakt, aby dostosować sklep internetowy do urządzeń przenośnych. W momencie, kiedy nie ma takiej możliwości, poruszanie się po witrynie jest mocno ograniczone, a to z kolei może spowodować, że klient zrezygnuje z zakupów.
 
-W tym zakresie można zdecydować się na dwa rozwiązania. Pierwszym z nich jest **mobilna wersja sklepu**. Jest ona przeznaczona na wszystkie urządzenia przenośne - nie tylko smartfony, ale również tablety, czy czytniki e-book. Warto jednak zauważyć, że w tym przypadku jest to zupełnie nowa domena, z własną grafiką i odrębną nawigacją. Drugą opcją jest responsywna strona internetowa sklepu. Na czym polega? Jest to jedna wersja, która dopasowuje się swoim wyglądem, treścią i nawigacją do urządzenia, na którym jest przeglądana. To rozwiązanie jest wykorzystywane obecnie najczęściej. Warto także zastanowić się nad stworzeniem [aplikacji internetowej sklepu](/uslugi/aplikacje.html).
+W tym zakresie można zdecydować się na dwa rozwiązania. Pierwszym z nich jest **mobilna wersja sklepu**. Jest ona przeznaczona na wszystkie urządzenia przenośne - nie tylko smartfony, ale również tablety, czy czytniki e-book. Warto jednak zauważyć, że w tym przypadku jest to zupełnie nowa domena, z własną grafiką i odrębną nawigacją. Drugą opcją jest responsywna strona internetowa sklepu. Na czym polega? Jest to jedna wersja, która dopasowuje się swoim wyglądem, treścią i nawigacją do urządzenia, na którym jest przeglądana. To rozwiązanie jest wykorzystywane obecnie najczęściej. Warto także zastanowić się nad stworzeniem [aplikacji internetowej sklepu](/uslugi/aplikacje-internetowe.html).
 
 ## Przejrzysta czytelna strona
 

@@ -4,7 +4,6 @@ layout: contact
 page_type: contact
 title: Kontakt
 published: true
-hide_links: false
 links_visible: true
 
 #SEO
@@ -13,11 +12,12 @@ seo_description: |-
   Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
 
 #HREFLANGS
-display_hreflangs: false
+display_hreflangs: true
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
+- lang: en
+  link: https://projets.io/contact.html
+- lang: pl
+  link: https://projets.pl/kontakt.html
 
 #MENU 
 top_line:

@@ -17,12 +17,6 @@ main_keywords:
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: x-default
-    link: https://projets.io
-  -
-    lang: en
-    link: https://projets.io
 
 #MENU 
 top_line:
@@ -79,7 +73,7 @@ React.js ze względu na tę właściwość doceniany jest przede wszystkim przez
 
 ## Gdzie może być wykorzystywana biblioteka React js?
 
-Zastosowanie React’a ma miejsce w przypadku [aplikacji](/uslugi/aplikacje.html) webowych. Co ciekawe, większość z nich znana jest każdemu użytkownikowi sieci. Z tej biblioteki korzysta między innymi Netflix, czy chociażby PayPal. Dzięki jego użyciu aplikacje te bez problemu dopasowują się do każdego urządzenia, na którym są otwierane. Z uwagi na fakt, że stworzone przy pomocy React’a interfejsy wyróżnia prostota, są one lekkie, a to przekłada się na szybkie wyświetlanie danych przez użytkownika.
+Zastosowanie React’a ma miejsce w przypadku [aplikacji](/uslugi/aplikacje-internetowe.html) webowych. Co ciekawe, większość z nich znana jest każdemu użytkownikowi sieci. Z tej biblioteki korzysta między innymi Netflix, czy chociażby PayPal. Dzięki jego użyciu aplikacje te bez problemu dopasowują się do każdego urządzenia, na którym są otwierane. Z uwagi na fakt, że stworzone przy pomocy React’a interfejsy wyróżnia prostota, są one lekkie, a to przekłada się na szybkie wyświetlanie danych przez użytkownika.
 
 ![Z react.js korzysta między innymi Netflix](/uploads/czym-jest-reactjs-kiedy-i-dlaczego-powinnismy-go-uzywac-02.jpg)
 

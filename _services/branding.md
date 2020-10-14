@@ -16,12 +16,12 @@ main_keywords:
   - identyfikacja wizualna
 
 #HREFLANGS
-display_hreflangs: false
+display_hreflangs: true
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
-
+- lang: en
+  link: https://projets.io/services/branding.html
+- lang: pl
+  link: https://projets.pl/uslugi/branding.html
 #MENU 
 top_line:
   menu_title: Branding

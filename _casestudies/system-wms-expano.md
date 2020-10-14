@@ -7,65 +7,105 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  SEO Expano WMS
+seo_title: Aplikacja typu WMS - Kontrola magazynu na wyższym pziomie
 seo_description: |-
-  META Expano WMS
+  Nowoczesny magazynowy system informatyczny pozwalający na zarządzenie produktami w kontekście logistycznym. 
 main_keywords:
-  - test Expano WMS 1
-  - test Expano WMS 2
+  - System WMS
 
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
-
 #MENU 
 top_line:
   menu_title: Expano WMS
-  cta_title:
+  cta_title: 
 
 #SETTINGS
 show_contact_in_footer: true
 
-#new
-date: 2020-08-31T16:02:04.000+00:00
-project_categories:
-  - _services/aplikacje-internetowe.md
-  - _services/ux-ui.md
-range:
-  - back-end
-  - front-end
-  - design
-
 # CASESTUDY layout
+cta_buttons:
+  - name: Wyceń podobny projekt
+    link: /kontakt.html
+  - name: Wyceń podobny projekt
+    link: /kontakt.html
+testimonial_on_index: false
+casestudy_on_index: false
+cta: Sprawdz Case Study aplikacji WMS
+
+
+date: 2020-09-01T12:02:04.000+00:00
+
+
 intro: 
   title: Aplikacja typu <strong>WMS</strong> - Kontrola magazynu na wyższym pziomie
   content: |-
     Nowoczesny magazynowy system informatyczny pozwalający na zarządzenie produktami w kontekście logistycznym. Sprawna komunikacja wewnętrzna i praktyczna pomoc w zarządzaniu pracą całego przedsiębiorstwa.
+
+
 header:
-  title:
+  title: Aplikacja typu <strong>WMS</strong> - Kontrola magazynu na wyższym pziomie
   intro: |-
-    
+    Nowoczesny magazynowy system informatyczny pozwalający na zarządzenie produktami w kontekście logistycznym. Sprawna komunikacja wewnętrzna i praktyczna pomoc w zarządzaniu pracą całego przedsiębiorstwa    
   main_photo:
 screens:
-  mobile: /uploads/casestudy-instalguru-wms-mobile.jpg
-  desktop: /uploads/casestudy-instalguru-wms-desktop.jpg
+  mobile: "/uploads/casestudy-instalguru-wms-mobile.jpg"
+  desktop: "/uploads/casestudy-instalguru-wms-desktop.jpg"
+  mobile_cover: "/uploads/casestudy-instalguru-wms-mobile-cover.jpg"
+  desktop_cover: "/uploads/casestudy-instalguru-wms-desktop-cover.jpg"
 colors:
   main: "9A18E5"
   devices_border: "FFFFFF"
+
+
 company: Tradecron
-company_logo: /uploads/logo-agdmaster.svg
-testimonial_on_index: true
-casestudy_on_index: false
-cta: Sprawdz Case Study aplikacji WMS
+company_logo: /uploads/instalguru-wms-logo.svg
+watermark: 
+
 customer_opinion:
   person: Konrad Ignacyk
   position: Head of Logistics
-  photo: /uploads/przemyslaw-strzalka.jpg
+  photo: /uploads/konrad-ignacyk.jpg
   quotation: |-
     Wybrane przez specjalistów rozwiązania w pełni zadowoliły nasze oczekiwania. Jesteśmy pod dużym wrażeniem sposobu działania, według którego realizowane były kolejne etapy projektu. W relatywnie krótkim czasie wspólnie udało się nam stworzyć funkcjonalne rozwiązania znacznie ułatwiające codzienną pracę magazynu.
   quotation_small: |-
-    Zastosowane przez zespół rozwiązania przyczyniły się do stworzenia nowoczesnego, a jednocześnie przyjaznego użytkownikowi sklepu. Oprócz wykonanego projektu specjaliści zapewniają także pełne wsparcie dla naszego serwisu.
+    Jesteśmy pod dużym wrażeniem sposobu działania, według którego realizowane były kolejne etapy projektu. W relatywnie krótkim czasie wspólnie udało się nam stworzyć funkcjonalne rozwiązania znacznie ułatwiające codzienną pracę magazynu.
+  quotation_sentence: W relatywnie krótkim czasie wspólnie udało się nam stworzyć funkcjonalne rozwiązania znacznie ułatwiające codzienną pracę magazynu 
+
+  
+project_categories:
+  - _services/aplikacje-internetowe.md
+project_technologies:
+  - _technologies/elastic-search.md
+  - _technologies/react-js.md
+  - _technologies/ruby-on-rails.md
+project_range:
+  - back-end
+  - front-end
+  - design
+
+
+project_challenges:
+project_process:
+project_result:
+
+
+presentation:
+  -
+    graphic:  
+    graphic_title:  
+    graphic_full_width: true
+    graphic_size: 4
+    content:  |-
+
+    content_size: 4
+  -
+    graphic: 
+    graphic_title: 
+    graphic_full_width: false
+    graphic_size: 4
+    content:  |-
+
+    content_size: 4
 ---

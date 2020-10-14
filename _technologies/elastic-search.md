@@ -16,9 +16,6 @@ main_keywords:
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
 
 #MENU 
 top_line:

@@ -15,15 +15,16 @@ main_keywords:
   - aplikacje
 
 #HREFLANGS
-display_hreflangs: false
+display_hreflangs: true
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
+- lang: en
+  link: https://projets.io/services/web-applications.html
+- lang: pl
+  link: https://projets.pl/uslugi/aplikacje-internetowe.html
 
 #MENU 
 top_line:
-  menu_title: Aplikacje
+  menu_title: Aplikacje internetowe
   cta_title:
 
 #SETTINGS

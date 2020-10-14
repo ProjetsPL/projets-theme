@@ -15,12 +15,6 @@ main_keywords:
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: x-default
-    link: https://projets.io
-  -
-    lang: en
-    link: https://projets.io
 
 #MENU 
 top_line:
@@ -58,7 +52,7 @@ faq:
 ---
 ## Scrum - podstawowe informacje
 
-Projekty związane z [produkcją oprogramowania](/uslugi/aplikacje.html) charakteryzują się tym, że bywają skomplikowane. Dwie najczęściej spotykane sytuacje, z którymi spotykają się firmy to te, w których klient nie jest pewien, czego oczekuje lub wręcz przeciwnie - oczekuje wszystkiego jednocześnie - nie zwracając uwagi na wyodrębnienie najważniejszych aspektów. Zarówno w jednym, jak i drugim przypadku najważniejszym zadaniem zespołu projektowego jest przedstawienie klientowi rozwiązań przydatnych z punktu widzenia biznesowego. Nie bez znaczenia jest jednak czas ich stworzenia oraz koszt.
+Projekty związane z [produkcją oprogramowania](/uslugi/aplikacje-internetowe.html) charakteryzują się tym, że bywają skomplikowane. Dwie najczęściej spotykane sytuacje, z którymi spotykają się firmy to te, w których klient nie jest pewien, czego oczekuje lub wręcz przeciwnie - oczekuje wszystkiego jednocześnie - nie zwracając uwagi na wyodrębnienie najważniejszych aspektów. Zarówno w jednym, jak i drugim przypadku najważniejszym zadaniem zespołu projektowego jest przedstawienie klientowi rozwiązań przydatnych z punktu widzenia biznesowego. Nie bez znaczenia jest jednak czas ich stworzenia oraz koszt.
 
 Właśnie na tym etapie przydatny jest Scrum - framework umożliwiające realizację procesów, dzięki którym zespół tworzy wartościowe dla klienta produkty.
 

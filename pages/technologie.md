@@ -4,7 +4,6 @@ layout: technologies
 page_type: technologies
 title: Technologie
 published: false
-hide_links: false
 links_visible: true
 
 #SEO
@@ -15,10 +14,6 @@ seo_description: |-
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
-
 #MENU 
 top_line:
   menu_title: Technologie

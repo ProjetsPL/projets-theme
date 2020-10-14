@@ -1,16 +1,18 @@
-og_random_photo: "/assets/img/default.jpg"
+og_random_photo: "/uploads/strona-glowna-OG-image.jpg"
 
-scvarificationnumber: "" # numer identyfikacjyny google search console
-analyticsvarificationnumber: "" # numer identyfikacjyny google analyticks
-gtagmanagervarificationnumber: "" # numer weryfikacyjny google tag manegera
-optimizevarificationnumber: "" # numer weryfikacyjny google optimize
-facebookpixelnumber: "" #numer weryfikacyjny facebook pixel
+scvarificationnumber: "Znt1MIzFfcefhplscekuzFtz-HmIceb1ZI29zm27VkQ" # numer identyfikacjyny google search console
+analyticsvarificationnumber: "UA-116358731-6" # numer identyfikacjyny google analyticks
+gtagmanagervarificationnumber: "GTM-TBWVMN7" # numer weryfikacyjny google tag manegera
+optimizevarificationnumber: "OPT-PGX25R6" # numer weryfikacyjny google optimize
+facebookpixelnumber: "689795445224895" #numer weryfikacyjny facebook pixel
 
 facebookmessenger_id: "500786126748798"
 facebookmessenger_lang: "pl_PL"
 facebookmessenger_theme_color: "#8644AD"
 facebookmessenger_logged_in_greeting: " Witaj, jak możemy Ci pomóc? 😉"
 facebookmessenger_logged_out_greeting: " Witaj, jak możemy Ci pomóc? 😉"
+
+
 
 footer:
   contact_section:

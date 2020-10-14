@@ -15,15 +15,16 @@ main_keywords:
   - e-commerce
 
 #HREFLANGS
-display_hreflangs: false
+display_hreflangs: true
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
+- lang: en
+  link: https://projets.io/services/online-stores.html
+- lang: pl
+  link: https://projets.pl/uslugi/sklepy-internetowe.html
 
 #MENU 
 top_line:
-  menu_title: Sklepy
+  menu_title: Sklepy internetowe
   cta_title:
 
 #SETTINGS
@@ -44,11 +45,11 @@ header:
 promoted_casestudies:
   - _casestudies/sklep-internetowy-manwoman-co.md
 cta_buttons:
-  - name: Wyceń projekt sklep
+  - name: Wyceń projekt sklepu
     link: /kontakt.html
-  - name: Wyceń projekt sklep
+  - name: Wyceń projekt sklepu
     link: /kontakt.html
-  - name: Wyceń projekt sklep
+  - name: Wyceń projekt sklepu
     link: /kontakt.html
 display_seo_section: false
 toc: true 
@@ -86,7 +87,7 @@ features_list:
       Projektujemy przejrzysty panel
     icon: /uploads/icon-lg-admin-panel.svg
 advantage:
-  title: Stawiamy na mechanimy, które realnie wpływają na <strong>zwiększenie sprzedaży</strong>
+  title: Stawiamy na mechanizmy, które realnie wpływają na <strong>zwiększenie sprzedaży</strong>
   content: |-
     Dopasowujemy indywidualnie do Twojego biznesu rozwiązania pozwalające stworzyć produkt lub usługę, która zadowoli klientów i odpowie na ich potrzeby. Dzięki nieszablonowemu podejściu zwiększysz sprzedaż oraz przewagę biznesową.
   brands:

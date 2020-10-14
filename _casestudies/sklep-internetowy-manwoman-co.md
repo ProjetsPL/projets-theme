@@ -7,18 +7,15 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  SEO manwoman.co
+seo_title:  +600 000 produktów i setki największych marek w jednym miejscu
 seo_description: |-
-  META manwoman.co
+  Nowoczesny portal stworzony dla miłośników mody, który gromadzi tysiące produktów i setki marek.
 main_keywords:
   - realizacja sklepu manwoman.co
 
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
 
 #MENU 
 top_line:
@@ -28,36 +25,48 @@ top_line:
 #SETTINGS
 show_contact_in_footer: true
 
-#new
-date: 2020-09-01T12:02:04.000+00:00
+# CASESTUDY layout
 cta_buttons:
   - name: Wyceń podobny projekt
     link: /kontakt.html
   - name: Wyceń podobny projekt
     link: /kontakt.html
+testimonial_on_index: true
+casestudy_on_index: false
+cta: Przeczytaj o sukcesie
 
 
-# CASESTUDY layout
+date: 2020-09-01T12:02:04.000+00:00
+
+
 intro: 
   title: <strong>+600 000</strong> produktów i setki największych marek w jednym miejscu
   content: |-
     Nowoczesny portal stworzony dla miłośników mody, który gromadzi tysiące produktów i setki marek. Łatwe wyszukiwanie, przejrzysty proces zakupowy i nowoczesny design czynią serwis przyjaznym użytkownikom.
+
+
 header:
   title: <strong>+600 000</strong> produktów i setki największych marek w jednym miejscu
   intro: |-
     Koncepcja projektu zakładała stworzenie strony z myślą o wszystkich miłośnikach mody. Ogromnym udogodnieniem jest w tym przypadku dostęp do najpopularniejszych oraz najbardziej pożądanych marek na rynku. Na wyciągnięcie ręki klient ma dostęp do wielu sklepów. Promocje, inspiracje i produkty wpisujące się w najnowsze trendy modowe - wszystko dostępne jest w jednym miejscu. Ponadto stworzony przez nasz zespół system pozwala na sprawne zarządzanie ogromną ilością informacji na temat produktów.
   main_photo:
+
+
 screens:
   mobile: /uploads/casestudy-manwoman-mobile.jpg
   desktop: /uploads/casestudy-manwoman-desktop.jpg
+  mobile_cover: /uploads/casestudy-manwoman-mobile-cover.jpg
+  desktop_cover: /uploads/casestudy-manwoman-desktop-cover.jpg
 colors:
   main: "00104E" 
   devices_border: "F9F9F9"
+
+
 company: manwoman.com
 company_logo: /uploads/logo-manwoman.svg
-testimonial_on_index: true
-casestudy_on_index: false
-cta: Przeczytaj o sukcesie
+watermark: /uploads/manwoman-bg.svg
+
+
 customer_opinion:
   person: Robert Niechciał
   position: CEO
@@ -66,8 +75,8 @@ customer_opinion:
     Zaprojektowanie strony obsługującej programy partnerskie jest zadaniem wymagającym doświadczenia i odpowiednich umiejętności. To właśnie te dwa czynniki zadecydowały o tym, że podjęliśmy współpracę z Projets. Na szczególną uwagę zasługuje komunikacja, która od początku była bardzo sprawna i przyjemna. Nowoczesne i funkcjonalne rozwiązania zaproponowane przez specjalistów w zupełności spełniły nasze oczekiwania. Dlatego z całą odpowiedzialnością możemy polecić Projets jako zespół do zadań specjalnych.
   quotation_small: |-
     Nowoczesne i funkcjonalne rozwiązania zaproponowane przez specjalistów w zupełności spełniły nasze oczekiwania. Dlatego z całą odpowiedzialnością możemy polecić Projets (...)
-  #new
   quotation_sentence: (...) z całą odpowiedzialnością możemy polecić Projets jako zespół do zadań specjalnych.
+
 
 project_categories:
   - _services/sklepy-internetowe.md
@@ -79,9 +88,7 @@ project_technologies:
 project_range:
   - back-end
   - front-end
-watermark: /uploads/manwoman-bg.svg
-start_content:  |-
-  **Koncepcja** projektu zakładała stworzenie strony z myślą o wszystkich miłośnikach mody. Ogromnym udogodnieniem jest w tym przypadku dostęp do najpopularniejszych oraz najbardziej pożądanych marek na rynku. Na wyciągnięcie ręki klient ma dostęp do wielu sklepów. Promocje, inspiracje i produkty wpisujące się w najnowsze trendy modowe - wszystko dostępne jest w jednym miejscu. Ponadto stworzony przez nasz zespół system pozwala na sprawne zarządzanie ogromną ilością informacji na temat produktów.
+
 
 project_challenges:  |-
   Prace nad projektem rozpoczęliśmy od określenia celów strony. Naszym zadaniem było uruchomienie platformy, która będzie odpowiednio zoptymalizowana. 
@@ -116,27 +123,42 @@ project_result:  |-
 
   Podsumowaniem naszych działań była optymalizacja platformy pod kątem szybkości jej przeglądania przy ilości informacji, które zostały na niej zgromadzone.
 
+
 presentation:
   -
-    graphic: /uploads/img-full-width.jpg
-    graphic_title: manwoman
+    graphic:
+    graphic_title:
     graphic_full_width: true
-    graphic_size: 4
+    graphic_size: 6
     content:  |-
       ## Różnorodność sklepów, marek i produktów w jednym miejscu
-
-      Zastosowanie wybranych przez nas technologii umożliwiło osiągnięcie celów, które założyliśmy na początku naszych działań.
-
-      Podsumowaniem naszych działań była optymalizacja platformy pod kątem szybkości jej przeglądania przy ilości informacji, które zostały na niej zgromadzone.
+      Szeroki wybór produktów został zapewniony klientom dzięki dostępności wielu sklepów i marek na jednej stronie. Bogata oferta zróżnicowanego asortymentu dotyczy zarówno odzieży damskiej, męskiej, galanterii skórzanej, jak i akcesoriów dodatkowych. Jedna platforma odpowiada na wszystkie potrzeby zakupowe, a sam asortyment jest cały czas aktualizowany.
     content_size: 4
   -
-    graphic: /uploads/img-full-width.jpg
-    graphic_title: manwoman
+    graphic:
+    graphic_title:
     graphic_full_width: false
     graphic_size: 6
     content:  |-
-      Zastosowanie wybranych przez nas technologii umożliwiło osiągnięcie celów, które założyliśmy na początku naszych działań.
-
-      Podsumowaniem naszych działań była optymalizacja platformy pod kątem szybkości jej przeglądania przy ilości informacji, które zostały na niej zgromadzone.
+      ## Filtry wyszukiwania
+      Filtrowanie produktów jest jedną z najważniejszych funkcji sklepu internetowego. To ona zapewnia klientowi wygodę wyszukiwania produktów, które go interesują. Zaawansowana filtracja uwzględnia takie kwestie jak kategorię produktu, kolor, cenę, markę, czy sklep. Konkretne produkty można wyszukiwać również po tagach produktów. Sam moduł odpowiadający za filtrację asortymentu jest bardzo czytelny i prosty w obsłudze, dlatego jego obsługa nie stanowi dla klienta żadnego problemu.
+    content_size: 4
+  -
+    graphic:
+    graphic_title:
+    graphic_full_width: false
+    graphic_size: 6
+    content:  |-
+      ## Blog z wieloma inspiracjami
+      Aktualizowany na bieżąco blog jest uzupełnieniem platformy. Stanowi doskonałe źródło informacji dla klienta. Przybliża znane marki, przedstawia wykorzystanie produktów, inspiruje i wprowadza w aktualne trendy. Wpisy blogowe są przygotowywane w czytelny dla użytkownika sposób, a ich dodatkowe elementy - linki, czy zdjęcia opisywanych produktów - sprawiają, że możliwe jest przejście do karty produktu i zapoznanie się z jego opisem i ceną.
+    content_size: 4
+  -
+    graphic:
+    graphic_title:
+    graphic_full_width: false
+    graphic_size: 6
+    content:  |-
+      ## Drugi najszybciej "rosnący" serwis w Polsce w 2019 rok
+      Stworzenie funkcjonalnej i odpowiednio zoptymalizowanej platformy było dla naszego zespołu wyzwaniem, z którym doskonale sobie poradziliśmy. Podjęte przy powstawaniu ManWoman działania wpisały się w trendy tworzenia stron www w 2019 roku. Wszystkie zastosowane przez nas rozwiązania przyczyniły się do tego, że serwis stał się drugą pod względem rozwoju platformą w całym kraju.
     content_size: 4
 ---

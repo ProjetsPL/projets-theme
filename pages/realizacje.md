@@ -4,20 +4,16 @@ layout: casestudies
 page_type: casestudies
 title: Realizacje
 published: true
-hide_links: false
 links_visible: true
 
 #SEO
-seo_title:  SEO Realizacje
+seo_title:  Realizujemy projekty wspierające cele biznesowe klientów
 seo_description: |-
-  MEAT Realizacje
+  Szukasz rozwiązań, które gwarantują wydajność oraz wspomagają osiągnięcie celów biznesowych? Sprawdź nasze dotychczasowe realizacje.
 
 #HREFLANGS
 display_hreflangs: false
 hreflangs:
-  -
-    lang: en
-    link: https://projets.io
 
 #MENU 
 top_line:
@@ -29,11 +25,8 @@ show_contact_in_footer: true
 
 #CASE STUDIES layout 
 header:
-  title: <strong>Realizacje</strong> - chwalimi się naszą pracą
-  intro: |-
-    Poznaj najnowsze trendy i technologie, które wykorzystujemy, aby Twój biznes nieustannie się rozwijał. Sprawdź ekspercki punkt widzenia.
-  main_photo:
-cta_buttons:
-  - name: Wyceń projekt
-    link: /kontakt.html
+  title: Realizujemy projekty wspierające <strong>cele biznesowe</strong> klientów
+  intro: |-   
+    Postaw na rozwiązania dedykowane dla swojego biznesu. Zobacz, jakie realizacje przygotowaliśmy dla naszych klientów.
+  main_photo: /uploads/realizacje-OG-image.jpg
 ---

@@ -6,7 +6,6 @@ title: Wysłano formularz
 published: true
 permalink: kontakt/:basename:output_ext
 sitemap: false
-hide_links: false
 
 #SEO
 seo_title:  Wysłano formularz

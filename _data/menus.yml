@@ -11,7 +11,7 @@ footer_menu:
     pages:
       -  _services/aplikacje-internetowe.md
       -  _services/sklepy-internetowe.md
-      - _services/ux-ui.md
+      - _services/strony-internetowe.md
       - _services/branding.md
   - 
     title: Informacje

@@ -135,7 +135,7 @@ var lazyLoadInstance = new LazyLoad({
 {% if site.data.global.linkedininsighttag %}
 <!-- LinkedIn - Insight Tag -->
 <script type="text/javascript">
-  _linkedin_partner_id = "{{site.data.global.gtagmanagervarificationnumber}}";
+  _linkedin_partner_id = "{{site.data.global.linkedininsighttag}}";
   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
   </script><script type="text/javascript">
@@ -146,7 +146,7 @@ var lazyLoadInstance = new LazyLoad({
   s.parentNode.insertBefore(b, s);})();
   </script>
   <noscript>
-  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid={{site.data.global.gtagmanagervarificationnumber}}&fmt=gif" />
+  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid={{site.data.global.linkedininsighttag}}&fmt=gif" />
   </noscript>
   <!-- End LinkedIn - Insight Tag -->
 {% endif %}

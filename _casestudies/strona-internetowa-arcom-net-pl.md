@@ -7,9 +7,9 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  Nowoczesny design i innowacyjny system widoku produktów
+seo_title:  Case Study Arcom.net.pl | Nowoczesne Systemy Magazynowe
 seo_description: |-
-  Kompleksowa odpowiedź na oczekiwania użytkownika w zakresie systemów magazynowania i transportu. 
+  Projekt platformy oferującej ogromny wybór 🏗️ specjalistycznych produków. ➡️ Sprawdź nowoczesny design i wiele funkcjonalności witryny.
 main_keywords:
   - strona internetowa arcom.net.pl
   
@@ -36,7 +36,7 @@ casestudy_on_index: true
 cta: Case study arcom.net.pl
 
 
-date: 2020-09-01T12:02:04.000+00:00
+date: 2019-11-19T12:02:04.000+00:00 
 
 
 intro: 

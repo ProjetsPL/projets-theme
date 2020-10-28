@@ -7,9 +7,9 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  Proste zakupy bez konieczności rejestracji. | Nowoczesny design i duży wybór produktów.
+seo_title:  Case Study Agdmaster.com | Sklep Online Oferujący AGD i RTV
 seo_description: |-
-  Funkcjonalny i spersonalizowany sklep internetowy w którym zgromadzony jest bardzo duży asortyment.
+  Prosty, przejrzysty i atrakcyjny sklep internetowy z wyposażeniem AGD i RTV 💻 Zobacz jak wyglądała realizacja projektu  z dużą ilością produktów.
 main_keywords:
   - sklep intternetowy agdmaster.com
 
@@ -36,7 +36,7 @@ casestudy_on_index: false
 cta: Poznaj szczegóły realizacji sklepu
 
 
-date: 2020-09-01T12:02:04.000+00:00
+date: 2018-09-01T12:02:04.000+00:00
 
 
 intro: 

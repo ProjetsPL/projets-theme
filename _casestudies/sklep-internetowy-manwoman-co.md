@@ -7,9 +7,9 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  +600 000 produktów i setki największych marek w jednym miejscu
+seo_title:  Case Study ManWoman.co | Portal Afiliacyjny dla Miłośników Mody
 seo_description: |-
-  Nowoczesny portal stworzony dla miłośników mody, który gromadzi tysiące produktów i setki marek.
+  Projekt witryny stworzonej dla miłośników mody. 👞 Kilka sieci afiliacyjnych, tysiące różnych marek i miliony produktów 👗 Wszystko w jednym miejscu.
 main_keywords:
   - realizacja sklepu manwoman.co
 
@@ -36,7 +36,7 @@ casestudy_on_index: false
 cta: Przeczytaj o sukcesie
 
 
-date: 2020-09-01T12:02:04.000+00:00
+date: 2019-01-10T12:02:04.000+00:00
 
 
 intro: 

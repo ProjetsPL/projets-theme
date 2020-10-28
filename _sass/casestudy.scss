@@ -19,6 +19,7 @@
         bottom: -50px;
         z-index: 1;
         img {
+            height: 85%;
             position: absolute;
             left:50%;
             transform: translateX(-50%);
@@ -201,7 +202,7 @@
         &.full-width {       
             img { 
                 width: 100%;
-                max-width: 2000px;     
+                max-width: 1120px;     
             }
         }
         &.size-1 {

@@ -49,7 +49,7 @@ header:
   title: <strong>+600 000</strong> produktów i setki największych marek w jednym miejscu
   intro: |-
     Koncepcja projektu zakładała stworzenie strony z myślą o wszystkich miłośnikach mody. Ogromnym udogodnieniem jest w tym przypadku dostęp do najpopularniejszych oraz najbardziej pożądanych marek na rynku. Na wyciągnięcie ręki klient ma dostęp do wielu sklepów. Promocje, inspiracje i produkty wpisujące się w najnowsze trendy modowe - wszystko dostępne jest w jednym miejscu. Ponadto stworzony przez nasz zespół system pozwala na sprawne zarządzanie ogromną ilością informacji na temat produktów.
-  main_photo:
+  main_photo: /uploads/manwoman-OG-image.jpg
 
 
 screens:
@@ -64,7 +64,7 @@ colors:
 
 company: manwoman.com
 company_logo: /uploads/logo-manwoman.svg
-watermark: /uploads/manwoman-bg.svg
+watermark: /uploads/manwoman-watermark.svg
 
 
 customer_opinion:
@@ -126,7 +126,7 @@ project_result:  |-
 
 presentation:
   -
-    graphic:
+    graphic: /uploads/casestudy-manwoman-pic-1.jpg
     graphic_title:
     graphic_full_width: true
     graphic_size: 6
@@ -135,27 +135,27 @@ presentation:
       Szeroki wybór produktów został zapewniony klientom dzięki dostępności wielu sklepów i marek na jednej stronie. Bogata oferta zróżnicowanego asortymentu dotyczy zarówno odzieży damskiej, męskiej, galanterii skórzanej, jak i akcesoriów dodatkowych. Jedna platforma odpowiada na wszystkie potrzeby zakupowe, a sam asortyment jest cały czas aktualizowany.
     content_size: 4
   -
-    graphic:
+    graphic: /uploads/casestudy-manwoman-pic-2.jpg
     graphic_title:
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 6
     content:  |-
       ## Filtry wyszukiwania
       Filtrowanie produktów jest jedną z najważniejszych funkcji sklepu internetowego. To ona zapewnia klientowi wygodę wyszukiwania produktów, które go interesują. Zaawansowana filtracja uwzględnia takie kwestie jak kategorię produktu, kolor, cenę, markę, czy sklep. Konkretne produkty można wyszukiwać również po tagach produktów. Sam moduł odpowiadający za filtrację asortymentu jest bardzo czytelny i prosty w obsłudze, dlatego jego obsługa nie stanowi dla klienta żadnego problemu.
     content_size: 4
   -
-    graphic:
+    graphic: /uploads/casestudy-manwoman-pic-3.jpg
     graphic_title:
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 6
     content:  |-
       ## Blog z wieloma inspiracjami
       Aktualizowany na bieżąco blog jest uzupełnieniem platformy. Stanowi doskonałe źródło informacji dla klienta. Przybliża znane marki, przedstawia wykorzystanie produktów, inspiruje i wprowadza w aktualne trendy. Wpisy blogowe są przygotowywane w czytelny dla użytkownika sposób, a ich dodatkowe elementy - linki, czy zdjęcia opisywanych produktów - sprawiają, że możliwe jest przejście do karty produktu i zapoznanie się z jego opisem i ceną.
     content_size: 4
   -
-    graphic:
+    graphic: /uploads/casestudy-manwoman-pic-4.jpg
     graphic_title:
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 6
     content:  |-
       ## Drugi najszybciej "rosnący" serwis w Polsce w 2019 rok

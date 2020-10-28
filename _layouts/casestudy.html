@@ -168,11 +168,7 @@
         {% if page.presentation[0] %}
         <section class="presentation-beam">
             {% for item in page.presentation %}
-                {% if item.graphic %}
-                    <div class="img-beam {% if item.graphic_full_width == true %}full-width{%else%}size-{{item.graphic_size}}{%endif%}">
-                        <img src="{{item.graphic}}" alt="{{item.graphic_title}}">
-                    </div>
-                {%endif%}
+
                 {% if item.content %}
                     <div class="beams-wrapper global-beam-wrapper content-beam">
                         <div class="beam b-size-6">
@@ -182,6 +178,11 @@
                         </div>
                     </div>
                 {%endif%}
+                {% if item.graphic %}
+                <div class="img-beam {% if item.graphic_full_width == true %}full-width{%else%}size-{{item.graphic_size}}{%endif%}">
+                    <img src="{{item.graphic}}" alt="{{item.graphic_title}}">
+                </div>
+            {%endif%}
             {% endfor %}
         </section>
         {%endif%}  

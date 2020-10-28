@@ -49,7 +49,7 @@ header:
   title: <strong>Nowoczesny design</strong> i <strong>innowacyjny system</strong> widoku produktów
   intro: |-
     Arcom to firma, która specjalizuje się w produkcji systemów wykorzystywanych do magazynowania i transportu. Realizacje opierają się na wieloletnim doświadczeniu wspartym nowoczesną technologią. Przedsiębiorstwo jest europejskim liderem w swojej branży. Rozwiązania oferowane przez specjalistów marki wpływają między innymi na lepsze zagospodarowanie przestrzeni magazynowej.
-  main_photo:
+  main_photo:  /uploads/arcom-OG-image.jpg
 
 
 screens:
@@ -64,7 +64,7 @@ colors:
 
 company: Arcom
 company_logo: /uploads/logo-arcom.svg
-watermark: 
+watermark: /uploads/arcom-watermark.svg
 
 
 customer_opinion:
@@ -125,7 +125,7 @@ project_result:  |-
 
 presentation:
   -
-    graphic:  
+    graphic: /uploads/casestudy-arcom-pic-1.jpg
     graphic_title:  
     graphic_full_width: true
     graphic_size: 4
@@ -133,9 +133,9 @@ presentation:
       Sukcesem niemal każdej platformy jest połączenie przemyślanych działań w zakresie identyfikacji firmy oraz dopasowania rozwiązań technologicznych. Są to aspekty dające podstawy do zdobycia klientów. Poniżej przedstawione zostały najważniejsze sekcje w projekcie, wpływające na funkcjonalność, estetykę i czytelność strony.
     content_size: 4
   -
-    graphic: 
+    graphic: /uploads/casestudy-arcom-pic-2.jpg
     graphic_title: 
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 4
     content:  |-
       ## Sposób prezentacji produktu
@@ -147,27 +147,27 @@ presentation:
 
     content_size: 4
   -
-    graphic: 
+    graphic: /uploads/casestudy-arcom-pic-3.jpg
     graphic_title: 
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 4
     content:  |-
       ## Karta katalogowa produktu
       Bezpośrednio z zakładki konkretnego produktu możliwe jest przejście do jego karty katalogowej, gdzie znajdują się wszelkie parametry techniczne, rysunki techniczne oraz dodatkowe dane dotyczące akcesoriów, czy transportu. Można tam również zapoznać się ze zdjęciami rzeczywistego produktu i zobaczyć, jak prezentuje się na żywo.
     content_size: 4
   -
-    graphic: 
+    graphic: /uploads/casestudy-arcom-pic-4.jpg
     graphic_title: 
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 4
     content:  |-
       ## Interaktywna mapa świata
       Na odbiorców witryny w zakładce "Kontakt" czeka interaktywna mapa świata. Po najechaniu na wybrany region, jego kolor zmienia się, natomiast po kliknięciu pojawia się informacja, który z opiekunów handlowych jest odpowiedzialny za wybrany kraj. Pojawiają się także informacje kontaktowe oraz ikony sugerujące znajomość konkretnych języków, którymi posługuje się pracownik.
     content_size: 4
   -
-    graphic: 
+    graphic: /uploads/casestudy-arcom-pic-5.jpg
     graphic_title: 
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 4
     content:  |-
       ## Pracownicy przypisani do wersji językowej strony

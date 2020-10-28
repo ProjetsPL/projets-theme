@@ -49,7 +49,7 @@ header:
   title:  <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
   intro: |-
     Założeniem projektu było stworzenie funkcjonalnego, spersonalizowanego sklepu internetowego. Główny cel stanowiło uruchomienie platformy, w której użytkownik będzie mógł dokonać zakupu bez konieczności rejestracji i tworzenia konta. Ponadto w jednym miejscu zgromadzony został bogaty asortyment w postaci sprzętów i części do urządzeń z branży AGD i RTV. Tworząc sklep internetowy, postawiliśmy również na profesjonalny i atrakcyjny dla klienta design. 
-  main_photo:
+  main_photo: /uploads/agdmaster-OG-image.jpg
 
 
 screens:
@@ -64,7 +64,7 @@ colors:
 
 company: agdmaster.com
 company_logo: /uploads/logo-agdmaster.svg
-watermark: 
+watermark: /uploads/agdmaster-watermark.svg
 
 customer_opinion:
   person: Przemysław Strzałka
@@ -120,35 +120,35 @@ project_result:  |-
 
 presentation:
   -
-    graphic:  
+    graphic: /uploads/casestudy-agdmaster-pic-1.jpg
     graphic_title:  
     graphic_full_width: true
-    graphic_size: 4
+    graphic_size: 1
     content:  |-
       Poniżej zaprezentowane zostały najważniejsze sekcje, które wpływają na funkcjonalność platformy. Ich wdrożenie przekłada się na procesy zakupowe klientów, dzięki czemu możliwe jest osiągnięcie przewagi konkurencyjnej przez firmę.
     content_size: 4
   -
-    graphic: 
+    graphic:  /uploads/casestudy-agdmaster-pic-2.jpg
     graphic_title: 
-    graphic_full_width: false
-    graphic_size: 4
+    graphic_full_width: true
+    graphic_size: 2
     content:  |-
       ## Karta produktu
       Właściwie skonfigurowana karta produktu to podstawa sukcesu każdego sklepu internetowego. Uwzględnienie pewnych funkcji przekłada się nie tylko na zadowolenie klientów, ale także na wyniki wyszukiwania w kontekście algorytmów przeglądarek. Dzięki wykorzystaniu odpowiednich technologii możliwe jest spersonalizowanie prezentacji produktu do wymagań konkretnej branży. Sam wygląd karty produktu ma również wpływ na decyzje zakupowe klienta oraz fakt, czy doda go do koszyka.
     content_size: 4
   -
-    graphic: 
+    graphic:  /uploads/casestudy-agdmaster-pic-3.jpg
     graphic_title: 
-    graphic_full_width: false
-    graphic_size: 4
+    graphic_full_width: true
+    graphic_size: 3
     content:  |-
       ## Wyszukiwarka
       Opcja wyszukiwania produktów to jedna z kluczowych funkcji. Na tym poziomie liczy się szybkość, skuteczność i użyteczność. Sklepowa wyszukiwarka powinna być także odporna na błędy, a w razie konieczności podpowiadać użytkownikowi dostępne rozwiązania. Możliwość wyszukiwania nawet w sytuacji błędnie wpisanej frazy i korekta  - to rozwiązania, które udało nam się zrealizować w projekcie. W tym przypadku wykorzystana została implementacja mechanizmu korekcji błędu.
     content_size: 4
   -
-    graphic: 
+    graphic:  /uploads/casestudy-agdmaster-pic-4.jpg
     graphic_title: 
-    graphic_full_width: false
+    graphic_full_width: true
     graphic_size: 4
     content:  |-
       ## Poradniki

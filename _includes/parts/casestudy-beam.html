@@ -3,8 +3,8 @@
         <div class="circle-bg" style="background-color: #{{ include.casestudy.colors.main }}"></div> 
     </div> 
     <div class="beam-item b-size-1  casestudy-img" >  
-        {% include parts/casestudy-mockup-mobile.html mockup=include.casestudy%}  
-        {% include parts/casestudy-mockup-desktop.html mockup=include.casestudy%}  
+        {% include parts/casestudy-mockup-mobile.html mockup=include.casestudy mockupMobileScreen=include.casestudy.screens.mobile_1%}  
+        {% include parts/casestudy-mockup-desktop.html mockup=include.casestudy mockupDesktopScreen=include.casestudy.screens.desktop_1%}  
     </div>
     <div class="beam-item b-size-1  casestudy-content" >
         {% if include.casestudy.links_visible %}

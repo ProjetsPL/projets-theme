@@ -49,11 +49,16 @@ header:
   intro: |-
     Nowoczesny magazynowy system informatyczny pozwalający na zarządzenie produktami w kontekście logistycznym. Sprawna komunikacja wewnętrzna i praktyczna pomoc w zarządzaniu pracą całego przedsiębiorstwa    
   main_photo:
+
 screens:
-  mobile: "/uploads/casestudy-instalguru-wms-mobile.jpg"
-  desktop: "/uploads/casestudy-instalguru-wms-desktop.jpg"
-  mobile_cover: "/uploads/casestudy-instalguru-wms-mobile-cover.jpg"
-  desktop_cover: "/uploads/casestudy-instalguru-wms-desktop-cover.jpg"
+  mobile_1:
+    img: "/uploads/casestudy-instalguru-wms-mobile.jpg"
+    cover: "/uploads/casestudy-instalguru-wms-mobile-cover.jpg"
+    alt: Expano WMS
+  desktop_1:
+    img: "/uploads/casestudy-instalguru-wms-desktop.jpg"
+    cover: "/uploads/casestudy-instalguru-wms-desktop-cover.jpg"
+    alt: Expano WMS
 colors:
   main: "9A18E5"
   devices_border: "FFFFFF"

@@ -53,10 +53,14 @@ header:
 
 
 screens:
-  mobile: /uploads/casestudy-arcom-mobile.jpg
-  desktop: /uploads/casestudy-arcom-desktop.jpg
-  mobile_cover: /uploads/casestudy-arcom-mobile-cover.jpg
-  desktop_cover: /uploads/casestudy-arcom-desktop-cover.jpg
+  mobile_1:
+    img: /uploads/casestudy-arcom-mobile.jpg
+    cover: /uploads/casestudy-arcom-mobile-cover.jpg
+    alt:
+  desktop_1:
+    img: /uploads/casestudy-arcom-desktop.jpg
+    cover: /uploads/casestudy-arcom-desktop-cover.jpg
+    alt:
 colors:
   main: "FAE129"
   devices_border: "FFF"

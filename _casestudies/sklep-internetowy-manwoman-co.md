@@ -53,10 +53,14 @@ header:
 
 
 screens:
-  mobile: /uploads/casestudy-manwoman-mobile.jpg
-  desktop: /uploads/casestudy-manwoman-desktop.jpg
-  mobile_cover: /uploads/casestudy-manwoman-mobile-cover.jpg
-  desktop_cover: /uploads/casestudy-manwoman-desktop-cover.jpg
+  mobile_1:
+    img: /uploads/casestudy-manwoman-mobile.jpg
+    cover: /uploads/casestudy-manwoman-mobile-cover.jpg
+    alt:
+  desktop_1:
+    img: /uploads/casestudy-manwoman-desktop.jpg
+    cover: /uploads/casestudy-manwoman-desktop-cover.jpg
+    alt:
 colors:
   main: "00104E" 
   devices_border: "F9F9F9"

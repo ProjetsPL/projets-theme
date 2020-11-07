@@ -19,8 +19,8 @@
             </header>    
             <section class="mockup-beam">
                 <div class="mockup-wrapper">
-                    {% include parts/casestudy-mockup-mobile.html mockup=page%}  
-                    {% include parts/casestudy-mockup-desktop.html mockup=page%}  
+                    {% include parts/casestudy-mockup-mobile.html mockup=page mockupMobileScreen=page.screens.mobile_1%}  
+                    {% include parts/casestudy-mockup-desktop.html mockup=page mockupDesktopScreen=page.screens.desktop_1%}  
                 </div>
             </section>  
             {% if page.watermark %}      

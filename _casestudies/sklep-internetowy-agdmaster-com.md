@@ -53,10 +53,14 @@ header:
 
 
 screens:
-  mobile: /uploads/casestudy-agdmaster-mobile.jpg
-  desktop: /uploads/casestudy-agdmaster-desktop.jpg
-  mobile_cover: /uploads/casestudy-agdmaster-mobile-cover.jpg
-  desktop_cover: /uploads/casestudy-agdmaster-desktop-cover.jpg
+  mobile_1:
+    img: /uploads/casestudy-agdmaster-mobile.jpg
+    cover: /uploads/casestudy-agdmaster-mobile-cover.jpg
+    alt:
+  desktop_1:
+    img: /uploads/casestudy-agdmaster-desktop.jpg
+    cover: /uploads/casestudy-agdmaster-desktop-cover.jpg
+    alt:
 colors:
   main: "223B4E"
   devices_border: "FFFFFF"

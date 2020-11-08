@@ -27,11 +27,11 @@ show_contact_in_footer: true
 
 # CASESTUDY layout
 cta_buttons:
+  - name: 
+    link: 
   - name: Wyceń podobny projekt
     link: /kontakt.html
-  - name: Wyceń podobny projekt
-    link: /kontakt.html
-testimonial_on_index: true
+testimonial_on_index: false
 casestudy_on_index: true
 cta: Case study Senuto
 
@@ -40,15 +40,15 @@ date: 2020-10-27T12:02:04.000+00:00
 
 
 intro: 
-  title:  <strong>Aplikacja mobilna Senuto</strong> - Planowanie, monitorowanie i optymalizacja działań SEO w telefonie
+  title:  <strong>Aplikacja mobilna Senuto</strong> - Planowanie i monitorowanie działań SEO w telefonie
   content: |-
     Senuto jest narzędziem ułatwiającym planowanie, optymalizowanie i monitorowanie content marketingu i procesów SEO. Dzięki niemu możliwa jest analiza konkurencji w Google i dostosowanie działań pozwalających na jej wyprzedzenie poprzez zwiększenie ruchu na na konkretnych stronach.
 
 
 header:
-  title: <strong>Senuto Mobile App</strong> - Planowanie, monitorowanie i optymalizacja SEO w telefonie
+  title: <strong>Aplikacja mobilna Senuto</strong> - Planowanie i monitorowanie działań SEO w telefonie
   intro: |-
-    Brak
+    Senuto jest narzędziem ułatwiającym planowanie, optymalizowanie i monitorowanie content marketingu i procesów SEO. Dzięki niemu możliwa jest analiza konkurencji w Google i dostosowanie działań pozwalających na jej wyprzedzenie poprzez zwiększenie ruchu na na konkretnych stronach.
   main_photo:  /uploads/senuto-OG-image.jpg
 
 project_type: mobile
@@ -80,11 +80,11 @@ customer_opinion:
   person: Damian Sałkowski
   position: CEO
   photo: /uploads/damian-salkowski.jpg
-  quotation: |-
-    W zeszłym roku mieliśmy okazje wspólnie z firmą Projets wybudować nową witrynę internetową dla naszej firmy. Na samym początku miłe zaskoczenie w postaci pozytywnego podejścia do klienta a później jeszcze większy plus za bardzo zaawansowaną technologie którą się posługują a dzięki której strona jest wyraźnie szybsza i wygląda nowocześnie. Na wszelkie nasze prośby reakcja zawsze natychmiastowa, nawet jeśli mówimy o sprawach już po zamknięciu etapu developmentu. Nie było chyba takiej wizji z naszej strony której nie udało by się im przelać na ekran, ba, poprawić ją i oszlifować żeby całość wyglądała profesjonalnie. Szczególne podziękowania dla Wojciecha Kozaka któremu w jakiś sposób udawało się upchnąć nasze zlecenia jeśli tylko tego potrzebowaliśmy.
-  quotation_small: |-
-    (..) miłe zaskoczenie w postaci pozytywnego podejścia do klienta a później jeszcze większy plus za bardzo zaawansowaną technologie którą się posługują a dzięki której strona jest wyraźnie szybsza i wygląda nowocześnie.
-  quotation_sentence: (...) plus za bardzo zaawansowaną technologie którą się posługują a dzięki której strona jest wyraźnie szybsza i wygląda nowocześnie
+  quotation:
+    
+  quotation_small:
+    
+  quotation_sentence: 
 
   
 project_categories:

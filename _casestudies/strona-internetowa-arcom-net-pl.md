@@ -32,7 +32,7 @@ cta_buttons:
   - name: Wyceń podobny projekt
     link: /kontakt.html
 testimonial_on_index: true
-casestudy_on_index: true
+casestudy_on_index: false
 cta: Case study arcom.net.pl
 
 

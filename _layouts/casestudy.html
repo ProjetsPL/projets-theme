@@ -131,51 +131,6 @@
                     </div>
                 </li>    
                 {% endfor %}
-                {% if page.project_challenges%}
-                <li class="beam-item b-size-6 main-point">
-                    <div class="beam b-size-6">
-                        <div class="beam-item b-size-1 label-wrapper">
-                            <div class="sticky-rail rail-sidebar">
-                                <div class="sticky-element label">
-                                    <div class="number">01</div>
-                                    <div class="name h4">{{site.data.global.translations.challenges}}</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="beam-item b-size-4 content">{{page.project_challenges | markdownify }}</div>
-                    </div>
-                </li>    
-                {%endif%}
-                {% if page.project_process %}
-                <li class="beam-item b-size-6 main-point">
-                    <div class="beam b-size-6">
-                        <div class="beam-item b-size-1">
-                            <div class="sticky-rail rail-sidebar">
-                                <div class="sticky-element label">
-                                    <div class="number">02</div>
-                                    <div class="name h4">{{site.data.global.translations.process}}</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="beam-item b-size-4 content">{{page.project_process | markdownify }}</div>
-                    </div>
-                </li>    
-                {%endif%}
-                {% if page.project_result %}
-                <li class="beam-item b-size-6 main-point">
-                    <div class="beam b-size-6">
-                        <div class="beam-item b-size-1">
-                            <div class="sticky-rail rail-sidebar">
-                                <div class="sticky-element label">
-                                    <div class="number">03</div>
-                                    <div class="name h4">{{site.data.global.translations.results}}</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="beam-item b-size-4 content">{{page.project_result | markdownify }}</div>
-                    </div>
-                </li>    
-                {%endif%}
             </ol>
         </section>        
         {%endif%}
@@ -209,6 +164,7 @@
             {% endfor %}
         </section>
         {%endif%}  
+        {% if page.customer_opinion.quotation%}
         <section class="beams-wrapper global-beam-wrapper beam-background section-beam quotation-sentence-beam">
             <div class="beam b-size-6">
                 <div class="beam-item b-size-4 ">
@@ -227,6 +183,7 @@
                 </div>
             </div>
         </section>
+        {%endif%}  
         {%if page.cta_buttons[2].link and page.cta_buttons[2].name%}
         <div class="beams-wrapper global-beam-wrapper cta-beam cta-beam-center">
             <div class="beam b-size-6">

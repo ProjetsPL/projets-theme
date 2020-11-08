@@ -22,7 +22,34 @@
             transform: translateX(-30%) translateY(30%);
         }
     }
-    .casestudy-img {
+    .casestudy-mobile {      
+        position: relative;
+        .mobile-mockup:nth-child(1) {
+            position: relative;
+            --mobile-mockup-size: 220px;
+            z-index: 5;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+        .mobile-mockup:nth-child(2) {
+            position: absolute;
+            --mobile-mockup-size: 180px;
+            z-index: 4;
+            bottom: calc(50%);
+            transform: translateY(50%);
+            left: $beam-gutter-size/2;
+            right: auto;
+        }
+        .mobile-mockup:nth-child(3) {
+            position: absolute;
+            --mobile-mockup-size: 180px;
+            z-index: 4;
+            bottom: calc(50%);
+            transform: translateY(50%);
+            right: $beam-gutter-size/2;
+        }
+    }
+    .casestudy-universal {
         text-align: right;
         position: relative;
         .mobile-mockup {               
@@ -88,7 +115,10 @@
                 transform: translateX(30%) translateY(30%);
             }                   
         }
-        .casestudy-img {   
+        .casestudy-mobile {   
+            order:2;
+        }
+        .casestudy-universal {   
             order:2;
             .mobile-mockup {
                 right: auto;
@@ -123,7 +153,11 @@
                 transform: translateX(30%) translateY(-7%);
             }     
         }
-        .casestudy-img {
+        .casestudy-mobile {      
+            max-width: 560px;
+            padding-bottom: 40px;
+        }
+        .casestudy-universal {
             &.b-size-1 {
                 height: 420px;
                 flex-basis: auto;
@@ -145,7 +179,7 @@
                     transform: translateX(-30%) translateY(-7%);
                 }     
             } 
-            .casestudy-img {   
+            .casestudy-universal {   
                 order:1;
                 .mobile-mockup {
                     transform: translateX(10%) translateY(-50%);

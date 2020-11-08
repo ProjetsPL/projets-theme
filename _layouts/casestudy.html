@@ -17,11 +17,19 @@
                     </div>   
                 </div>
             </header>    
-            <section class="mockup-beam">
-                <div class="mockup-wrapper">
+            <section class="mockup-beam">                
+                {% if page.project_type == "mobile"%}
+                <div class="mockup-mobile">
+                    {% include parts/casestudy-mockup-mobile.html mockup=page mockupMobileScreen=page.screens.mobile_1%}  
+                    {% include parts/casestudy-mockup-mobile.html mockup=page mockupMobileScreen=page.screens.mobile_2%}  
+                    {% include parts/casestudy-mockup-mobile.html mockup=page mockupMobileScreen=page.screens.mobile_3%}  
+                </div>
+                {%else%}
+                <div class="mockup-universal">
                     {% include parts/casestudy-mockup-mobile.html mockup=page mockupMobileScreen=page.screens.mobile_1%}  
                     {% include parts/casestudy-mockup-desktop.html mockup=page mockupDesktopScreen=page.screens.desktop_1%}  
                 </div>
+                {%endif%}
             </section>  
             {% if page.watermark %}      
             <div class="background"><img src="{{ page.watermark }}" alt="{{page.company}}"></div>

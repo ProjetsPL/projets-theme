@@ -2,10 +2,19 @@
     <div class="casestudy-bg">
         <div class="circle-bg" style="background-color: #{{ include.casestudy.colors.main }}"></div> 
     </div> 
-    <div class="beam-item b-size-1  casestudy-img" >  
+    
+    {% if include.casestudy.project_type == "mobile"%}
+    <div class="beam-item b-size-1  casestudy-mobile" >  
+        {% include parts/casestudy-mockup-mobile.html mockup=include.casestudy mockupMobileScreen=include.casestudy.screens.mobile_1%}  
+        {% include parts/casestudy-mockup-mobile.html mockup=include.casestudy mockupMobileScreen=include.casestudy.screens.mobile_2%}  
+        {% include parts/casestudy-mockup-mobile.html mockup=include.casestudy mockupMobileScreen=include.casestudy.screens.mobile_3%}  
+    </div>
+    {%else%}
+    <div class="beam-item b-size-1  casestudy-universal" >  
         {% include parts/casestudy-mockup-mobile.html mockup=include.casestudy mockupMobileScreen=include.casestudy.screens.mobile_1%}  
         {% include parts/casestudy-mockup-desktop.html mockup=include.casestudy mockupDesktopScreen=include.casestudy.screens.desktop_1%}  
     </div>
+    {%endif%}
     <div class="beam-item b-size-1  casestudy-content" >
         {% if include.casestudy.links_visible %}
         <a href="{{include.casestudy.url}}"><p class="h3">{{include.casestudy.intro.title}}</p></a>

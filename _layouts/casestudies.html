@@ -30,13 +30,22 @@
                 {% for casestudy in casestudies %}
                     <li class="beam-item">
                         <div class="beam b-size-2 casestudy-item">
-                            <div class="beam-item b-size-1  casestudy-img" >  
-
+                            {% if casestudy.project_type == "mobile"%}
+                            <div class="beam-item b-size-1  casestudy-img casestudy-mobile" >  
+                                <div class="mockups">                                  
+                                    {% include parts/casestudy-mockup-mobile.html mockup=casestudy mockupMobileScreen=casestudy.screens.mobile_1%}  
+                                    {% include parts/casestudy-mockup-mobile.html mockup=casestudy mockupMobileScreen=casestudy.screens.mobile_2%}  
+                                    {% include parts/casestudy-mockup-mobile.html mockup=casestudy mockupMobileScreen=casestudy.screens.mobile_3%}  
+                                </div>
+                            </div>
+                            {%else%}
+                            <div class="beam-item b-size-1  casestudy-img casestudy-universal" >  
                                 <div class="mockups">
                                     {% include parts/casestudy-mockup-mobile.html mockup=casestudy mockupMobileScreen=casestudy.screens.mobile_1%}  
                                     {% include parts/casestudy-mockup-desktop.html mockup=casestudy mockupDesktopScreen=casestudy.screens.desktop_1%}  
-                                </div>
-                            </div>
+                                </div> 
+                            </div>                               
+                            {%endif%}
                             <div class="beam-item b-size-1 casestudy-desc">
                                 <ul class="categories">
                                     {% for category in casestudy.project_categories%}

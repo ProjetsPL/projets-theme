@@ -1,3 +1,10 @@
+{% assign pages = site.pages %}
+{% assign posts = site.posts %}
+{% assign casestudies = site.casestudies %}
+{% assign services = site.services %}
+{% assign technologies = site.technologies %}
+{% assign all = blog | concat: pages | concat: posts | concat: casestudies | concat: services | concat: technologies   %}
+
 {% if page.page_type == "index" %}
 
   <script type="application/ld+json">
@@ -6,8 +13,8 @@
         "@graph": [
             {
               "@type": "WebSite",
-              "name": "{{site.data.global.title}}",
-              "url": "{{site.data.global.url}}"
+              "name": "{{site.title}}",
+              "url": "{{site.url}}"
             }
         ]
     }
@@ -112,10 +119,10 @@
           },  
           "publisher": {
             "@type": "Organization",
-            "name": "{{site.data.global.title}}",
+            "name": "{{site.title}}",
             "logo": {
               "@type": "ImageObject",
-              "url": "{{site.url}}/assets/img/h-logo.svg",
+              "url": "{{site.url}}/assets/img/h-logo.png",
               "width": 121,
               "height": 24
             }
@@ -124,6 +131,63 @@
           "dateModified": "{{ page.dates.update | date: "%m-%d-%Y" }}"
         }
         {% endif %}
+    ]
+}
+</script>
+
+{% elsif page.page_type == "landing-page" %}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+        {%if page.display_faq_section %}
+          {% if page.faq[0] %}  
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+            {% for question in page.faq %}
+              {% if question.question and question.answer%}  
+                {
+                  "@type": "Question",
+                  "name": "{{question.question}}",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{question.answer}}"
+                  }
+                }
+                {% if forloop.last == false %}
+                  ,
+                {%endif%}
+              {%endif%}
+            {% endfor %}
+            ]
+          }
+          ,
+          {% endif %}
+        {% endif %}
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {% for parent in page.page_parents %}
+                {% assign service = all | where: "path", parent  %}
+                {% assign index = forloop.index  %}
+                {% for item in service %}
+              {
+                "@type": "ListItem",
+                "position": {{ index }},
+                "name": "{{item.top_line.menu_title}}",
+                "item": "{{item.url | absolute_url}}"
+              },
+                {% endfor %}    
+            {% endfor %}
+          {
+            "@type": "ListItem",
+            "position": {{ index | plus: 1}},
+            "name": "{{page.top_line.menu_title}}",
+            "item": "{{page.url | absolute_url}}"
+          }]
+        }        
     ]
 }
 </script>

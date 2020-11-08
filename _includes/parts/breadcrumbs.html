@@ -1,3 +1,10 @@
+{% assign pages = site.pages %}
+{% assign posts = site.posts %}
+{% assign casestudies = site.casestudies %}
+{% assign services = site.services %}
+{% assign technologies = site.technologies %}
+{% assign all = blog | concat: pages | concat: posts | concat: casestudies | concat: services | concat: technologies   %}
+
 <nav class="breadcrumbs">
     <ol>
         {% assign index = site.pages | where: "page_type", "index" %}
@@ -18,6 +25,13 @@
             {% assign technology = site.pages | where: "page_type", "technologies" %}
             {% for item in technology %}
                 <li><a href="{{item.url}}">{{item.top_line.menu_title}}</a></li>
+            {% endfor %}
+        {% elsif  page.page_type == "landing-page" %}  
+            {% for parent in page.page_parents %}
+                {% assign service = all | where: "path", parent  %}
+                {% for item in service %}
+                    <li><a href="{{item.url}}">{{item.top_line.menu_title}}</a></li>
+                {% endfor %}    
             {% endfor %}
         {% elsif  page.page_type == "casestudy" %}  
             {% assign casestudies = site.pages | where: "page_type", "casestudies" %}

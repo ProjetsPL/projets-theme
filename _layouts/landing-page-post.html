@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include parts/gtagmanager.html %}
+    {% include top-line.html %}
+    {% include parts/breadcrumbs.html %}
+    <article class="beams-wrapper global-beam-wrapper beam-background section-beam post-beam post-article">
+        <div class="beam b-size-5 " id="main-content">
+            <div class="beam-item b-size-3 post-content">
+                <header>
+                    <h1 class="title">{{page.header.title}}</h1>
+                    <div class="post-date">
+                        <span class="p3">{{site.data.global.translations.publication_date}}: <time
+                                datetime="{{ page.dates.publication | date_to_xmlschema }}">{{page.dates.publication | date: '%d-%m-%Y'}}</time></span>
+                        |
+                        <span class="p3">{{site.data.global.translations.update_date}}: <time
+                                datetime="{{ page.dates.update  | date_to_xmlschema }}">{{page.dates.update  | date: '%d-%m-%Y'}}</time></span>
+                    </div>
+                    {{page.header.intro | markdownify }}
+                    <figure>
+                        <img src="{{ page.header.main_photo}}" class="img" alt="{{page.header.main_photo_desc}}">
+                        <figcaption>{{page.header.main_photo_desc}}</figcaption>
+                    </figure>
+                </header>                
+                {%if page.toc %}
+                <nav class="table-of-content table-of-content-mobile">
+                    <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                    {{ content | toc_only }}
+                </nav>
+                {%endif%}
+                {{ content | inject_anchors }}
+                {%if page.display_faq_section %}
+                <section>
+                    {% for question in page.faq limit:1 %}
+                    {% if question.question and question.answer%}
+                    <h2>FAQ</h2>
+                    {%endif%}
+                    {% endfor %}
+                    {% for question in page.faq %}
+                    {% if question.question and question.answer%}
+                    <section class="faq distinction">
+                        <h3 class="h4"> {{question.question}}</h3>
+                        <p>{{question.answer}}</p>
+                    </section>
+                    {%endif%}
+                    {% endfor %}
+                </section>
+                {% endif %}
+                <footer class="author">
+                    <div class="photo">
+                        <img src="{{page.author.photo}}" alt="{{page.author.name}}">
+                    </div>
+                    <div class="content">
+                        <p class="name h4">{{page.author.name}}</p>
+                        <p class="position">{{page.author.position}}</p>
+                    </div>
+                </footer>
+            </div>            
+            {%if page.toc %}
+            <div class="beam-item b-size-2  post-toc">
+                <div class="sticky-rail rail-sidebar">
+                    <div class="sticky-sidebar">
+                        <nav class="table-of-content  table-of-content-desktop">
+                            <span class="title">{{site.data.global.translations.table_of_contents}}</span>
+                            {{ content | toc_only }}
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            {%endif%}
+        </div>
+    </article>
+    <section class="beams-wrapper global-beam-wrapper beam-background section-beam futured-posts-beam">
+        <div class="beam">
+            <div class="beam-item">
+                <header class="section-header">
+                    <div class="head">
+                        <div class="title">
+                            <p class="h4 uppercase">{{site.data.global.translations.featured_posts}}</p>
+                        </div>
+                        {% assign blog = site.pages | where: "layout", "blog" %}
+                        {% for item in blog %}
+                        <div class="link">
+                            <a href="{{item.url}}">{{site.data.global.translations.see_all_posts}}  <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </header>
+                <div class="beam b-size-3 futured-posts-listing ">
+                    {% for item in site.posts limit:3 %}
+                    <div class="beam-item b-size-1">
+                        {% include parts/post-item.html  post=item h="p"%}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include random-links.html %}    
+    {% include footer.html %}
+    {% include parts/stickby-sidebar.html %}
+</body>
+</html>

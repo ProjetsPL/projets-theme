@@ -7,9 +7,9 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  Case Study Senuto | Nowoczesne Systemy Magazynowe
+seo_title:  Case Study Senuto | Monitorowanie SEO w telefonie
 seo_description: |-
-  Projekt platformy oferującej ogromny wybór 🏗️ specjalistycznych produków. ➡️ Sprawdź nowoczesny design i wiele funkcjonalności witryny.
+  Aplikacja mobilna Senuto 📱 Planowanie, monitorowanie i optymalizacja działań SEO w telefonie 📈
 main_keywords:
   - aplikacja mobilna Senuto
   
@@ -36,44 +36,44 @@ casestudy_on_index: true
 cta: Case study Senuto
 
 
-date: 2019-11-17T12:02:04.000+00:00 
+date: 2020-10-27T12:02:04.000+00:00 
 
 
 intro: 
-  title: <strong>Senuto</strong> aplikacja mobilna
+  title:  <strong>Aplikacja mobilna Senuto</strong> - Planowanie, monitorowanie i optymalizacja działań SEO w telefonie
   content: |-
-    Kompleksowa odpowiedź na oczekiwania użytkownika w zakresie systemów magazynowania i transportu. Doświadczenie wsparte nowoczesnymi technologiami. Innowacyjny sposób prezencji produktów z elementami animacji, prosty i charakterystyczny design, a przede wszystkim przyjazny i intuicyjny layout skierowany na użytkownika.
+    Senuto jest narzędziem ułatwiającym planowanie, optymalizowanie i monitorowanie content marketingu i procesów SEO. Dzięki niemu możliwa jest analiza konkurencji w Google i dostosowanie działań pozwalających na jej wyprzedzenie poprzez zwiększenie ruchu na na konkretnych stronach.
 
 
 header:
-  title: <strong>Senuto</strong> aplikacja mobilna
+  title: <strong>Senuto Mobile App</strong> - Planowanie, monitorowanie i optymalizacja SEO w telefonie
   intro: |-
-    Arcom to firma, która specjalizuje się w produkcji systemów wykorzystywanych do magazynowania i transportu. Realizacje opierają się na wieloletnim doświadczeniu wspartym nowoczesną technologią. Przedsiębiorstwo jest europejskim liderem w swojej branży. Rozwiązania oferowane przez specjalistów marki wpływają między innymi na lepsze zagospodarowanie przestrzeni magazynowej.
-  main_photo:  /uploads/arcom-OG-image.jpg
+    Brak
+  main_photo:  /uploads/senuto-OG-image.jpg
 
 project_type: mobile
 
 screens:
   mobile_1:
-    img: /uploads/casestudy-arcom-mobile.jpg
-    cover: /uploads/casestudy-arcom-mobile-cover.jpg
+    img: /uploads/casestudy-senuto-mobile-1.jpg
+    cover: /uploads/casestudy-senuto-mobile-1-cover.jpg
     alt:
   mobile_2:
-    img: /uploads/casestudy-arcom-mobile.jpg
-    cover: /uploads/casestudy-arcom-mobile-cover.jpg
+    img: /uploads/casestudy-senuto-mobile-2.jpg
+    cover: /uploads/casestudy-senuto-mobile-2-cover.jpg
     alt:
   mobile_3:
-    img: /uploads/casestudy-arcom-mobile.jpg
-    cover: /uploads/casestudy-arcom-mobile-cover.jpg
+    img: /uploads/casestudy-senuto-mobile-3.jpg
+    cover: /uploads/casestudy-senuto-mobile-3-cover.jpg
     alt:
 colors:
-  main: "FAE129"
+  main: "1B1C63"
   devices_border: "FFF"
 
 
 company: Senuto
-company_logo: /uploads/logo-arcom.svg
-watermark: /uploads/arcom-watermark.svg
+company_logo: 
+watermark: 
 
 
 customer_opinion:
@@ -88,98 +88,80 @@ customer_opinion:
 
   
 project_categories:
-  - _services/strony-internetowe.md
+  - _services/aplikacje-internetowe.md
 project_technologies:
-  - _technologies/react-js.md
+  - _technologies/react-native.md
 project_range:
-  - back-end
   - front-end
-  - design
 
-
-project_challenges:  |-
-  Jednym z najważniejszych aspektów projektu była szybkość działania strony i wyeliminowanie ewentualnych przeładowań, które mogłyby pojawić się w związku z dużą ilością informacji oraz plików multimedialnych.
-
-  Dodatkowo ustaliliśmy z klientem, że ważny będzie nowoczesny design, który powinien być dopasowany do zdjęć w widoku 360 stopni oraz animacji różnorodnych produktów.
-
-  Ponadto we wstępnym etapie planowania działań uwzględnione zostały aspekty w zakresie rozwiązań technologicznych:
-
-  {:.list.list-positive}
-  * wiele wersji językowych witryny,
-  * przypisane przedstawiciela firmy do konkretnej wersji językowej strony,
-  * stworzenie mapy i dodanie przedstawiciela do kraju, za który odpowiada.
-project_process:  |-
-  Proces projektowania strony, podobnie, jak w innych realizacjach rozpoczęliśmy od przygotowania makiet, który dały nam ogólny pogląd tego, co chcielibyśmy osiągnąć. Następnie na ich podstawie zajęliśmy się przygotowaniem personalizowanej identyfikacji wizualnej. W tym zakresie skupiliśmy się na takich kwestiach jak:
-
-  {:.list.list-positive}
-  * dobór właściwej kolorystki,
-  * stworzenie typografii,
-  * przygotowanie dedykowanych ikon.
-
-  Na tym etapie oprócz makiet wykorzystywaliśmy także stylequide.
-
-  Stworzenie witryny od strony technologicznej wymagało zastosowania Gatsby.js. Front strony połączyliśmy z panelem administracyjnym dzięki API. System CMS został odpowiednio dostosowany do oczekiwań firmy. Zespół zastosował również technologie zapewniające jego najwyższą wydajność.
-
-  W momencie, kiedy projekt graficzny został zaakceptowany przez klienta, gotowa strona została umieszczona na serwerze. Cały proces przygotowanie do tego momentu trwał 12 tygodni.
-project_result:  |-
-  Projekt został zrealizowany zgodnie z początkowymi założeniami ustalonymi ze zleceniodawcą.
-
-  Bardzo ważnym aspektem było stworzenie identyfikacji wizualnej firmy, która pasowałaby do branży, a jednocześnie wyróżniałaby przedsiębiorstwo na rynku. Na uwagę zasługuje przede wszystkim kolorystyka strony oraz podświetlenie produktów, które sprawia, że odbiorca po najechaniu na dany element zwraca na niego szczególną uwagę. Sama typografia jest bardzo prosta, co nie sprawia wrażenia przytłoczenia.
-
-  To, co jest charakterystyczne dla firmy to obrotowy widok produktów 360 stopni. Dzięki temu klient może sprawdzić, jak dokładnie wyglądają, co jest ważnym aspektem procesu zakupowego.
-
-  W kwestii technologicznej - zastosowane udogodnienia wpłynęły na stworzenie strony w trzech językach: polskim, angielskim i niemieckim. Co więcej, po wyborze konkretnej wersji językowej można skontaktować się bezpośrednio z odpowiednim pracownikiem. W prawym rogu wyświetla się ikona - tzw. dymek - a po kliknięciu na nią dane osobowe pracownika. W zakładce "Kontakt" stworzono natomiast interaktywną mapę świata. Po wybraniu regionu świata pojawia się informacja dotycząca opiekuna sprzedaży przypisanego do kraju wraz z danymi kontaktowymi.
-
-  Zastosowane systemy sprawiły, że witryna ładuje się sprawnie - pomimo bardzo dużej ilości treści oraz plików multimedialnych. Wyeliminowane zostały również zagrożenia, które mogłyby wpływać na przeładowania strony.
+steps:
+- name: Analiza
+  icon: /uploads/graphic-analysis.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Odbiór gotowego projektu graficznego oraz pełnej dokumentacji API od klienta.
+    * Analiza wymagań i oczekiwań wobec przygotowywanego projektu aplikacji i jej funkcjonalności.
+    * Stworzenie estymacji czasowej dotyczącej zaprogramowania aplikacji mobilnej.
+- name: Front-end
+  icon: /uploads/graphic-front-end.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Dopasowanie technologii spełniającej wszelkie oczekiwania wobec aplikacji - React Native.
+    * Prace związane z programowaniem i dopracowywaniem aplikacji mobilnej trwające 3 miesiące.
+    * Oddanie gotowej aplikacji dostosowanej pod różnych użytkowników - w wersji Android oraz iOS.
+- name: Testowanie
+  icon: /uploads/graphic-testing.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Testowanie działania i użyteczności aplikacji już na początkowych etapach produkcji.
+    * Dodawanie kolejnych funkcjonalności i sprawdzanie ich bezpośrednio po stworzeniu.
+    * Testy manualne mające na celu weryfikację założeń i wymagań stawianych przez klienta wobec realizowanego projektu.
 
 presentation:
   -
-    graphic: /uploads/casestudy-arcom-pic-1.jpg
+    graphic: /uploads/casestudy-senuto-pic-1.jpg
     graphic_title:  
     graphic_full_width: true
     graphic_size: 4
     content:  |-
-      Sukcesem niemal każdej platformy jest połączenie przemyślanych działań w zakresie identyfikacji firmy oraz dopasowania rozwiązań technologicznych. Są to aspekty dające podstawy do zdobycia klientów. Poniżej przedstawione zostały najważniejsze sekcje w projekcie, wpływające na funkcjonalność, estetykę i czytelność strony.
+      ## Poznaj aplikację mobilną Senuto
+      Nowoczesne aplikacje mobilne ułatwiają codzienną pracę. Jest to szczególnie ważne w przypadku procesów związanych z marketingiem internetowym. Głównym założeniem projektu było więc stworzenie narzędzia, które można wykorzystać w dowolnym miejscu i czasie - bez dostępu do komputera. Podstawą w tym przypadku było dopasowanie technologii, które przełożą się na użyteczność aplikacji i intuicyjną obsługę z wykorzystaniem wszystkich dostępnych funkcji.
     content_size: 4
   -
-    graphic: /uploads/casestudy-arcom-pic-2.jpg
+    graphic: /uploads/casestudy-senuto-pic-2.jpg
     graphic_title: 
     graphic_full_width: true
     graphic_size: 4
     content:  |-
-      ## Sposób prezentacji produktu
-      Jedną z najważniejszych kwestii podczas przygotowywania strony było odpowiednie prezentowanie produktów oferowanych przez firmę. Z uwagi na specyfikę branży, zastosowane przez nasz zespół rozwiązania można uznać za innowacyjne. Na szczególną uwagę zasługują przede wszystkim dwie kwestie - animacja produktu oraz widok 360 stopni. 
-
-      {:.list}
-      * **Animacja produktu** - Przy każdym produkcie stworzona została wizualizacja graficzna jego wykorzystania. Przekaz jest bardzo czytelny dla odbiorcy, który może dowiedzieć się, jak złożyć konkretne wyposażenie lub jak może zastosować je dla własnych potrzeb.
-      * **Widok 360 stopni** - Produkty posiadają także obrotowy widok 360 stopni. To umożliwia dokładnie sprawdzenie konstrukcji i poszczególnych elementów całego asortymentu.
+      ## Zaawansowane technologie - React Native
+      Główną technologią wykorzystaną w podczas tworzenia aplikacji Senuto jest React Native. Jest to platforma, której wykorzystanie umożliwia stworzenie dynamicznych i intuicyjnych aplikacji mobilnych. Jej zastosowanie podczas programowania pozwoliło uzyskać maksymalną płynność, która ma wpływ na doświadczenia użytkownika korzystającego z narzędzia.
 
     content_size: 4
   -
-    graphic: /uploads/casestudy-arcom-pic-3.jpg
+    graphic: /uploads/casestudy-senuto-pic-3.jpg
     graphic_title: 
     graphic_full_width: true
     graphic_size: 4
     content:  |-
-      ## Karta katalogowa produktu
-      Bezpośrednio z zakładki konkretnego produktu możliwe jest przejście do jego karty katalogowej, gdzie znajdują się wszelkie parametry techniczne, rysunki techniczne oraz dodatkowe dane dotyczące akcesoriów, czy transportu. Można tam również zapoznać się ze zdjęciami rzeczywistego produktu i zobaczyć, jak prezentuje się na żywo.
+      ## Bezpieczeństwo i ochrona użytkowników
+      Umieszczenie aplikacji mobilnej w App Store i Google Play to gwarancja bezpieczeństwa i ochrony danych wszystkich użytkowników, którzy ją pobierają i pracują z jej wykorzystaniem. Każde oprogramowanie dodawane na te platformy musi spełniać określone zasady i chronić urządzenia osób, które je pobierają przed zagrożeniami i szkodliwym oprogramowaniem. 
     content_size: 4
   -
-    graphic: /uploads/casestudy-arcom-pic-4.jpg
+    graphic: /uploads/casestudy-senuto-pic-4.jpg
     graphic_title: 
     graphic_full_width: true
     graphic_size: 4
     content:  |-
-      ## Interaktywna mapa świata
-      Na odbiorców witryny w zakładce "Kontakt" czeka interaktywna mapa świata. Po najechaniu na wybrany region, jego kolor zmienia się, natomiast po kliknięciu pojawia się informacja, który z opiekunów handlowych jest odpowiedzialny za wybrany kraj. Pojawiają się także informacje kontaktowe oraz ikony sugerujące znajomość konkretnych języków, którymi posługuje się pracownik.
+      ## Szybkość i wydajność aplikacji
+      Personalizowana aplikacja mobilna to zdecydowana przewaga nad standardowymi rozwiązaniami. Projekt przygotowany z uwzględnieniem indywidualnych wymagań klienta daje zdecydowanie większe możliwości w zakresie osiągnięcia maksymalnej użyteczności. Te aspekty dotyczą przygotowanej przez nas zespół aplikacji, która działa sprawnie i zapewnia znacznie lepsze doświadczenia użytkownikom niż strona internetowa.
     content_size: 4
   -
-    graphic: /uploads/casestudy-arcom-pic-5.jpg
+    graphic: /uploads/casestudy-senuto-pic-5.jpg
     graphic_title: 
     graphic_full_width: true
     graphic_size: 4
     content:  |-
-      ## Pracownicy przypisani do wersji językowej strony
-      Witryna dostępna jest w trzech wersjach językowych. Za każdą z nich odpowiedzialna jest inna osoba. Jak skontaktować się z właściwym pracownikiem? Po wejściu na stronę - w prawym dolnym roku pojawia się "przypięta" ikona wskazująca na dymek czatu. Po kliknięciu na nią pojawiają się dane kontaktowe do właściwej osoby.
+      ## Wielowymiarowe i zaawansowane wykresy
+      Główną funkcjonalnością aplikacji mobilnej Senuto są zaawansowane wykresy dające szerokie możliwości w zakresie filtrowania. Użytkownik może jednocześnie nałożyć na siebie kilka wyników, co daje mu zdecydowanie szerszy pogląd na kwestię optymalizacji procesów marketingowych. Jednocześnie generownie wielowymiarowych wykresów w żaden sposób nie wpływa na wydajność aplikacji.
     content_size: 4
 ---

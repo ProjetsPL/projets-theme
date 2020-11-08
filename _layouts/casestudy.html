@@ -113,9 +113,24 @@
             </div>
         </div>
         {%endif%}   
-        {% if page.project_challenges or page.project_process  or page.project_result %}
+        {% if page.steps[0] %}
         <section class="beams-wrapper global-beam-wrapper beam-background section-beam main-points-beam">
             <ol class="beam b-size-6 main-points-list">
+                {% for step in page.steps %}
+                <li class="beam-item b-size-6 main-point">
+                    <div class="beam b-size-6">
+                        <div class="beam-item b-size-1 label-wrapper">
+                            <div class="sticky-rail rail-sidebar">
+                                <div class="sticky-element label">
+                                    <div class="number">0{{ forloop.index }}</div>
+                                    <div class="name h4">{{step.name}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beam-item b-size-4 content">{{step.desc | markdownify }}</div>
+                    </div>
+                </li>    
+                {% endfor %}
                 {% if page.project_challenges%}
                 <li class="beam-item b-size-6 main-point">
                     <div class="beam b-size-6">

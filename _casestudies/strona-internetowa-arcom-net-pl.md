@@ -92,40 +92,28 @@ project_range:
   - design
 
 
-project_challenges:  |-
-  Jednym z najważniejszych aspektów projektu była szybkość działania strony i wyeliminowanie ewentualnych przeładowań, które mogłyby pojawić się w związku z dużą ilością informacji oraz plików multimedialnych.
-
-  Dodatkowo ustaliliśmy z klientem, że ważny będzie nowoczesny design, który powinien być dopasowany do zdjęć w widoku 360 stopni oraz animacji różnorodnych produktów.
-
-  Ponadto we wstępnym etapie planowania działań uwzględnione zostały aspekty w zakresie rozwiązań technologicznych:
-
-  {:.list.list-positive}
-  * wiele wersji językowych witryny,
-  * przypisane przedstawiciela firmy do konkretnej wersji językowej strony,
-  * stworzenie mapy i dodanie przedstawiciela do kraju, za który odpowiada.
-project_process:  |-
-  Proces projektowania strony, podobnie, jak w innych realizacjach rozpoczęliśmy od przygotowania makiet, który dały nam ogólny pogląd tego, co chcielibyśmy osiągnąć. Następnie na ich podstawie zajęliśmy się przygotowaniem personalizowanej identyfikacji wizualnej. W tym zakresie skupiliśmy się na takich kwestiach jak:
-
-  {:.list.list-positive}
-  * dobór właściwej kolorystki,
-  * stworzenie typografii,
-  * przygotowanie dedykowanych ikon.
-
-  Na tym etapie oprócz makiet wykorzystywaliśmy także stylequide.
-
-  Stworzenie witryny od strony technologicznej wymagało zastosowania Gatsby.js. Front strony połączyliśmy z panelem administracyjnym dzięki API. System CMS został odpowiednio dostosowany do oczekiwań firmy. Zespół zastosował również technologie zapewniające jego najwyższą wydajność.
-
-  W momencie, kiedy projekt graficzny został zaakceptowany przez klienta, gotowa strona została umieszczona na serwerze. Cały proces przygotowanie do tego momentu trwał 12 tygodni.
-project_result:  |-
-  Projekt został zrealizowany zgodnie z początkowymi założeniami ustalonymi ze zleceniodawcą.
-
-  Bardzo ważnym aspektem było stworzenie identyfikacji wizualnej firmy, która pasowałaby do branży, a jednocześnie wyróżniałaby przedsiębiorstwo na rynku. Na uwagę zasługuje przede wszystkim kolorystyka strony oraz podświetlenie produktów, które sprawia, że odbiorca po najechaniu na dany element zwraca na niego szczególną uwagę. Sama typografia jest bardzo prosta, co nie sprawia wrażenia przytłoczenia.
-
-  To, co jest charakterystyczne dla firmy to obrotowy widok produktów 360 stopni. Dzięki temu klient może sprawdzić, jak dokładnie wyglądają, co jest ważnym aspektem procesu zakupowego.
-
-  W kwestii technologicznej - zastosowane udogodnienia wpłynęły na stworzenie strony w trzech językach: polskim, angielskim i niemieckim. Co więcej, po wyborze konkretnej wersji językowej można skontaktować się bezpośrednio z odpowiednim pracownikiem. W prawym rogu wyświetla się ikona - tzw. dymek - a po kliknięciu na nią dane osobowe pracownika. W zakładce "Kontakt" stworzono natomiast interaktywną mapę świata. Po wybraniu regionu świata pojawia się informacja dotycząca opiekuna sprzedaży przypisanego do kraju wraz z danymi kontaktowymi.
-
-  Zastosowane systemy sprawiły, że witryna ładuje się sprawnie - pomimo bardzo dużej ilości treści oraz plików multimedialnych. Wyeliminowane zostały również zagrożenia, które mogłyby wpływać na przeładowania strony.
+steps:
+- name: Wyzwania
+  icon: /uploads/graphic-challenges.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Szybka strona internetowa bez przeładowań wynikających z dużej produktów, ilości informacji i multimediów.
+    * Spójna identyfikacja wizualna firmy, dopasowana jej specjalizacji i wyróżniająca się na tle konkurencji rynkowej.
+    * Nowoczesny design strony dopasowany do zdjęć w widoku 360 stopni oraz animacji produktów.
+- name: Proces
+  icon: /uploads/graphic-process.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Stworzenia typografii, dedykowanych ikon i dostosowanie kolorystyki wpływającej na wizerunek marki.
+    * Przygotowanie witryny z wykorzystaniem Gatsby.js - połączenie frontu z panelem administracyjnym po API.
+    * Dopasowanie systemu CMS i jego wydajności gwarantujące zadowolenie użytkowników.
+- name: Rezultaty
+  icon: /uploads/graphic-result.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Podświetlenie i obrotowy widok produktów 3D ułatwiający podejmowanie decyzji zakupowych.
+    * Strona w języku: polskim, angielskim i niemieckim i kontakt z pracownikiem przypisanym do konkretnej wersji językowej.
+    * Interaktywna mapa świata z informacjami o opiekunie sprzedaży przypisanym do danego regionu.
 
 presentation:
   -

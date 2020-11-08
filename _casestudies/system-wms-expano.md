@@ -91,10 +91,7 @@ project_range:
   - design
 
 
-project_challenges:
-project_process:
-project_result:
-
+steps:
 
 presentation:
   -

@@ -93,39 +93,28 @@ project_range:
   - back-end
   - front-end
 
-
-project_challenges:  |-
-  Prace nad projektem rozpoczęliśmy od określenia celów strony. Naszym zadaniem było uruchomienie platformy, która będzie odpowiednio zoptymalizowana. 
-
-  {:.list.list-positive}
-  * Głównym założeniem było zintegrowanie kilku dobrze działających sieci afiliacyjnych, które zgromadzą w jednym miejscu setki sklepów, tysiące marek i miliony produktów.
-  * Realizacja wyżej przedstawionej koncepcji wiązała się z przygotowaniem miejsca, w którym będzie odbywało się zarządzanie wszystkimi produktami.
-  * Dążyliśmy do tego, aby możliwa była ciągła aktualizacja stanów, a wszelkie zmiany zachodzące w tym obszarze nie generowały żadnych komplikacji.
-  * Bardzo ważna była struktura SEOfriendly - na której dość mocno się skupiliśmy.
-  * Pracowaliśmy nad możliwością tworzenia kategorii wirtualnych, co przekładało się na opracowanie rozbudowanego katalogu produktów.
-  * Naszym celem było opracowanie tagów produktów, które wprowadziły nowe możliwości w zakresie grupowania asortymentu.
-  * Ostateczny punkt stanowiło połączenie wszystkich założeń i osiągnięcie odpowiedniej szybkości strony podczas jej przeglądania, co przy tak dużej bazie produktowej stanowiło prawdziwe wyzwanie.
-project_process:  |-
-  Cały proces przygotowania platformy bazował na uzgodnieniu z klientem jego oczekiwań. Na tej podstawie ustaliliśmy główne punkty, które stały się dla nas wyznacznikiem do podjęcia dalszych działań.
-
-  Zdecydowaliśmy, że panel administracyjny będzie oparty na Ruby on Rails oraz Elasticsearch, co zapewni odpowiednia funkcjonalność. Pierwszy projekt w wersji MVP przedstawiliśmy klientowi po 2 miesiącach. Proces przygotowania strony został podzielony na 4-tygodniowe sprinty, dzięki czemu działania podejmowane przez naszych specjalistów były elastyczne, a jednocześnie cały czas mieliśmy stałą kontrolę nad poprawnością kolejnych czynności.
-
-  Kolejnym etapem było stworzenie dodatkowej aplikacji frontendowej opartej na React.js. Jej wdrożenie zapewniło maksymalną szybkość ładowania się strony. 
-
-  Wszystkie technologie zastosowane w procesie przygotowania platformy przełożyły się na najwyższą wydajność aplikacji - zarówno frontendowej, jak i backendowej - niezależnie od bardzo dużej ilości produktów.
-project_result:  |-
-  Zastosowanie wybranych przez nas technologii umożliwiło osiągnięcie celów, które założyliśmy na początku naszych działań.
-
-  Wprowadziliśmy rozwiązania, dzięki którym:
-
-  {:.list.list-positive}
-  * powstały prężnie działające sieci afiliacyjne z szerokim wyborem marek, sklepów i produktów * dopasowanych do każdych potrzeb,
-  * stworzyliśmy panel administracyjny, dzięki któremu w prosty sposób można zarządzać każdym produktem z jednego poziomu,
-  * przygotowaliśmy system, który umożliwia szybką aktualizację stanów,
-  * powstały kategorie wirtualne  i tagi produktów, dzięki którym kategoryzowanie produktów stało się szybkie i niezwykle łatwe,
-  * wprowadziliśmy strukturę SEOfriendly - dzięki której serwis ma potencjał na uzyskanie wyższych wyników organicznych w wyszukiwarkach internetowych.
-
-  Podsumowaniem naszych działań była optymalizacja platformy pod kątem szybkości jej przeglądania przy ilości informacji, które zostały na niej zgromadzone.
+steps:
+- name: Wyzwania
+  icon: /uploads/graphic-challenges.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Utworzenie kilku dobrze działających sieci afiliacyjnych gromadzących setki sklepów, tysiące marek i miliony produktów.
+    * Proste zarządzanie produktami z jednego miejsca i ciągła aktualizacja stanów bez komplikacji.
+    * Utworzenie tagów produktów, kategorii wirtualnych i wprowadzenie nowych możliwości w zakresie ich grupowania.
+- name: Proces
+  icon: /uploads/graphic-process.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Zastosowanie nowoczesnych technologii Ruby on Rails oraz Elasticsearch.
+    * Opracowanie aplikacji frontendowej opartej na React.js gwarantującej szybkość ładowania strony.
+    * Uzyskanie maksymalnej wydajności aplikacji od strony frondendowej i backendowej.
+- name: Rezultaty
+  icon: /uploads/graphic-result.svg
+  desc:  |-
+    {:.list.list-positive}
+    * Nieograniczone możliwości w zakresie dodawania produktów i dopasowania ich pod kątem indywidualnych potrzeb.
+    * Przejrzysty i prosty w obsłudze panel administracyjny ułatwiający kontrolę nad wszystkimi produktami.
+    * Struktura SEO friendly dająca potencjał na uzyskanie wysokich wyników organicznych w wyszukiwarkach internetowych.
 
 
 presentation:

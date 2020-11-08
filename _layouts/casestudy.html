@@ -115,17 +115,17 @@
         {%endif%}   
         {% if page.steps[0] %}
         <section class="beams-wrapper global-beam-wrapper beam-background section-beam main-points-beam">
-            <ol class="beam b-size-6 main-points-list">
+            {%assign steps_number = page.steps.size %}
+            <ol class="beam b-size-{{steps_number}} main-points-list">
                 {% for step in page.steps %}
-                <li class="beam-item b-size-6 main-point">
-                    <div class="beam b-size-6">
-                        <div class="beam-item b-size-1 label-wrapper">
-                            <div class="sticky-rail rail-sidebar">
-                                <div class="sticky-element label">
-                                    <div class="number">0{{ forloop.index }}</div>
-                                    <div class="name h4">{{step.name}}</div>
-                                </div>
+                <li class="beam-item b-size-1 main-point">
+                    <div class="beam">
+                        <div class="beam-item label-wrapper">
+                            <div class="label">
+                                <div class="number">0{{ forloop.index }}</div>
+                                <div class="name h4">{{step.name}}</div>
                             </div>
+                            <img src="{{step.icon}}" alt="">
                         </div>
                         <div class="beam-item b-size-4 content">{{step.desc | markdownify }}</div>
                     </div>
@@ -206,6 +206,5 @@
             </section>
         {% include random-links.html %}    
         {% include footer.html %}       
-        {% include parts/stickby-element.html %}
     </body>
 </html>

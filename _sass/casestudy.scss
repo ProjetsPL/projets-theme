@@ -42,7 +42,7 @@
         z-index: 5;
         .mockup-universal {
             position: relative;
-            padding-bottom: 50px;
+            padding-bottom: 80px;
             width: 100%;
             max-width: 960px;
             .casestudy-mockup {
@@ -56,14 +56,14 @@
                 &.mobile-mockup {
                     position: absolute;
                     z-index: 2;
-                    bottom: 30px;
+                    bottom: 60px;
                     right: 30px;
                 }
             }
         }
         .mockup-mobile {
             position: relative;
-            padding-bottom:30px;
+            padding-bottom:60px;
             padding-top: 30px;
             width: 100%;
             max-width: 960px;
@@ -187,6 +187,18 @@
             margin-bottom: 50px;
             &:last-child {
                 margin-bottom: 0px;
+            }
+        }
+        .label-wrapper {
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            padding-left: 50px;
+            img {
+                position: relative;
+                top: -5px;
+                padding-left: 40px;
             }
         }
         .label {
@@ -321,15 +333,9 @@
         }
     }
     .main-points-beam {
-        .main-point {
-            >.beam {
-                >.beam-item {
-                    flex-basis: 100%;
-                    .label {
-                        margin-bottom: 40px
-                        
-                    }
-                }
+        .main-points-list {
+            .main-point {
+                flex-basis: 100%;
             }
         }
     }

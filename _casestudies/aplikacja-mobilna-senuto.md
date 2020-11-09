@@ -7,9 +7,9 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  Case Study Senuto | Monitorowanie SEO w telefonie
+seo_title:  Case Study Senuto | Aplikacja Mobilna dla Marketingu i SEO
 seo_description: |-
-  Aplikacja mobilna Senuto 📱 Planowanie, monitorowanie i optymalizacja działań SEO w telefonie 📈
+  Projekt aplikacji mobilnej ułatwiającej pracę z marketingiem online i procesami SEO. 📈 Sprawdź, jak powstawała aplikacja mobilna. 📲
 main_keywords:
   - aplikacja mobilna Senuto
   
@@ -48,7 +48,7 @@ intro:
 header:
   title: <strong>Aplikacja mobilna Senuto</strong> - Planowanie i monitorowanie działań SEO w telefonie
   intro: |-
-    Senuto jest narzędziem ułatwiającym planowanie, optymalizowanie i monitorowanie content marketingu i procesów SEO. Dzięki niemu możliwa jest analiza konkurencji w Google i dostosowanie działań pozwalających na jej wyprzedzenie poprzez zwiększenie ruchu na na konkretnych stronach.
+    Projekt realizowany dla Senuto zakładał stworzenie nowoczesnej aplikacji ułatwiającej pracę z szeroko pojętym marketingiem online i procesami SEO. Bardzo ważnym aspektem był dobór właściwych technologii, które gwarantują płynność i przejrzystość w trakcie obsługi. Dodatkowo koncepcja zakładała wprowadzenie takich funkcjonalności jak zaawansowane wykresy z możliwością filtrowania analizowanych danych. 
   main_photo:  /uploads/senuto-OG-image.jpg
 
 project_type: mobile

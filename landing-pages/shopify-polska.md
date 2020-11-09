@@ -32,7 +32,7 @@ page_parents:
 header: 
   title: Otwórz swój sklep internetowy na <strong>Shopify Polska</strong>
   intro: |-
-    Shopify jest obecnie jedną z najlepiej hostowanych platform eCommerce dostępnych na rynku. Na jej korzyść przemawia przede wszystkim cena oraz wiele użytecznych funkcji. Shopify obsługuje między innymi wiele kanałów sprzedaży na portalach takich jak Facebook, czy Amazon. Ogromnym plusem jest także całodobowe wsparcie. Wszystkie te czynniki decydują o tym, że ​​Shopify jest doskonałym i kompleksowym rozwiązaniem eCommerce, które pomoże Ci sprzedawać więcej - zarówno online za pośrednictwem eCommerce i offline za pośrednictwem zintegrowanych systemów POS. Sprawdź, co zyskasz decydując się na Shopify.
+    Shopify jest obecnie jedną z najlepiej hostowanych platform eCommerce dostępnych na rynku. Na jej korzyść przemawia przede wszystkim cena oraz wiele użytecznych funkcji. Shopify obsługuje między innymi wiele kanałów sprzedaży na portalach takich jak Facebook, czy Amazon. Ogromnym plusem jest także całodobowe wsparcie. Wszystkie te czynniki decydują o tym, że ​​Shopify jest doskonałym i kompleksowym rozwiązaniem, które pomoże Ci sprzedawać więcej - zarówno online za pośrednictwem eCommerce i offline za pośrednictwem zintegrowanych systemów POS. Sprawdź, co zyskasz decydując się na Shopify.
   small_intro: |-
      Shopify jest obecnie jedną z najlepiej hostowanych platform eCommerce dostępnych na rynku.
   main_photo: /uploads/shopify-polska-01.jpg
@@ -50,9 +50,19 @@ display_faq_section: true
 faq:
   -
     question: |-
-      Zastanawiałeś się ile kosztuje sklep internetowy? 
+      Co to jest Shopify?
     answer: |-
-      Sprawdź, jak rozpocząć biznes, operując niewielkim budżetem.
+      Shopify to jedna z popularnych platform eCommerce, na której można założyć swój sklep. Jest ona bardzo elastyczna, dzięki czemu można modyfikować ją, dopasowując do własnych potrzeb. To rozwiązanie, które wykorzystują osoby rozpoczynające swój biznes online.
+  -
+    question: |-
+      Ile kosztuje sklep internetowy na Shopify?
+    answer: |-
+      Podstawowy pakiet abonamentowy w Shopify to koszt 29$ miesięcznie. Droższe abonamenty wynoszą kolejno 79$ i 299$. Warto jednak zauważyć, że tej ceny należy doliczyć również usługę konfiguracji sklepu. Funkcjonalny, prosty sklep internetowy na Shopify to koszt od 5000 złotych wzwyż.
+  -
+    question: |-
+      Czy Shopify w Polsce jest popularnym rozwiązaniem?
+    answer: |-
+      Coraz więcej osób, które rozpoczynają swój biznes online, decydują się na wykorzystanie Shopify. Polska jest krajem, który szczególnie docenia to rozwiązanie. Popularność Shopify w Polsce wynika przede wszystkim z łatwości obsługi platformy oraz kosztów związanych z uruchomieniem sklepu.
 ---
 ## Postaw na niskie koszty 
 
@@ -60,7 +70,7 @@ Dzięki Shopify otrzymujesz gwarancję niewielkich kosztów związanych z prowad
 
 ## Łatwa obsługa? To możliwe!
 
-Jedną z największych zalet Shopify jest prosta obsługa, która wynika z bardzo intuicyjnego panelu administracyjnego, do którego można logować się za pośrednictwem przeglądarki. Dostęp do różnych sekcji panelu administracyjnego zapewnia pasek boczny. Możesz skorzystać również z paska wyszukiwania, który daje możliwość znalezienia produktów, stron lub innych informacji, które są Ci potrzebne. Dzięki temu nawet niedoświadczeni sprzedawcy z łatwością poradzą sobie z jego obsługą.
+Jedną z największych zalet Shopify jest prosta obsługa, która wynika z bardzo intuicyjnego panelu administracyjnego, do którego można logować się za pośrednictwem przeglądarki lub za pomocą dedykowanej aplikacji mobilnej. Dostęp do różnych sekcji panelu administracyjnego zapewnia pasek boczny. Możesz skorzystać również z paska wyszukiwania, który daje możliwość znalezienia produktów, stron lub innych informacji, które są Ci potrzebne. Dzięki temu nawet niedoświadczeni sprzedawcy z łatwością poradzą sobie z jego obsługą.
 
 ## Gwarancja bezpieczeństwa
 
@@ -69,7 +79,7 @@ Platforma zapewnia certyfikaty SSL oraz zgodność z PCI – które są niezbęd
 
 ## Wersja mobilna - szybkie zakupy w każdym miejscu
 
-Zakupy przez urządzenia mobilne z roku na roku są coraz popularniejsze - głównie ze względu na wygodę. Twój sklep powinien być dostosowany do potrzeb takich użytkowników, dając im to, czego oczekują. Warto zauważyć, że wszystkie motywy Shopify są obsługiwane przez urządzenia mobilne. Korzystając z tego rozwiązania Twoi klienci mogą korzystać ze sklepu w dowolnym miejscu i na dowolnym urządzeniu. Wykorzystując technikę Responsive Web Design (RWD) masz gwarancję, że layout Twojej strony dopasuje się do rozmiaru każdego ekranu i zawsze będzie wyglądał atrakcyjnie.
+Zakupy przez urządzenia mobilne z roku na roku są coraz popularniejsze - głównie ze względu na wygodę. Twój sklep powinien być dostosowany do potrzeb takich użytkowników, dając im to, czego oczekują. Warto zauważyć, że wszystkie motywy Shopify są obsługiwane przez urządzenia mobilne. Wybierając to rozwiązanie Twoi klienci mogą korzystać ze sklepu w dowolnym miejscu i na dowolnym urządzeniu. Wykorzystując technikę Responsive Web Design (RWD) masz gwarancję, że layout Twojej strony dopasuje się do rozmiaru każdego ekranu i zawsze będzie wyglądał atrakcyjnie.
 
 ## Zadbaj o SEO i marketing
 
@@ -77,7 +87,7 @@ Shopify zapewnia wiele funkcji optymalizacji pod kątem wyszukiwarek, które pom
 
 ## Szybkość, która zadowoli Twoich klientów
 
-Shopify oferuje wyłącznie takie funkcje, które są niezbędne dla prawidłowej pracy sklepu internetowego. Wyeliminowane zostały wszelkie zagrożenia, które mogłyby spowolnić sklep. We wszystkich tekstach dotyczących sprawnego działa platforma wypada bardzo dobrze. 
+Shopify oferuje wyłącznie takie funkcje, które są niezbędne dla prawidłowej pracy sklepu internetowego. Wyeliminowane zostały wszelkie zagrożenia, które mogłyby spowolnić sklep. We wszystkich testach dotyczących sprawnego działa platforma wypada bardzo dobrze. 
 
 ## Łatwa skalowalność na inne rynki zagraniczne
 
@@ -85,8 +95,9 @@ Zależy Ci, aby swoje produkty oferować klientom z innych krajów? Shopify to p
 
 ## Możliwość odzyskania porzuconego koszyka
 
-Zdarza się, że klient dodaje produkty do koszyka, lecz rezygnuje z ich zakupu. Shopify daje możliwość odzyskania porzuconego koszyka, dając klientowi możliwość ponownego rozważenia zakupu. Platforma automatycznie śledzi i wysyła wiadomości e-mail do potencjalnych klientów, aby przypomnieć im o sfinalizowaniu zakupu. 
+Zdarza się, że klient dodaje produkty do koszyka, lecz rezygnuje z ich zakupu. Shopify daje możliwość odzyskania porzuconego koszyka, umożliwiając klientowi ponowne rozważenie zakupu. Platforma automatycznie śledzi i wysyła wiadomości e-mail do potencjalnych klientów, aby przypomnieć im o sfinalizowaniu zakupu. 
 
 Czy można stworzyć sklep za 5000 złotych? Tak! Wystarczy, że postawisz na Shopify i wybierzesz gotowy szablon, a my skonfigurujemy go tak, abyś mógł rozpocząć sprzedaż tak szybko, jak to możliwe.
 
 Nie czekaj! Skontaktuj się z nami i wykorzystaj swoją szansę na sukces.
+

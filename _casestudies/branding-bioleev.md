@@ -31,7 +31,7 @@ cta_buttons:
     link: /kontakt.html
   - name: Wyceń podobny projekt
     link: /kontakt.html
-testimonial_on_index: true
+testimonial_on_index: false
 casestudy_on_index: false
 cta: Case study bioleev
 

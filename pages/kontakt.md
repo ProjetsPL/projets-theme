@@ -7,7 +7,7 @@ published: true
 links_visible: true
 
 #SEO
-seo_title:  Wycenimy Twój projekt! |  Softwere House | Projets
+seo_title:  Wycenimy Twój projekt! |  Software House | Projets
 seo_description: |-
   Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
 

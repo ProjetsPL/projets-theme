@@ -21,6 +21,8 @@
         {% else %}
         <p class="h3">{{include.casestudy.intro.title}}</p>
         {% endif %}
+
+        {% if include.casestudy.customer_opinion.quotation %}
         <p>"{{include.casestudy.customer_opinion.quotation_small}}"</p>        
         <div class="person">
             <div class="photo">
@@ -31,6 +33,9 @@
                 <p class="p3">{{include.casestudy.customer_opinion.position}} @ {{include.casestudy.company}}</p>
             </div>
         </div>
+        {%else%}
+        <p>{{include.casestudy.intro.content}}</p>
+        {%endif%}
         {% if include.casestudy.links_visible %}
         <a href="{{include.casestudy.url}}">{{include.casestudy.cta}} <svg class="arrow-more" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5H19M19 5L15 1M19 5L15 9" stroke="#8644AD" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         {% endif %}

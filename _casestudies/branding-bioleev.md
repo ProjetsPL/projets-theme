@@ -56,11 +56,11 @@ header:
 screens:
   mobile_1:
     img: /uploads/casestudy-bioleev-mobile.jpg
-    cover:
+    cover: /uploads/casestudy-bioleev-mobile.jpg
     alt:
   desktop_1:
     img: /uploads/casestudy-bioleev-desktop.jpg
-    cover:
+    cover: /uploads/casestudy-bioleev-desktop.jpg
     alt:
 colors:
   main: "000"

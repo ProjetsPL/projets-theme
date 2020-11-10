@@ -194,7 +194,7 @@
         </div>
         {%endif%}  
         <section class="beams-wrapper global-beam-wrapper beam-background  section-beam section-beam-lg overflow-beam">
-            {%assign casestudies = site.casestudies%}
+            {%assign casestudies = site.casestudies | sample:2%}
             {% for item in casestudies  %}
                 {% if item.path == page.path %}                
                     {% continue %}
@@ -203,7 +203,7 @@
                     {% break %}
                 {% endif %}
             {%endfor%}
-            </section>
+        </section>
         {% include random-links.html %}    
         {% include footer.html %}       
     </body>

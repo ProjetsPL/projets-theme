@@ -55,7 +55,7 @@
         .mobile-mockup {               
             z-index: 2; 
             --mobile-mockup-size: 170px;
-            position: absolute;
+            // position: absolute;
             top:50%;
             right: 0%;
             transform: translateX(-30%) translateY(-30%);
@@ -76,9 +76,13 @@
     .casestudy-content {   
         position: relative;
         z-index: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
         .h3 {
             margin-top: 0;
             padding-top: 0;
+            margin-bottom: 0;
         }
         .person {
             display: flex;
@@ -122,8 +126,8 @@
             order:2;
             .mobile-mockup {
                 right: auto;
-                left: 0%;
-                transform: translateX(30%) translateY(-30%);
+                right: 100%;
+                transform: translateX(130%) translateY(-30%);
             }
             .desktop-mockup {
                 right: auto;
@@ -182,7 +186,7 @@
             .casestudy-universal {   
                 order:1;
                 .mobile-mockup {
-                    transform: translateX(10%) translateY(-50%);
+                    transform: translateX(110%) translateY(-50%);
                 }
             }
             .casestudy-content {

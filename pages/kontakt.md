@@ -29,16 +29,23 @@ show_contact_in_footer: false
 
 #CONTACT layout
 header:
-  title: <strong>Formularz kontaktowy</strong><br>Wycenimy Twój projekt w 7 dni
+  title: <strong>Witaj</strong>, miło Cię widzieć
   intro: |-
-    Chcesz omówić swój pomysł? Napisz do nas, a my skontaktujemy się z Tobą w ciągu 24h i rozpoczniemy współpracę.
+    Chcesz pilnie omówić swój pomysł? Zadzwoń, z chęcią odpowiem na wszystkie Twoje pytania i przygotuje ekspresową estymację.
+  phone: +48 666 395 394
+  phone_desc: Jestem do Twojej dyspozycji od poniedziałku do piątku w godzinach 8.00 - 18.00
+  mail: wojciech@projets.pl
+  mail_desc: Na wiadomości e-mail staram się odpisywać w ten sam dzień. Maksymalny czas odpowiedzi to 24h 
   main_photo: uploads/kontakt-OG-image.jpg
-  
+  person_photo: uploads/wojciech-kozak-contact.png
+
+form_intro: Mozesz też wypełnić formularz, który znajduje się poniżej. Gwarantuje, że skontaktuje się z Tobą najpóźniej w ciągu 24h.
+
 project_type:
   header:
     title: Jakiego typu projekt chcesz zrealizować?
-    content: |-
-      Zastanawiasz się jak stworzyć sklep internetowy? Potrzebujesz funkcjonalnej aplikacji? A może masz pomysł na stronę internetową, ale nie wiesz jak go zrealizować? Wybierz jedną z opcji, abyśmy wiedzieli, jak możemy Ci pomóc. 
+    # content: |-
+    #   Zastanawiasz się jak stworzyć sklep internetowy? Potrzebujesz funkcjonalnej aplikacji? A może masz pomysł na stronę internetową, ale nie wiesz jak go zrealizować? Wybierz jedną z opcji, abyśmy wiedzieli, jak możemy Ci pomóc. 
     icon: /assets/img/1.svg
   types:
     -
@@ -50,11 +57,14 @@ project_type:
     -
       title: Strona internetowa
       icon: /uploads/icon-lg-web-design.svg
+    -
+      title: Aplikacja mobilna
+      icon: /uploads/icon-lg-mobile-app.svg 
 project_range:
   header:
     title: Jaki zakres prac będzie obejmował projekt?
-    content: |-
-      Interesuje Cię zaprogramowanie aplikacji i umieszczenie jej na serwerze? Zależy Ci na przygotowaniu projektu, który będzie wyróżniał się nowoczesnym designem i praktycznymi technologiami? Szukasz pomocy związanej z identyfikacją wizualną? Postaw na obszar, który Cię interesuje lub wybierz kompleksową pomoc.
+    # content: |-
+    #   Interesuje Cię zaprogramowanie aplikacji i umieszczenie jej na serwerze? Zależy Ci na przygotowaniu projektu, który będzie wyróżniał się nowoczesnym designem i praktycznymi technologiami? Szukasz pomocy związanej z identyfikacją wizualną? Postaw na obszar, który Cię interesuje lub wybierz kompleksową pomoc.
     icon: /assets/img/2.svg
   types:
     -

@@ -1,5 +1,49 @@
+.contact-header {
+    padding-bottom: 0;
+    padding-top: 30px;
+    > .beam {
+        align-items: flex-end;
+    }
+    .photo {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .content {
+        padding-bottom: 20px;
+        .title {
+            margin: 0;
+            margin: 0 0 10px 0;
+        }
+        .intro {
+            margin: 0;
+            margin: 0 0 20px 0;
+        }
+        .phone {
+            margin: 0;
+        }
+        .mail {
+            margin: 0;
+        }
+        .phone-desc, .mail-desc {
+            margin: 0 0 20px 0;
+            color: $bg-4;
+            max-width: 400px;
+        }
+    }
+}
+.section-contact-form {
+    padding-top: 50px;
+}
+.form-intro {
+    .content {
+        max-width: 550px;
+    }
+}
 .contact-form {
     justify-content: flex-start;
+    margin-top: 50px;
     .section-header {
         padding-bottom: 0;
     }
@@ -73,6 +117,26 @@
     }
 
 }
+@media (max-width: 1000px) {
+    .contact-header {
+        .photo {
+            position: relative;
+            img {
+                position: absolute;
+                bottom:0;
+                left:0;
+                width: 350px;
+                transform: translateX(-23%);
+            }
+        }
+    }
+    .section-contact-form {
+        padding-top: 30px;
+    }
+    .contact-form {
+        margin-top: 30px;
+    }
+}
 @media (max-width: 860px) {
     .contact-form {
         .product-type {
@@ -93,6 +157,26 @@
                 .beam-item {
                     flex-basis: 100%;
                 }
+        }
+    }
+}
+@media (max-width: 660px) {
+    .contact-header {
+        >.beam {
+            >.beam-item {
+                flex-basis: 100%;
+            }
+        }
+        .photo {
+            position: relative;
+            // order: 1;
+            // border-bottom: $bg-border-3;
+            img {
+                position: relative;
+                width: 100%;
+                max-width: 250px;
+                transform: translateX(0%);margin-bottom: 10px;
+            }
         }
     }
 }

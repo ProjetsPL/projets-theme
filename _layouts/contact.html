@@ -8,16 +8,28 @@
         {% include top-line.html %} 
         {% include parts/breadcrumbs.html %}               
         <header class="beams-wrapper small-beam-wrapper beam-background section-beam header-beam contact-header">
-            <div class="beam">
-                <div class="beam-item">
-                    <h1>{{page.header.title}}</h1>
-                    <p>{{page.header.intro}}</p>
+            <div class="beam b-size-5 ">
+                <div class="beam-item b-size-2 photo">
+                    <img src="{{page.header.person_photo}}" alt="">
+                </div>
+                <div class="beam-item b-size-3 content">
+                    <h1 class="title">{{page.header.title}}</h1>
+                    <p class="intro">{{page.header.intro}}</p>
+                    <a href="tel:{{page.header.phone}}" class="h2 phone">{{page.header.phone}}</a>
+                    <p class="p2 phone-desc">{{page.header.phone_desc}}</p>
+                    <a href="mailtp:{{page.header.mail}}" class="h3 mail">{{page.header.mail}}</a>
+                    <p class="p2 mail-desc">{{page.header.mail_desc}}</p>
                 </div>
             </div>
         </header>
         <form id= "contactForm" name="contact" method="POST" data-netlify="true"  data-netlify-recaptcha="true" class="beams-wrapper small-beam-wrapper beam-background section-beam section-contact-form" onsubmit="return submitEvent()" action="/kontakt/success.html">
+            <div class="beam form-intro">
+                <div class="beam-item">
+                    <p class="p1 content">{{page.form_intro}}</p>        
+                </div>
+            </div>
             <div class="beam contact-form">               
-                <div class="beam-item contact-inputs">                        
+                <div class="beam-item contact-inputs">                
                     <div class="section-header">
                         <div class="head">
                             <div class="title">

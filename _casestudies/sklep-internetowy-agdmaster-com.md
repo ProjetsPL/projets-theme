@@ -40,13 +40,13 @@ date: 2018-09-01T12:02:04.000+00:00
 
 
 intro: 
-  title: <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
+  title: <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów
   content: |-
     Funkcjonalny i spersonalizowany sklep internetowy w którym zgromadzony jest bardzo duży asortyment. Atrakcyjny design i brak konieczności tworzenia konta w celu dokonania zakupu zachęcają klientów do skorzystania z oferty.
 
     
 header:
-  title:  <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów.
+  title:  <strong>Proste zakupy</strong> bez konieczności rejestracji. Nowoczesny design i duży wybór produktów
   intro: |-
     Założeniem projektu było stworzenie funkcjonalnego, spersonalizowanego sklepu internetowego. Główny cel stanowiło uruchomienie platformy, w której użytkownik będzie mógł dokonać zakupu bez konieczności rejestracji i tworzenia konta. Ponadto w jednym miejscu zgromadzony został bogaty asortyment w postaci sprzętów i części do urządzeń z branży AGD i RTV. Tworząc sklep internetowy, postawiliśmy również na profesjonalny i atrakcyjny dla klienta design. 
   main_photo: /uploads/agdmaster-OG-image.jpg

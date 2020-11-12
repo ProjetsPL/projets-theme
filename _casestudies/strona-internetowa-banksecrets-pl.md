@@ -72,12 +72,14 @@ watermark: /uploads/banksecrets-watermark.svg
 
 
 customer_opinion:
-  person:
-  position:
-  photo: 
-  quotation:
-  quotation_small:
-  quotation_sentence:
+  person: Robert Niechciał
+  position: CEO
+  photo: /uploads/robert-niechcial.jpg
+  quotation: |-
+    Firma Projets to zespół specjalistów, którzy mają ogromne doświadczenie i są zorientowani na aktualne trendy branżowe. Umiejętność ich dostosowania do potrzeb klienta sprawiły, że wszystkie nasze oczekiwania zostały spełnione. Projekt został zrealizowany profesjonalnie i z pełnym zaangażowaniem. Na każdym etapie mogliśmy także liczyć na merytoryczny poziom komunikacji, co przełożyło się na bezproblemową i przyjemną współpracę. Profesjonalna pomoc, wsparcie i doradztwo — to cechy, które sprawiają, że możemy polecić Projets jako rzetelnego partnera do współpracy.
+  quotation_small: |-
+    Profesjonalna pomoc, wsparcie i doradztwo — to cechy, które sprawiają, że możemy polecić Projets jako rzetelnego partnera do współpracy.
+  quotation_sentence: Projekt został zrealizowany profesjonalnie i z pełnym zaangażowaniem.
 
   
 project_categories:

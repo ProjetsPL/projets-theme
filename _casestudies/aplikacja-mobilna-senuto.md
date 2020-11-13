@@ -31,7 +31,7 @@ cta_buttons:
     link: 
   - name: Wyceń podobny projekt
     link: /kontakt.html
-testimonial_on_index: false
+testimonial_on_index: true
 casestudy_on_index: true
 cta: Case study Senuto
 
@@ -80,11 +80,12 @@ customer_opinion:
   person: Damian Sałkowski
   position: CEO
   photo: /uploads/damian-salkowski.jpg
-  quotation:
-    
-  quotation_small:
-    
-  quotation_sentence: 
+  quotation: |-
+    Aplikacja mobilna była dla nas jednym z priorytetów na 2020 rok. Brak wewnętrznych zasobów IT spowodował, że postanowiliśmy zlecić jej stworzenie podmiotowi zewnętrznemu. Współpraca z Projets od początku układała się bardzo dobrze. Warto tu wyróżnić sprawne zarządzanie projektem, dobre zrozumienie produktu klienta i terminowość. Aplikacja działa sprawnie i notuje setki pobrań tygodniowo. Z czystym sumieniem mogę polecić firmę Projets jako rzetelnego partnera.
+  quotation_small: |-
+    Współpraca z Projets od początku układała się bardzo dobrze. Warto tu wyróżnić sprawne zarządzanie projektem, dobre zrozumienie produktu klienta i terminowość.
+  quotation_sentence: Z czystym sumieniem mogę polecić firmę Projets jako rzetelnego partnera.
+
 
   
 project_categories:

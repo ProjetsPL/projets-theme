@@ -72,7 +72,7 @@ colors:
 
 
 company: Senuto
-company_logo: 
+company_logo: /uploads/senuto-logo.png
 watermark: 
 
 

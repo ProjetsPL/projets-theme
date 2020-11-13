@@ -67,7 +67,7 @@ colors:
 
 
 company: banksecrets.pl
-company_logo: /uploads/logo-banksecrets.svg
+company_logo: /uploads/banksecrets-logo.svg
 watermark: /uploads/banksecrets-watermark.svg
 
 
